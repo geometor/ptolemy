@@ -1,0 +1,42 @@
+{
+  "repository": "geometor/ptolemy",
+  "author": "Claudius Ptolemy (c. 100–170 CE)",
+  "copyright_audit": {
+    "status": "100% Public Domain sources + 100% Original GEOMETOR English translation and commentary",
+    "excluded_modern_translations": [
+      "R. Catesby Taliaferro (Great Books of the Western World, 1952) — NOT consulted or used",
+      "G. J. Toomer (Ptolemy's Almagest, Duckworth / Springer / Princeton, 1984/1998) — NOT consulted or used",
+      "J. L. Berggren & R. S. D. Thomas (Ptolemy's Geography / Sidoli & Berggren 2007 Planisphaerium) — NOT consulted or used"
+    ]
+  },
+  "primary_public_domain_sources": [
+    {
+      "id": "heiberg_1898",
+      "citation": "Claudii Ptolemaei Opera quae exstant omnia, Vol. I: Syntaxis Mathematica, Pars I, ed. J. L. Heiberg (Leipzig: B. G. Teubner, 1898)",
+      "language": "Ancient Greek (polytonic)",
+      "rights": "Public Domain worldwide (published 1898; editor died 1928)",
+      "local_pdf_gitignored": "resources/pdfs/heiberg_1898_syntaxis_vol1_pt1.pdf",
+      "folios_inspected_multimodal": "Printed pp. 4–11, 30–49, 66–81 (PDF pp. 14–21, 40–59, 76–91)"
+    },
+    {
+      "id": "heiberg_1907",
+      "citation": "Claudii Ptolemaei Opera quae exstant omnia, Vol. II: Opera Astronomica Minora, ed. J. L. Heiberg (Leipzig: B. G. Teubner, 1907), Planisphaerium pp. 225–259",
+      "language": "Medieval Scientific Latin (trans. Hermann of Carinthia, Toulouse, 1 June 1143)",
+      "rights": "Public Domain worldwide (published 1907; editor died 1928)",
+      "local_pdf_gitignored": "resources/pdfs/heiberg_1907_opera_minora_vol2.pdf",
+      "folios_inspected_multimodal": "Printed pp. 226–235 (PDF pp. 436–445)"
+    },
+    {
+      "id": "halma_1813",
+      "citation": "Composition mathématique de Claude Ptolémée, ed. & trans. Nicolas B. Halma, Tome I (Paris: Henri Grand, 1813)",
+      "language": "Ancient Greek & French",
+      "rights": "Public Domain worldwide (published 1813)"
+    },
+    {
+      "id": "manitius_1912",
+      "citation": "Des Claudius Ptolemäus Handbuch der Astronomie, trans. Karl Manitius, Band I (Leipzig: B. G. Teubner, 1912)",
+      "language": "German",
+      "rights": "Public Domain worldwide (published 1912; translator died 1921)"
+    }
+  ]
+}

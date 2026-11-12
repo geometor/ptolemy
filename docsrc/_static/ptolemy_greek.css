@@ -1,0 +1,33 @@
+/* Polytonic Greek & Scientific Latin Scriptorium typography for GEOMETOR Ptolemy */
+
+.greek-text,
+[lang="el"],
+[lang="grc"] {
+  font-family: "Gentium Plus", "GFS Porson", "Noto Serif", "Palatino Linotype", Georgia, serif;
+  font-size: 1.07rem;
+  line-height: 1.82;
+  letter-spacing: 0.01em;
+}
+
+.latin-text,
+[lang="la"] {
+  font-family: "Gentium Plus", "EB Garamond", "Noto Serif", Georgia, serif;
+  font-size: 1.04rem;
+  line-height: 1.78;
+}
+
+.heiberg-loc {
+  display: inline-block;
+  font-family: var(--font-mono, ui-monospace, SFMono-Regular, Menlo, monospace);
+  font-size: 0.78rem;
+  opacity: 0.72;
+  margin-right: 0.45rem;
+  user-select: none;
+}
+
+.euclid-graphic {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1.25rem auto;
+}

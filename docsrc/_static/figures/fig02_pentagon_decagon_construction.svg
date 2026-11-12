@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic" viewBox="0 0 560 430" role="img" aria-label="Almagest I.10a Golden Pentagon and Decagon Construction">
+  <defs>
+    <marker id="geom-tick-1" viewBox="-2 -6 4 12" refX="0" refY="0" markerWidth="4" markerHeight="12" orient="auto">
+      <line x1="0" y1="-4.5" x2="0" y2="4.5" stroke="currentColor" stroke-width="1.35" stroke-linecap="round"/>
+    </marker>
+    <marker id="geom-tick-2" viewBox="-4 -6 8 12" refX="0" refY="0" markerWidth="8" markerHeight="12" orient="auto">
+      <line x1="-1.8" y1="-4.5" x2="-1.8" y2="4.5" stroke="currentColor" stroke-width="1.35" stroke-linecap="round"/>
+      <line x1="1.8" y1="-4.5" x2="1.8" y2="4.5" stroke="currentColor" stroke-width="1.35" stroke-linecap="round"/>
+    </marker>
+    <marker id="geom-tick-3" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" orient="auto">
+      <line x1="-3.4" y1="-4.5" x2="-3.4" y2="4.5" stroke="currentColor" stroke-width="1.35" stroke-linecap="round"/>
+      <line x1="0" y1="-4.5" x2="0" y2="4.5" stroke="currentColor" stroke-width="1.35" stroke-linecap="round"/>
+      <line x1="3.4" y1="-4.5" x2="3.4" y2="4.5" stroke="currentColor" stroke-width="1.35" stroke-linecap="round"/>
+    </marker>
+  </defs>
+  <g id="elements">
+    <circle class="geom-dashed" cx="280.00" cy="235.00" r="155.00" fill="none" data-ref="cABG_full" stroke-dasharray="4 4"/>
+    <path class="geom-circle" d="M 435.00 235.00 A 155.00 155.00 0 0 0 125.00 235.00" fill="none" data-ref="cABG" stroke-width="1.90"/>
+    <path class="geom-line" d="M 125.00 235.00 L 280.00 235.00 L 435.00 235.00" fill="none" data-ref="AG" stroke-width="1.50"/>
+    <path class="geom-line" d="M 280.00 235.00 L 280.00 157.50 L 280.00 80.00" fill="none" data-ref="DB" stroke="var(--geom-assert, #2563eb)" stroke-width="1.90"/>
+    <path class="geom-line" d="M 280.00 235.00 L 318.75 235.00 L 357.50 235.00" fill="none" data-ref="DE" marker-mid="url(#geom-tick-1)"/>
+    <path class="geom-line" d="M 357.50 235.00 L 396.25 235.00 L 435.00 235.00" fill="none" data-ref="EG" marker-mid="url(#geom-tick-1)"/>
+    <path class="geom-dashed" d="M 357.50 235.00 L 318.75 157.50 L 280.00 80.00" fill="none" data-ref="EB" stroke="var(--geom-accent, #d97706)" stroke-width="1.50" stroke-dasharray="6 4"/>
+    <path class="geom-arc" d="M 280.00 80.00 A 173.30 173.30 0 0 0 184.20 235.00" fill="none" data-ref="arcBZ" stroke="var(--geom-accent, #d97706)" stroke-width="1.60" stroke-dasharray="5 4"/>
+    <path class="geom-bold" d="M 280.00 235.00 L 232.10 235.00 L 184.20 235.00" fill="none" data-ref="DZ" stroke="var(--geom-accent, #d97706)" stroke-width="2.80"/>
+    <path class="geom-bold" d="M 280.00 80.00 L 232.10 157.50 L 184.20 235.00" fill="none" data-ref="BZ" stroke="var(--geom-assert, #2563eb)" stroke-width="2.60"/>
+    <path class="geom-dashed" d="M 125.00 235.00 L 139.80 189.45 L 154.60 143.89" fill="none" data-ref="s10_arc" stroke="var(--geom-accent, #d97706)" stroke-dasharray="3 3"/>
+    <path class="geom-dashed" d="M 125.00 235.00 L 178.55 161.29 L 232.10 87.59" fill="none" data-ref="s5_arc" stroke="var(--geom-assert, #2563eb)" stroke-dasharray="3 3"/>
+  </g>
+  <g id="graphics">
+    <path class="geom-ang-arc" d="M 267.00 235.00 L 267.00 222.00 L 280.00 222.00" fill="none" stroke="var(--geom-muted, #64748b)" stroke-width="1.25" data-ref="angADB"/>
+  </g>
+  <g id="highlights">
+    <polygon class="geom-polygon" points="280.00,80.00 280.00,235.00 184.20,235.00" fill="var(--geom-accent, #d97706)" fill-opacity="0.13" stroke="none" data-ref="triBDZ"/>
+  </g>
+  <g id="points">
+    <circle class="geom-point" cx="125.00" cy="235.00" r="3.60" data-ref="A"/>
+    <circle class="geom-point" cx="280.00" cy="80.00" r="3.60" data-ref="B"/>
+    <circle class="geom-point" cx="435.00" cy="235.00" r="3.60" data-ref="G"/>
+    <circle class="geom-point" cx="280.00" cy="235.00" r="3.60" data-ref="D"/>
+    <circle class="geom-point" cx="357.50" cy="235.00" r="3.60" data-ref="E"/>
+    <circle class="geom-point" cx="184.20" cy="235.00" r="3.60" data-ref="Z"/>
+  </g>
+  <g id="labels">
+    <text class="geom-label" x="109.00" y="237.00" text-anchor="middle" dominant-baseline="central" style="font-style: italic; font-size: 15px;" data-ref="A">A</text>
+    <text class="geom-label" x="280.00" y="64.00" text-anchor="middle" dominant-baseline="central" style="font-style: italic; font-size: 15px;" data-ref="B">B</text>
+    <text class="geom-label" x="451.00" y="237.00" text-anchor="middle" dominant-baseline="central" style="font-style: italic; font-size: 15px;" data-ref="G">Γ</text>
+    <text class="geom-label" x="286.00" y="253.00" text-anchor="middle" dominant-baseline="central" style="font-style: italic; font-size: 15px;" data-ref="D">Δ</text>
+    <text class="geom-label" x="361.50" y="253.00" text-anchor="middle" dominant-baseline="central" style="font-style: italic; font-size: 15px;" data-ref="E">E</text>
+    <text class="geom-label" x="178.20" y="253.00" text-anchor="middle" dominant-baseline="central" style="font-style: italic; font-size: 15px;" data-ref="Z">Z</text>
+    <text class="geom-label" x="232.10" y="269.00" text-anchor="middle" dominant-baseline="central" style="font-size: 12px;" data-ref="DZ">ΔZ = R/φ = s₁₀ (37;4,55ᵖ)</text>
+    <text class="geom-label" x="184.10" y="149.50" text-anchor="middle" dominant-baseline="central" style="font-size: 12px;" data-ref="BZ">BZ = s₅ (70;32,3ᵖ)</text>
+  </g>
+</svg>
