@@ -12,8 +12,10 @@ dist/
 .pytest_cache/
 .ruff_cache/
 
-# Compiled Sphinx documentation
+# Compiled Sphinx documentation & generated AutoAPI stubs
 docs/
+docsrc/modules/api/
+.doctrees
 
 # Archival PDFs & raw scan dumps
 *.pdf

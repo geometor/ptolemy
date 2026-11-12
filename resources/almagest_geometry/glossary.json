@@ -1,0 +1,77 @@
+{
+  "syntaxis-mathematike": {
+    "headword": "Μαθηματικὴ Σύνταξις",
+    "translation": "Mathematical Systematic Treatise (Almagest)",
+    "definition": "Ptolemy's original Greek title for his thirteen-book astronomical and geometric treatise; later called ἡ μεγίστη [σύνταξις] ('the greatest'), whence Arabic al-Majisṭī and Latin Almagestum."
+  },
+  "tmema": {
+    "headword": "τμῆμα (pl. τμήματα)",
+    "translation": "part / unit segment of the diameter",
+    "definition": "One of the 120 equal parts (120^p) into which Ptolemy divides the reference diameter of the circle in Almagest I.10 (Heiberg I, p. 32), so the radius equals 60^p."
+  },
+  "moira": {
+    "headword": "μοῖρα (pl. μοῖραι)",
+    "translation": "degree of arc",
+    "definition": "One of the 360 equal parts (360°) into which the circumference of any circle is divided, subdivided sexagesimally into first-sixtieths (πρῶτα ἑξηκοστά, minutes) and second-sixtieths (δεύτερα ἑξηκοστά, seconds)."
+  },
+  "hexekoston": {
+    "headword": "ἑξηκοστόν (πρῶτον, δεύτερον)",
+    "translation": "sixtieth (sexagesimal fractional place)",
+    "definition": "Base-60 positional fractional subdivision (parts; primes, seconds = p; a, b = p + a/60 + b/3600) adopted by Ptolemy to avoid unwieldy unit-fraction manipulations."
+  },
+  "eutheia-hypoteinousa": {
+    "headword": "εὐθεῖα ὑποτείνουσα περιφέρειαν",
+    "translation": "straight line subtending an arc (chord, crd θ)",
+    "definition": "The fundamental trigonometric function of Greek geometry: for an arc θ on a circle of radius R = 60^p, crd(θ) = 2R sin(θ/2) = 120 sin(θ/2)."
+  },
+  "akron-kai-meson-logon": {
+    "headword": "ἄκρον καὶ μέσον λόγον",
+    "translation": "extreme and mean ratio (golden section, φ)",
+    "definition": "Defined in Euclid Elements VI.Def.3: a straight line ΓZ is cut at Δ so ΓZ : ΓΔ = ΓΔ : ΔZ; in Almagest I.10 (p. 33), ΓΔ = R = 60^p is the hexagon side and ΔZ = R/φ is the decagon side."
+  },
+  "tetragonon-eggegrammenon": {
+    "headword": "τετράπλευρον ἐν κύκλῳ ἐγγεγραμμένον",
+    "translation": "quadrilateral inscribed in a circle (cyclic quadrilateral)",
+    "definition": "A four-sided polygon whose vertices lie on a common circle; subject of Ptolemy's Theorem (Almagest I.10, pp. 36–37) equating the rectangle of the diagonals to the sum of the rectangles of opposite sides."
+  },
+  "dia-ton-grammon": {
+    "headword": "διὰ τῶν γραμμῶν",
+    "translation": "by means of lines (exact geometric construction)",
+    "definition": "Compass-and-straightedge (or explicit algebraic curve) construction; Ptolemy notes in Almagest I.10 (p. 42) that given crd(1½°), crd(½°) cannot be found 'by means of lines' because trisecting a general angle is not ruler-and-compass constructible."
+  },
+  "kata-synthesin": {
+    "headword": "κατὰ σύνθεσιν",
+    "translation": "by composition (synthesin form of Menelaus's Theorem)",
+    "definition": "First compound-ratio form of the Menelaus configuration (Almagest I.13, p. 69): ΓA : AE = (ΓΔ : ΔZ) · (ZB : BE), where the whole segment ΓA is compared to an outer part AE."
+  },
+  "kata-diairesin": {
+    "headword": "κατὰ διαίρεσιν",
+    "translation": "by division / separation (diairesin form of Menelaus's Theorem)",
+    "definition": "Second compound-ratio form of the Menelaus configuration (Almagest I.13, p. 69): ΓE : EA = (ΓZ : ZΔ) · (ΔB : BA), comparing the two subsegments ΓE and EA of ΓA."
+  },
+  "loxosis": {
+    "headword": "λόξωσις τοῦ διὰ μέσων τῶν ζωδίων κύκλου",
+    "translation": "obliquity of the ecliptic (ε)",
+    "definition": "Inclination between the plane of the celestial equator and the ecliptic circle; measured by Ptolemy in Almagest I.12 as 2ε = 11/83 of 360° ≈ 47°42'40'', so ε ≈ 23°51'20''."
+  },
+  "planisphaerium": {
+    "headword": "Planisphaerium (Ἅπλωσις ἐπιφανείας σφαίρας)",
+    "translation": "Flattening / Planar Representation of the Sphere",
+    "definition": "Ptolemy's treatise demonstrating how celestial circles on the solid sphere are mapped onto the equatorial plane by stereographic projection from the South Celestial Pole, forming the mathematical theory of the planispheric astrolabe."
+  },
+  "circulus-declivis": {
+    "headword": "circulus declivis / signifer",
+    "translation": "oblique / zodiacal circle (projected ecliptic)",
+    "definition": "Hermann of Carinthia's Latin term in Planisphaerium §1 for the ecliptic circle, projected onto the equatorial plane as an eccentric circle on diameter tm tangent to the Tropics of Cancer and Capricorn and bisecting the equator at b and d."
+  },
+  "subcontraria-sectio": {
+    "headword": "ὑπεναντία τομή / sectio subcontraria",
+    "translation": "subcontrary section of an oblique circular cone",
+    "definition": "Apollonius Conics I.5 configuration in which an oblique circular cone (vertex at the South Pole, base on a celestial circle) is cut by the equatorial plane at anti-parallel angles, proving that every circle on the sphere projects to an exact circle."
+  },
+  "almucantar": {
+    "headword": "almucantar (al-muqanṭarāt)",
+    "translation": "circle of equal altitude above the horizon",
+    "definition": "A parallel small circle of constant altitude h above the local horizon, which stereographic projection maps to an eccentric circle on the astrolabe tympan."
+  }
+}

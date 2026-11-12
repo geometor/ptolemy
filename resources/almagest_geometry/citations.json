@@ -1,0 +1,79 @@
+{
+  "heiberg:1898": {
+    "author": "J. L. Heiberg (ed.)",
+    "work": "Claudii Ptolemaei Opera quae exstant omnia, Vol. I: Syntaxis Mathematica, Pars I (Libros I–VI continens)",
+    "locus": "Leipzig: B. G. Teubner, 1898",
+    "year": 1898,
+    "note": "Definitive critical Greek edition of Almagest Book I (pp. 4–81); 100% Public Domain."
+  },
+  "heiberg:1907": {
+    "author": "J. L. Heiberg (ed.)",
+    "work": "Claudii Ptolemaei Opera quae exstant omnia, Vol. II: Opera Astronomica Minora",
+    "locus": "Leipzig: B. G. Teubner, 1907, pp. 225–259",
+    "year": 1907,
+    "note": "Definitive critical edition of Hermann of Carinthia's 1143 Latin translation of Ptolemy's Planisphaerium; 100% Public Domain."
+  },
+  "halma:1813": {
+    "author": "Nicolas B. Halma (ed. & trans.)",
+    "work": "Composition mathématique de Claude Ptolémée, Tome Premier",
+    "locus": "Paris: Henri Grand, 1813",
+    "year": 1813,
+    "note": "Bilingual Greek–French edition with notes by J.-B. Delambre; 100% Public Domain."
+  },
+  "manitius:1912": {
+    "author": "Karl Manitius (trans.)",
+    "work": "Des Claudius Ptolemäus Handbuch der Astronomie, Erster Band",
+    "locus": "Leipzig: B. G. Teubner, 1912",
+    "year": 1912,
+    "note": "German scholarly translation keyed directly to Heiberg's Teubner pagination; 100% Public Domain."
+  },
+  "commandino:1558": {
+    "author": "Federico Commandino",
+    "work": "Ptolemaei Planisphaerium; Iordani Planisphaerium; Federici Commandini Urbinatis in Ptolemaei Planisphaerium Commentarius",
+    "locus": "Venice: Aldus, 1558",
+    "year": 1558,
+    "note": "Renaissance Latin edition and geometric commentary supplying the Apollonius Conics I.5 subcontrary-cone proof; 100% Public Domain."
+  },
+  "euclid:elements": {
+    "author": "Euclid",
+    "work": "Elements (Στοιχεῖα, ed. Heiberg / trans. Heath)",
+    "locus": "Books I–IV, VI, XI, XIII",
+    "year": -300,
+    "note": "Cross-linked to geometor/euclid and geometor/elements for propositions I.47, II.1, II.6, III.21, III.31, IV.15, VI.Def.3, VI.1, VI.3, VI.4, VI.8, VI.16, VI.33, XI.3, XIII.9, and XIII.10."
+  },
+  "apollonius:conics": {
+    "author": "Apollonius of Perga",
+    "work": "Conics (Κωνικά, ed. Heiberg 1891)",
+    "locus": "Book I, Prop. 5",
+    "year": -200,
+    "note": "Subcontrary section of an oblique circular cone proving stereographic circle preservation."
+  },
+  "menelaus:sphaerica": {
+    "author": "Menelaus of Alexandria",
+    "work": "Sphaerica (Σφαιρικά)",
+    "locus": "Book III, Prop. 1",
+    "year": 100,
+    "note": "Spherical six-quantity transversal theorem adapted in Almagest I.13 (Heiberg I, pp. 74–76)."
+  },
+  "archimedes:dimensio": {
+    "author": "Archimedes of Syracuse",
+    "work": "Measurement of a Circle (Κύκλου μέτρησις)",
+    "locus": "Prop. 3",
+    "year": -225,
+    "note": "Bounds 3 + 10/71 < pi < 3 + 1/7 within which Ptolemy's 3;8,30 = 377/120 sits."
+  },
+  "aristotle:metaphysics": {
+    "author": "Aristotle",
+    "work": "Metaphysics (Τὰ μετὰ τὰ φυσικά)",
+    "locus": "Book E (VI), 1026a18–19",
+    "year": -340,
+    "note": "Tripartite division of theoretical philosophy into physics, mathematics, and theology cited in Almagest I.1 (Heiberg I, p. 5)."
+  },
+  "casey:1886": {
+    "author": "John Casey",
+    "work": "A Sequel to the First Six Books of the Elements of Euclid (4th ed.)",
+    "locus": "Dublin: Hodges, Figgis & Co., 1886, Book VI, §6",
+    "year": 1886,
+    "note": "Modern synthetic treatment of Ptolemy's Theorem, Casey's generalized bitangent theorem, and circular inversion."
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "ptolemy": {
+    "name": "Claudius Ptolemy (Κλαύδιος Πτολεμαῖος)",
+    "dates": "c. 100 – c. 170 CE",
+    "role": "Alexandrian mathematician, astronomer, geometer, and cartographer",
+    "summary": "Author of the Mathematike Syntaxis (Almagest), Planisphaerium, Geography, Harmonics, and Optics; synthesized Greek chord trigonometry, cyclic quadrilateral geometry, spherical Menelaus calculus, and stereographic projection."
+  },
+  "syrus": {
+    "name": "Syrus (Σύρος)",
+    "dates": "fl. mid-2nd century CE",
+    "role": "Dedicatee of Ptolemy's Almagest, Planisphaerium, and Tetrabiblos",
+    "summary": "Addressed directly in the opening sentences of both Almagest I.1 ('ὦ Σύρε') and Planisphaerium §1 ('Jesure' / 'Syrus' via Arabic transcription)."
+  },
+  "hipparchus": {
+    "name": "Hipparchus of Nicaea (Ἵππαρχος ὁ Νικαεύς)",
+    "dates": "c. 190 – c. 120 BCE",
+    "role": "Founder of Greek chord trigonometry and quantitative observational astronomy",
+    "summary": "Compiled a twelve-book treatise on chords in a circle and established solar/lunar models and the tropical-to-sidereal precession upon which Ptolemy built Book I."
+  },
+  "menelaus": {
+    "name": "Menelaus of Alexandria (Μενέλαος ὁ Ἀλεξανδρεύς)",
+    "dates": "c. 70 – 140 CE",
+    "role": "Geometer and spherical astronomer; author of the Sphaerica",
+    "summary": "Formulated the intrinsic geometry of spherical triangles and the six-quantity transversal theorem (Sphaerica III.1) adapted by Ptolemy in Almagest I.13."
+  },
+  "euclid": {
+    "name": "Euclid of Alexandria (Εὐκλείδης)",
+    "dates": "fl. c. 300 BCE",
+    "role": "Author of the Elements, Phaenomena, and Optics",
+    "summary": "Provides the deductive backbone of Almagest I.10 and I.13, particularly Elements Books I–IV, Book VI (similar triangles and extreme-and-mean ratio), and Book XIII (regular decagon and pentagon)."
+  },
+  "apollonius": {
+    "name": "Apollonius of Perga (Ἀπολλώνιος ὁ Περγαῖος)",
+    "dates": "c. 240 – c. 190 BCE",
+    "role": "The 'Great Geometer'; author of the Conics",
+    "summary": "Proved in Conics I.5 that a subcontrary plane section of an oblique circular cone is a true circle—the geometric foundation of stereographic circle preservation in Ptolemy's Planisphaerium."
+  },
+  "archimedes": {
+    "name": "Archimedes of Syracuse (Ἀρχιμήδης)",
+    "dates": "c. 287 – 212 BCE",
+    "role": "Geometer and mathematical physicist",
+    "summary": "Bounded the circumference-to-diameter ratio between 3 + 10/71 and 3 + 1/7 in Measurement of a Circle; Ptolemy's crd(1°) = 1;2,50 yields pi = 3;8,30 = 377/120 strictly inside Archimedes' interval."
+  },
+  "eratosthenes": {
+    "name": "Eratosthenes of Cyrene (Ἐρατοσθένης)",
+    "dates": "c. 276 – c. 194 BCE",
+    "role": "Chief librarian at Alexandria, geographer, and mathematician",
+    "summary": "Cited by Ptolemy in Almagest I.12 (Heiberg I, p. 68) alongside Hipparchus for measuring the arc between the tropics as 11/83 of the full meridian circle."
+  },
+  "aristotle": {
+    "name": "Aristotle of Stagira (Ἀριστοτέλης)",
+    "dates": "384 – 322 BCE",
+    "role": "Philosopher; author of Metaphysics Book E and Posterior Analytics",
+    "summary": "Cited by name in Almagest I.1 (Heiberg I, p. 5) for dividing theoretical philosophy into physics, mathematics, and theology."
+  },
+  "theodosius": {
+    "name": "Theodosius of Bithynia (Θεοδόσιος)",
+    "dates": "c. 160 – c. 90 BCE",
+    "role": "Author of Sphaerica",
+    "summary": "Codified the pure solid geometry of great and parallel circles on a sphere prior to Menelaus's trigonometric Sphaerica."
+  },
+  "maslama": {
+    "name": "Maslama al-Majrītī",
+    "dates": "c. 950 – 1007 CE",
+    "role": "Andalusian astronomer and mathematician in Córdoba",
+    "summary": "Revised the Arabic translation of Ptolemy's Planisphaerium and added astrolabe commentary; his recension was translated into Latin at Toulouse in 1143."
+  },
+  "hermann": {
+    "name": "Hermann of Carinthia (Hermannus Secundus / Dalmata)",
+    "dates": "c. 1100 – c. 1160 CE",
+    "role": "Twelfth-century Latin translator and natural philosopher",
+    "summary": "Translated Ptolemy's Planisphaerium from Maslama al-Majrītī's Arabic recension into Latin at Toulouse on 1 June 1143, preserving the treatise after the loss of the Greek original."
+  },
+  "commandino": {
+    "name": "Federico Commandino",
+    "dates": "1509 – 1575",
+    "role": "Renaissance humanist mathematician and editor",
+    "summary": "Published Ptolemaei Planisphaerium: Iordani Planisphaerium; Federici Commandini Urbinatis in Ptolemaei Planisphaerium Commentarius (Venice: Aldus, 1558), proving stereographic circle-preservation explicitly from Apollonius Conics I.5."
+  },
+  "halma": {
+    "name": "Nicolas B. Halma",
+    "dates": "1755 – 1828",
+    "role": "French mathematician and classical philologist",
+    "summary": "Edited the Greek text and authored the public-domain French translation Composition mathématique de Claude Ptolémée (2 vols., Paris: Henri Grand, 1813–1816)."
+  },
+  "heiberg": {
+    "name": "Johan Ludvig Heiberg",
+    "dates": "1854 – 1928",
+    "role": "Danish classical philologist and historian of Greek mathematics",
+    "summary": "Established the definitive Teubner critical editions of Claudii Ptolemaei Opera quae exstant omnia: Syntaxis Mathematica (Vol. I.1–I.2, 1898–1903) and Opera Astronomica Minora including Planisphaerium (Vol. II, 1907)."
+  },
+  "manitius": {
+    "name": "Karl Manitius",
+    "dates": "1848 – 1921",
+    "role": "German classical scholar and historian of astronomy",
+    "summary": "Translated Heiberg's Teubner text of the Almagest into German (Des Claudius Ptolemäus Handbuch der Astronomie, 2 vols., Leipzig: Teubner, 1912–1913)."
+  },
+  "brahmagupta": {
+    "name": "Brahmagupta",
+    "dates": "c. 598 – c. 668 CE",
+    "role": "Indian mathematician and astronomer; author of the Brāhmasphuṭasiddhānta",
+    "summary": "Generalized cyclic quadrilateral geometry with rational sides, diagonals, and areas, complementing Ptolemy's Theorem on cyclic quadrilaterals."
+  },
+  "casey": {
+    "name": "John Casey",
+    "dates": "1820 – 1891",
+    "role": "Irish geometer; author of A Sequel to the First Six Books of the Elements of Euclid",
+    "summary": "Extended Ptolemy's Theorem to four mutually tangent circles (Casey's Theorem) and systematized circular inversion in modern synthetic geometry."
+  }
+}
