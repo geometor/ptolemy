@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic" viewBox="0 0 520 420" role="img" aria-label="Almagest I.14 Solar Declination Spherical Menelaus Figure">
+  <defs>
+    <marker id="geom-tick-1" viewBox="-2 -6 4 12" refX="0" refY="0" markerWidth="4" markerHeight="12" orient="auto">
+      <line x1="0" y1="-4.5" x2="0" y2="4.5" stroke="currentColor" stroke-width="1.35" stroke-linecap="round"/>
+    </marker>
+    <marker id="geom-tick-2" viewBox="-4 -6 8 12" refX="0" refY="0" markerWidth="8" markerHeight="12" orient="auto">
+      <line x1="-1.8" y1="-4.5" x2="-1.8" y2="4.5" stroke="currentColor" stroke-width="1.35" stroke-linecap="round"/>
+      <line x1="1.8" y1="-4.5" x2="1.8" y2="4.5" stroke="currentColor" stroke-width="1.35" stroke-linecap="round"/>
+    </marker>
+    <marker id="geom-tick-3" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" orient="auto">
+      <line x1="-3.4" y1="-4.5" x2="-3.4" y2="4.5" stroke="currentColor" stroke-width="1.35" stroke-linecap="round"/>
+      <line x1="0" y1="-4.5" x2="0" y2="4.5" stroke="currentColor" stroke-width="1.35" stroke-linecap="round"/>
+      <line x1="3.4" y1="-4.5" x2="3.4" y2="4.5" stroke="currentColor" stroke-width="1.35" stroke-linecap="round"/>
+    </marker>
+  </defs>
+  <g id="elements">
+    <circle class="geom-circle" cx="260.00" cy="210.00" r="155.00" fill="none" data-ref="cABGD" stroke-width="1.90"/>
+    <path class="geom-line" d="M 105.0 210.0 Q 260.0 242.0 415.0 210.0" fill="none" stroke="var(--geom-assert, #2563eb)" stroke-width="1.9" data-ref="arcAEG"/>
+    <path class="geom-bold" d="M 118.2 147.3 Q 260.0 242.0 401.8 272.7" fill="none" stroke="var(--geom-accent, #d97706)" stroke-width="2.3" data-ref="arcBED"/>
+    <path class="geom-line" d="M 260.0 55.0 Q 182.0 180.0 188.0 222.0" fill="none" stroke-width="1.8" data-ref="arcZHTheta"/>
+    <path class="geom-bold" d="M 194.00 201.00 L 191.00 211.50 L 188.00 222.00" fill="none" data-ref="arcHTheta" stroke="var(--geom-accent, #d97706)" stroke-width="3.00"/>
+    <path class="geom-dashed" d="M 260.00 55.00 L 260.00 210.00 L 260.00 365.00" fill="none" data-ref="axisZN" stroke-dasharray="4 4"/>
+  </g>
+  <g id="graphics">
+  </g>
+  <g id="highlights">
+  </g>
+  <g id="points">
+    <circle class="geom-point" cx="105.00" cy="210.00" r="3.60" data-ref="A"/>
+    <circle class="geom-point" cx="118.25" cy="147.30" r="3.60" data-ref="B"/>
+    <circle class="geom-point" cx="415.00" cy="210.00" r="3.60" data-ref="G"/>
+    <circle class="geom-point" cx="401.75" cy="272.70" r="3.60" data-ref="D"/>
+    <circle class="geom-point" cx="260.00" cy="226.00" r="3.60" data-ref="E"/>
+    <circle class="geom-point" cx="260.00" cy="55.00" r="3.60" data-ref="Z"/>
+    <circle class="geom-point" cx="194.00" cy="201.00" r="3.60" data-ref="H"/>
+    <circle class="geom-point" cx="188.00" cy="222.00" r="3.60" data-ref="Theta"/>
+  </g>
+  <g id="labels">
+    <text class="geom-label" x="63.00" y="214.00" text-anchor="middle" dominant-baseline="central" style="font-style: italic; font-size: 13px;" data-ref="A">A (Equator)</text>
+    <text class="geom-label" x="76.25" y="137.30" text-anchor="middle" dominant-baseline="central" style="font-style: italic; font-size: 13px;" data-ref="B">B (Solstice)</text>
+    <text class="geom-label" x="431.00" y="214.00" text-anchor="middle" dominant-baseline="central" style="font-style: italic; font-size: 13px;" data-ref="G">Γ</text>
+    <text class="geom-label" x="417.75" y="282.70" text-anchor="middle" dominant-baseline="central" style="font-style: italic; font-size: 13px;" data-ref="D">Δ</text>
+    <text class="geom-label" x="294.00" y="241.00" text-anchor="middle" dominant-baseline="central" style="font-style: italic; font-size: 13px;" data-ref="E">E (Equinox)</text>
+    <text class="geom-label" x="260.00" y="40.00" text-anchor="middle" dominant-baseline="central" style="font-style: italic; font-size: 13px;" data-ref="Z">Z (Pole)</text>
+    <text class="geom-label" x="158.00" y="189.00" text-anchor="middle" dominant-baseline="central" style="font-style: italic; font-size: 13px;" data-ref="H">H (Sun, λ)</text>
+    <text class="geom-label" x="174.00" y="237.00" text-anchor="middle" dominant-baseline="central" style="font-style: italic; font-size: 13px;" data-ref="Theta">Θ</text>
+    <text class="geom-label" x="260.00" y="396.00" text-anchor="middle" style="font-size: 13px; opacity: 0.82;">crd(2 HΘ) / crd(180°) = [crd(2 AB) / crd(2 ZB)] · [crd(2 EH) / crd(2 EB)]  ⇒  sin δ = sin ε · sin λ</text>
+  </g>
+</svg>

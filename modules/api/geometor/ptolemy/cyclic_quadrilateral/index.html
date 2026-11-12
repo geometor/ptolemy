@@ -1,0 +1,305 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-content_root="../../../../../">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>geometor.ptolemy.cyclic_quadrilateral &mdash; GEOMETOR • ptolemy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/css/styles.css?v=66998e95" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/ptolemy_greek.css?v=de4239ee" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="../../../../../_static/css/print.css" type="text/css" media="print" />
+  <link rel="icon" href="../../../../../_static/favicon.ico" />
+</head>
+
+<body class="book-theme-classical-serif">
+  <header>
+    <div class="logo">
+      <a href="../../../../../index.html">
+        <h1>GEOMETOR • ptolemy</h1>
+      </a>
+      <div class="org-repo">
+        <span class="org">GEOMETOR</span>
+        •
+        <span class="repo">ptolemy</span>
+      </div>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../../../../../almagest_geometry/index.html"  >Almagest I & Planisphaerium</a>
+        </li>
+        <li>
+          <a href="../../../../../demos/index.html"  >Symbolic Demonstrations</a>
+        </li>
+        <li>
+          <a href="../../../../index.html" class="is-active" aria-selected="true" >Modules</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main class="book-main">
+    <article class="book-layout book-reading-pane">
+      <header class="book-header">
+        <div class="book-header-bar">
+          <div class="book-header-identity">
+            <a class="book-portal-link" href="../../../../../index.html" title="Return to Project Portal">&larr; ptolemy</a>
+            <span class="book-header-sep">/</span>
+            <a class="book-title-link" href="../../../../../index.html">GEOMETOR • ptolemy</a>
+          </div>
+          <div class="book-header-breadcrumbs book-header-badges" role="navigation" aria-label="Breadcrumbs">
+            <a class="book-crumb-link" href="../../../../index.html">Modules</a>
+          </div>
+        </div>
+        <div class="book-header-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../pentagon_chords/index.html" title="geometor.ptolemy.pentagon_chords">&larr; <span class="nav-label">Prev</span></a>
+          </div>
+          <div class="book-nav-center">
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../menelaus_sphaerica/index.html" title="geometor.ptolemy.menelaus_sphaerica"><span class="nav-label">Next</span> &rarr;</a>
+          </div>
+        </div>
+      </header>
+      <div class="content body book-content" role="main">
+        <section class="level-1" id="module-geometor.ptolemy.cyclic_quadrilateral">
+        <span id="geometor-ptolemy-cyclic-quadrilateral"></span><h1>geometor.ptolemy.cyclic_quadrilateral<a class="headerlink" href="#module-geometor.ptolemy.cyclic_quadrilateral" title="Link to this heading">¶</a></h1>
+        <p>Exact symbolic construction &amp; proof of Ptolemy’s Theorem on Cyclic Quadrilaterals.</p>
+        <p>Implements <em>Almagest</em> Book I, Ch. 10b (Heiberg 1898, Vol. I.1, pp. 36-37):</p>
+        <div class="math notranslate nohighlight">
+        \[AC \cdot BD = AB \cdot CD + BC \cdot DA\]</div>
+        <p>Includes:</p>
+        <ol class="arabic simple">
+        <li><p><strong>Exact Euclidean Construction &amp; Proof</strong> (<a class="reference internal" href="#geometor.ptolemy.cyclic_quadrilateral.construct_ptolemy_quadrilateral" title="geometor.ptolemy.cyclic_quadrilateral.construct_ptolemy_quadrilateral"><code class="xref py py-func docutils literal notranslate"><span class="pre">construct_ptolemy_quadrilateral()</span></code></a>):
+        Constructs canonical rational cyclic quadrilaterals in <code class="docutils literal notranslate"><span class="pre">geometor.model</span></code> with
+        <code class="docutils literal notranslate"><span class="pre">auto_intersect=False</span></code> and zero <code class="docutils literal notranslate"><span class="pre">sp.Float</span></code> coordinates—including the classical
+        Pythagorean-chord cyclic quadrilateral on diameter $65$ with integer sides
+        $(AB, BC, CD, DA) = (25, 39, 60, 52)$ and integer diagonals $(AC, BD) = (56, 63)$
+        ($56 \times 63 = 3528 = 25 \times 60 + 39 \times 52 = 1500 + 2028$), as well as
+        Brahmagupta’s $(13, 14, 15)$-derived cyclic quadrilateral—together with Ptolemy’s
+        auxiliary point $E \in AC$ satisfying $\angle ABE = \angle DBC$.</p></li>
+        <li><p><strong>Universal Algebraic Proof</strong> (<a class="reference internal" href="#geometor.ptolemy.cyclic_quadrilateral.prove_ptolemy_theorem_universally" title="geometor.ptolemy.cyclic_quadrilateral.prove_ptolemy_theorem_universally"><code class="xref py py-func docutils literal notranslate"><span class="pre">prove_ptolemy_theorem_universally()</span></code></a>):
+        Proves Ptolemy’s identity universally over $\mathbb{Q}(t_1, t_2, t_3, t_4)$ on the
+        rational parameterization of the circle via Cayley-Menger / Euler four-point identity.</p></li>
+        </ol>
+        <section class="level-2" id="classes">
+        <h2>Classes<a class="headerlink" href="#classes" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.ptolemy.cyclic_quadrilateral.CyclicQuadrilateralResult" title="geometor.ptolemy.cyclic_quadrilateral.CyclicQuadrilateralResult"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CyclicQuadrilateralResult</span></code></a></p></td>
+        <td><p>Exact symbolic verification record for Ptolemy's Theorem (<em>Almagest</em> I.10b).</p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="functions">
+        <h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.ptolemy.cyclic_quadrilateral.construct_ptolemy_quadrilateral" title="geometor.ptolemy.cyclic_quadrilateral.construct_ptolemy_quadrilateral"><code class="xref py py-obj docutils literal notranslate"><span class="pre">construct_ptolemy_quadrilateral</span></code></a>([model, preset]) → CyclicQuadrilateralResult</p></td>
+        <td><p>Construct a rational cyclic quadrilateral and verify Ptolemy's Theorem (<em>Almagest</em> I.10, pp. 36-37).</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.ptolemy.cyclic_quadrilateral.prove_ptolemy_theorem_universally" title="geometor.ptolemy.cyclic_quadrilateral.prove_ptolemy_theorem_universally"><code class="xref py py-obj docutils literal notranslate"><span class="pre">prove_ptolemy_theorem_universally</span></code></a>() → sympy.Expr</p></td>
+        <td><p>Prove Ptolemy's Theorem universally over $mathbb{Z}[t_1, t_2, t_3, t_4]$ on the rational circle.</p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="module-contents">
+        <h2>Module Contents<a class="headerlink" href="#module-contents" title="Link to this heading">¶</a></h2>
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.ptolemy.cyclic_quadrilateral.CyclicQuadrilateralResult">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.ptolemy.cyclic_quadrilateral.</span></span><span class="sig-name descname"><span class="pre">CyclicQuadrilateralResult</span></span><a class="headerlink" href="#geometor.ptolemy.cyclic_quadrilateral.CyclicQuadrilateralResult" title="Link to this definition">¶</a></dt>
+        <dd><p>Exact symbolic verification record for Ptolemy’s Theorem (<em>Almagest</em> I.10b).</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.cyclic_quadrilateral.CyclicQuadrilateralResult.model">
+        <span class="sig-name descname"><span class="pre">model</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">geometor.model.Model</span></span><a class="headerlink" href="#geometor.ptolemy.cyclic_quadrilateral.CyclicQuadrilateralResult.model" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.cyclic_quadrilateral.CyclicQuadrilateralResult.preset">
+        <span class="sig-name descname"><span class="pre">preset</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><a class="headerlink" href="#geometor.ptolemy.cyclic_quadrilateral.CyclicQuadrilateralResult.preset" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.cyclic_quadrilateral.CyclicQuadrilateralResult.A">
+        <span class="sig-name descname"><span class="pre">A</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span></span><a class="headerlink" href="#geometor.ptolemy.cyclic_quadrilateral.CyclicQuadrilateralResult.A" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.cyclic_quadrilateral.CyclicQuadrilateralResult.B">
+        <span class="sig-name descname"><span class="pre">B</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span></span><a class="headerlink" href="#geometor.ptolemy.cyclic_quadrilateral.CyclicQuadrilateralResult.B" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.cyclic_quadrilateral.CyclicQuadrilateralResult.C">
+        <span class="sig-name descname"><span class="pre">C</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span></span><a class="headerlink" href="#geometor.ptolemy.cyclic_quadrilateral.CyclicQuadrilateralResult.C" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.cyclic_quadrilateral.CyclicQuadrilateralResult.D">
+        <span class="sig-name descname"><span class="pre">D</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span></span><a class="headerlink" href="#geometor.ptolemy.cyclic_quadrilateral.CyclicQuadrilateralResult.D" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.cyclic_quadrilateral.CyclicQuadrilateralResult.E">
+        <span class="sig-name descname"><span class="pre">E</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span></span><a class="headerlink" href="#geometor.ptolemy.cyclic_quadrilateral.CyclicQuadrilateralResult.E" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.cyclic_quadrilateral.CyclicQuadrilateralResult.center">
+        <span class="sig-name descname"><span class="pre">center</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span></span><a class="headerlink" href="#geometor.ptolemy.cyclic_quadrilateral.CyclicQuadrilateralResult.center" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.cyclic_quadrilateral.CyclicQuadrilateralResult.circle">
+        <span class="sig-name descname"><span class="pre">circle</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.geometry.Circle</span></span><a class="headerlink" href="#geometor.ptolemy.cyclic_quadrilateral.CyclicQuadrilateralResult.circle" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.cyclic_quadrilateral.CyclicQuadrilateralResult.sides">
+        <span class="sig-name descname"><span class="pre">sides</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.ptolemy.cyclic_quadrilateral.CyclicQuadrilateralResult.sides" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.cyclic_quadrilateral.CyclicQuadrilateralResult.diagonals">
+        <span class="sig-name descname"><span class="pre">diagonals</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.ptolemy.cyclic_quadrilateral.CyclicQuadrilateralResult.diagonals" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.cyclic_quadrilateral.CyclicQuadrilateralResult.ae_segment_length">
+        <span class="sig-name descname"><span class="pre">ae_segment_length</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.ptolemy.cyclic_quadrilateral.CyclicQuadrilateralResult.ae_segment_length" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.cyclic_quadrilateral.CyclicQuadrilateralResult.ec_segment_length">
+        <span class="sig-name descname"><span class="pre">ec_segment_length</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.ptolemy.cyclic_quadrilateral.CyclicQuadrilateralResult.ec_segment_length" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.cyclic_quadrilateral.CyclicQuadrilateralResult.lhs_product">
+        <span class="sig-name descname"><span class="pre">lhs_product</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.ptolemy.cyclic_quadrilateral.CyclicQuadrilateralResult.lhs_product" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.cyclic_quadrilateral.CyclicQuadrilateralResult.rhs_sum">
+        <span class="sig-name descname"><span class="pre">rhs_sum</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.ptolemy.cyclic_quadrilateral.CyclicQuadrilateralResult.rhs_sum" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.ptolemy.cyclic_quadrilateral.construct_ptolemy_quadrilateral">
+        <span class="sig-prename descclassname"><span class="pre">geometor.ptolemy.cyclic_quadrilateral.</span></span><span class="sig-name descname"><span class="pre">construct_ptolemy_quadrilateral</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">geometor.model.Model</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">preset</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'pythagorean_65'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.ptolemy.cyclic_quadrilateral.CyclicQuadrilateralResult" title="geometor.ptolemy.cyclic_quadrilateral.CyclicQuadrilateralResult"><span class="pre">CyclicQuadrilateralResult</span></a></span></span><a class="headerlink" href="#geometor.ptolemy.cyclic_quadrilateral.construct_ptolemy_quadrilateral" title="Link to this definition">¶</a></dt>
+        <dd><p>Construct a rational cyclic quadrilateral and verify Ptolemy’s Theorem (<em>Almagest</em> I.10, pp. 36-37).</p>
+        <p>Supported <code class="docutils literal notranslate"><span class="pre">preset</span></code> configurations (100% exact rational coordinates):</p>
+        <ul class="simple">
+        <li><p><code class="docutils literal notranslate"><span class="pre">&quot;pythagorean_65&quot;</span></code> (default): Cyclic quadrilateral on the circle $x^2 + y^2 = (65/2)^2$
+        with exact rational vertices $A = (-65/2, 0)$, $B = (-595/26, 300/13)$,
+        $C = (2047/130, 1848/65)$, and $D = (91/10, -156/5)$, yielding <strong>exact integer sides</strong>
+        $(AB, BC, CD, DA) = (25, 39, 60, 52)$ and <strong>exact integer diagonals</strong>
+        $(AC, BD) = (56, 63)$, so $56 \times 63 = 3528 = 25 \times 60 + 39 \times 52$.</p></li>
+        <li><p><code class="docutils literal notranslate"><span class="pre">&quot;brahmagupta&quot;</span></code>: Rational orthodiagonal cyclic quadrilateral on $x^2 + y^2 = (65/2)^2$
+        with integer sides $(25, 39, 60, 52)$ in swapped chord order so $AC \perp BD$.</p></li>
+        </ul>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><ul class="simple">
+        <li><p><strong>model</strong> – Optional <code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code> (created with <code class="docutils literal notranslate"><span class="pre">auto_intersect=False</span></code> if <code class="docutils literal notranslate"><span class="pre">None</span></code>).</p></li>
+        <li><p><strong>preset</strong> – <code class="docutils literal notranslate"><span class="pre">&quot;pythagorean_65&quot;</span></code> or <code class="docutils literal notranslate"><span class="pre">&quot;brahmagupta&quot;</span></code>.</p></li>
+        </ul>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Verified <a class="reference internal" href="#geometor.ptolemy.cyclic_quadrilateral.CyclicQuadrilateralResult" title="geometor.ptolemy.cyclic_quadrilateral.CyclicQuadrilateralResult"><code class="xref py py-class docutils literal notranslate"><span class="pre">CyclicQuadrilateralResult</span></code></a>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.ptolemy.cyclic_quadrilateral.prove_ptolemy_theorem_universally">
+        <span class="sig-prename descclassname"><span class="pre">geometor.ptolemy.cyclic_quadrilateral.</span></span><span class="sig-name descname"><span class="pre">prove_ptolemy_theorem_universally</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">sympy.Expr</span></span></span><a class="headerlink" href="#geometor.ptolemy.cyclic_quadrilateral.prove_ptolemy_theorem_universally" title="Link to this definition">¶</a></dt>
+        <dd><p>Prove Ptolemy’s Theorem universally over $\mathbb{Z}[t_1, t_2, t_3, t_4]$ on the rational circle.</p>
+        <p>On the unit circle parameterized by $P(t) = \left(\frac{1 - t^2}{1 + t^2}, \frac{2t}{1 + t^2}\right)$,
+        the Euclidean chord distance between $P(t_i)$ and $P(t_j)$ for ordered parameters
+        $t_1 &lt; t_2 &lt; t_3 &lt; t_4$ is:</p>
+        <p>$$d(t_i, t_j) = \frac{2(t_j - t_i)}{\sqrt{(1 + t_i^2)(1 + t_j^2)}}$$</p>
+        <p>Clearing the common positive denominator $\frac{1}{4}(1+t_1^2)(1+t_2^2)(1+t_3^2)(1+t_4^2)$
+        reduces $AC \cdot BD - (AB \cdot CD + BC \cdot DA) = 0$ to Euler’s universal four-point
+        polynomial identity, returning <code class="docutils literal notranslate"><span class="pre">sp.Integer(0)</span></code>.</p>
+        </dd></dl>
+
+        </section>
+        </section>
+
+      </div>
+      <footer class="book-footer">
+        <div class="book-footer-ornament">&#10086;</div>
+        <div class="book-footer-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../pentagon_chords/index.html" title="geometor.ptolemy.pentagon_chords">&larr; <span class="nav-label">geometor.ptolemy.pentagon_chords</span></a>
+          </div>
+          <div class="book-nav-center">
+            <a class="book-toc-link" href="../../../../../index.html">GEOMETOR • ptolemy</a>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../menelaus_sphaerica/index.html" title="geometor.ptolemy.menelaus_sphaerica"><span class="nav-label">geometor.ptolemy.menelaus_sphaerica</span> &rarr;</a>
+          </div>
+        </div>
+      </footer>
+    </article>
+  </main>
+  <div class="asides">
+    <aside class="aside-search">
+      <h3>Search</h3>
+      <div id="searchbox" role="search">
+        <form id="rtd-search-form" class="wy-form search-form" action="../../../../../search.html" method="get">
+          <div class="search-field">
+            <input type="search" name="q" placeholder="Search docs..." aria-label="Search docs" autocomplete="off" />
+            <button type="submit" class="search-submit" aria-label="Search" title="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+      </div>
+    </aside>
+  </div>
+  <footer>
+    <hr />
+    <div role="contentinfo">
+      <p>
+        &copy; Copyright c. 150 CE · 1898 / 1907 Teubner · Digital Codex GEOMETOR.
+      </p>
+    </div>
+  </footer>
+
+  <script src="../../../../../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../../../../../_static/documentation_options.js?v=01f34227"></script>
+  <script src="../../../../../_static/doctools.js?v=fd6eb6e6"></script>
+  <script src="../../../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+  <script src="../../../../../_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="../../../../../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script>window.MathJax = {"tex": {"inlineMath": [["\\(", "\\)"], ["$", "$"]], "displayMath": [["\\[", "\\]"], ["$$", "$$"]]}}</script>
+  <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+  <script src="../../../../../_static/js/search_highlight.js"></script>
+
+</body>
+</html>

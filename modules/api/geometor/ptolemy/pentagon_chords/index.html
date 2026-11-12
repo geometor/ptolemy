@@ -1,0 +1,548 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-content_root="../../../../../">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>geometor.ptolemy.pentagon_chords &mdash; GEOMETOR • ptolemy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/css/styles.css?v=66998e95" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/ptolemy_greek.css?v=de4239ee" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="../../../../../_static/css/print.css" type="text/css" media="print" />
+  <link rel="icon" href="../../../../../_static/favicon.ico" />
+</head>
+
+<body class="book-theme-classical-serif">
+  <header>
+    <div class="logo">
+      <a href="../../../../../index.html">
+        <h1>GEOMETOR • ptolemy</h1>
+      </a>
+      <div class="org-repo">
+        <span class="org">GEOMETOR</span>
+        •
+        <span class="repo">ptolemy</span>
+      </div>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../../../../../almagest_geometry/index.html"  >Almagest I & Planisphaerium</a>
+        </li>
+        <li>
+          <a href="../../../../../demos/index.html"  >Symbolic Demonstrations</a>
+        </li>
+        <li>
+          <a href="../../../../index.html" class="is-active" aria-selected="true" >Modules</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main class="book-main">
+    <article class="book-layout book-reading-pane">
+      <header class="book-header">
+        <div class="book-header-bar">
+          <div class="book-header-identity">
+            <a class="book-portal-link" href="../../../../../index.html" title="Return to Project Portal">&larr; ptolemy</a>
+            <span class="book-header-sep">/</span>
+            <a class="book-title-link" href="../../../../../index.html">GEOMETOR • ptolemy</a>
+          </div>
+          <div class="book-header-breadcrumbs book-header-badges" role="navigation" aria-label="Breadcrumbs">
+            <a class="book-crumb-link" href="../../../../index.html">Modules</a>
+          </div>
+        </div>
+        <div class="book-header-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../../../../index.html" title="Modules">&larr; <span class="nav-label">Prev</span></a>
+          </div>
+          <div class="book-nav-center">
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../cyclic_quadrilateral/index.html" title="geometor.ptolemy.cyclic_quadrilateral"><span class="nav-label">Next</span> &rarr;</a>
+          </div>
+        </div>
+      </header>
+      <div class="content body book-content" role="main">
+        <section class="level-1" id="module-geometor.ptolemy.pentagon_chords">
+        <span id="geometor-ptolemy-pentagon-chords"></span><h1>geometor.ptolemy.pentagon_chords<a class="headerlink" href="#module-geometor.ptolemy.pentagon_chords" title="Link to this heading">¶</a></h1>
+        <p>Exact symbolic construction of Ptolemy’s Golden Pentagon-Decagon &amp; Sexagesimal Chords.</p>
+        <p>Implements <em>Almagest</em> Book I, Ch. 10a (Heiberg 1898, Vol. I.1, pp. 31-36 &amp; 38-46):</p>
+        <ol class="arabic simple">
+        <li><p><strong>Ptolemy’s Golden Pentagon-Decagon Construction</strong> (<a class="reference internal" href="#geometor.ptolemy.pentagon_chords.construct_pentagon_decagon" title="geometor.ptolemy.pentagon_chords.construct_pentagon_decagon"><code class="xref py py-func docutils literal notranslate"><span class="pre">construct_pentagon_decagon()</span></code></a>):
+        Constructs both the side of the regular decagon ($s_{10} = DZ = R / \phi$) and the
+        side of the regular pentagon ($s_5 = BZ = R \sqrt{3 - \phi}$) inside a single circle
+        of radius $R$ using <code class="docutils literal notranslate"><span class="pre">geometor.model</span></code> with <code class="docutils literal notranslate"><span class="pre">auto_intersect=False</span></code> and zero
+        floating-point coordinates.</p></li>
+        <li><p><strong>Exact Radical Chord Table</strong> (<a class="reference internal" href="#geometor.ptolemy.pentagon_chords.exact_chord" title="geometor.ptolemy.pentagon_chords.exact_chord"><code class="xref py py-func docutils literal notranslate"><span class="pre">exact_chord()</span></code></a>, <a class="reference internal" href="#geometor.ptolemy.pentagon_chords.build_radical_chord_table" title="geometor.ptolemy.pentagon_chords.build_radical_chord_table"><code class="xref py py-func docutils literal notranslate"><span class="pre">build_radical_chord_table()</span></code></a>):
+        Derives exact closed-form algebraic radical expressions in SymPy for Ptolemy’s
+        canonical chord chain ($120^circ, 90^circ, 72^circ, 60^circ, 36^circ, 12^circ,
+        6^circ, 3^circ, 1frac{1}{2}^circ, frac{3}{4}^circ$) on diameter $2R = 120^p$.</p></li>
+        <li><p><strong>Exact Base-60 Sexagesimal Arithmetic</strong> (<a class="reference internal" href="#geometor.ptolemy.pentagon_chords.Sexagesimal" title="geometor.ptolemy.pentagon_chords.Sexagesimal"><code class="xref py py-class docutils literal notranslate"><span class="pre">Sexagesimal</span></code></a>, <a class="reference internal" href="#geometor.ptolemy.pentagon_chords.verify_ptolemy_pi" title="geometor.ptolemy.pentagon_chords.verify_ptolemy_pi"><code class="xref py py-func docutils literal notranslate"><span class="pre">verify_ptolemy_pi()</span></code></a>):
+        Converts exact SymPy algebraic and rational numbers into Ptolemy’s sexagesimal
+        notation ($p; m', s''$) and verifies Ptolemy’s Inequality Lemma bounds on
+        $\operatorname{crd}(1^\circ) \approx 1;2,50 = \frac{377}{360}$ and
+        $\pi \approx 3;8,30 = \frac{377}{120}$.</p></li>
+        </ol>
+        <section class="level-2" id="attributes">
+        <h2>Attributes<a class="headerlink" href="#attributes" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.ptolemy.pentagon_chords.PHI" title="geometor.ptolemy.pentagon_chords.PHI"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PHI</span></code></a></p></td>
+        <td><p></p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.ptolemy.pentagon_chords.PHI_INV" title="geometor.ptolemy.pentagon_chords.PHI_INV"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PHI_INV</span></code></a></p></td>
+        <td><p></p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.ptolemy.pentagon_chords.PTOLEMY_RADIUS" title="geometor.ptolemy.pentagon_chords.PTOLEMY_RADIUS"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PTOLEMY_RADIUS</span></code></a></p></td>
+        <td><p></p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.ptolemy.pentagon_chords.PTOLEMY_DIAMETER" title="geometor.ptolemy.pentagon_chords.PTOLEMY_DIAMETER"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PTOLEMY_DIAMETER</span></code></a></p></td>
+        <td><p></p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="classes">
+        <h2>Classes<a class="headerlink" href="#classes" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.ptolemy.pentagon_chords.Sexagesimal" title="geometor.ptolemy.pentagon_chords.Sexagesimal"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Sexagesimal</span></code></a></p></td>
+        <td><p>Exact representation of a non-negative base-60 sexagesimal quantity <code class="docutils literal notranslate"><span class="pre">p;</span> <span class="pre">d1,</span> <span class="pre">d2,</span> <span class="pre">...</span></code>.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.ptolemy.pentagon_chords.PentagonDecagonResult" title="geometor.ptolemy.pentagon_chords.PentagonDecagonResult"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PentagonDecagonResult</span></code></a></p></td>
+        <td><p>Exact symbolic elements and algebraic invariants of <em>Almagest</em> I.10a.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.ptolemy.pentagon_chords.ChordEntry" title="geometor.ptolemy.pentagon_chords.ChordEntry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChordEntry</span></code></a></p></td>
+        <td><p>Entry in Ptolemy's <em>Almagest</em> I.10 radical and sexagesimal chord chain.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.ptolemy.pentagon_chords.PtolemyPiVerification" title="geometor.ptolemy.pentagon_chords.PtolemyPiVerification"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PtolemyPiVerification</span></code></a></p></td>
+        <td><p>Exact verification of Ptolemy's Inequality Lemma bounds for <code class="docutils literal notranslate"><span class="pre">crd(1°)</span></code> and <code class="docutils literal notranslate"><span class="pre">pi</span></code>.</p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="functions">
+        <h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.ptolemy.pentagon_chords.to_sexagesimal" title="geometor.ptolemy.pentagon_chords.to_sexagesimal"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_sexagesimal</span></code></a>(value[, places]) → Sexagesimal</p></td>
+        <td><p>Round an exact non-negative SymPy real expression to <code class="docutils literal notranslate"><span class="pre">places</span></code> base-60 fractional places.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.ptolemy.pentagon_chords.from_sexagesimal" title="geometor.ptolemy.pentagon_chords.from_sexagesimal"><code class="xref py py-obj docutils literal notranslate"><span class="pre">from_sexagesimal</span></code></a>(parts, *digits) → sympy.Rational</p></td>
+        <td><p>Convert <code class="docutils literal notranslate"><span class="pre">(parts,</span> <span class="pre">d1,</span> <span class="pre">d2,</span> <span class="pre">...)</span></code> in base 60 to an exact <code class="xref py py-class docutils literal notranslate"><span class="pre">sympy.Rational</span></code>.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.ptolemy.pentagon_chords.construct_pentagon_decagon" title="geometor.ptolemy.pentagon_chords.construct_pentagon_decagon"><code class="xref py py-obj docutils literal notranslate"><span class="pre">construct_pentagon_decagon</span></code></a>([model, radius]) → PentagonDecagonResult</p></td>
+        <td><p>Construct the regular decagon side $DZ$ and pentagon side $BZ$ (<em>Almagest</em> I.10, Heiberg I, pp. 32-35).</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.ptolemy.pentagon_chords.supplementary_chord" title="geometor.ptolemy.pentagon_chords.supplementary_chord"><code class="xref py py-obj docutils literal notranslate"><span class="pre">supplementary_chord</span></code></a>(chord_theta[, diameter]) → sympy.Expr</p></td>
+        <td><p>Return $operatorname{crd}(180^circ - theta) = sqrt{D^2 - operatorname{crd}^2(theta)}$ (Eucl. I.47, III.31).</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.ptolemy.pentagon_chords.chord_difference" title="geometor.ptolemy.pentagon_chords.chord_difference"><code class="xref py py-obj docutils literal notranslate"><span class="pre">chord_difference</span></code></a>(chord_alpha, chord_beta[, diameter]) → sympy.Expr</p></td>
+        <td><p>Return $operatorname{crd}(alpha - beta)$ via Ptolemy's Theorem (<em>Almagest</em> I.10, Heiberg I, p. 38).</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.ptolemy.pentagon_chords.chord_sum" title="geometor.ptolemy.pentagon_chords.chord_sum"><code class="xref py py-obj docutils literal notranslate"><span class="pre">chord_sum</span></code></a>(chord_alpha, chord_beta[, diameter]) → sympy.Expr</p></td>
+        <td><p>Return $operatorname{crd}(alpha + beta)$ via Ptolemy's Theorem (<em>Almagest</em> I.10, Heiberg I, pp. 41-42).</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.ptolemy.pentagon_chords.chord_half_arc" title="geometor.ptolemy.pentagon_chords.chord_half_arc"><code class="xref py py-obj docutils literal notranslate"><span class="pre">chord_half_arc</span></code></a>(chord_theta[, diameter]) → sympy.Expr</p></td>
+        <td><p>Return $operatorname{crd}(theta / 2)$ via Ptolemy's Half-Arc Lemma (<em>Almagest</em> I.10, Heiberg I, pp. 39-40).</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.ptolemy.pentagon_chords.exact_chord" title="geometor.ptolemy.pentagon_chords.exact_chord"><code class="xref py py-obj docutils literal notranslate"><span class="pre">exact_chord</span></code></a>(arc_deg[, radius]) → sympy.Expr</p></td>
+        <td><p>Return the exact SymPy closed-form radical expression for Ptolemy's chord of <code class="docutils literal notranslate"><span class="pre">arc_deg</span></code>.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.ptolemy.pentagon_chords.build_radical_chord_table" title="geometor.ptolemy.pentagon_chords.build_radical_chord_table"><code class="xref py py-obj docutils literal notranslate"><span class="pre">build_radical_chord_table</span></code></a>([radius]) → list[ChordEntry]</p></td>
+        <td><p>Build Ptolemy's exact <em>Almagest</em> I.10–I.11 radical and sexagesimal chord table.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.ptolemy.pentagon_chords.verify_ptolemy_pi" title="geometor.ptolemy.pentagon_chords.verify_ptolemy_pi"><code class="xref py py-obj docutils literal notranslate"><span class="pre">verify_ptolemy_pi</span></code></a>() → PtolemyPiVerification</p></td>
+        <td><p>Verify Ptolemy's Inequality Lemma (<em>Almagest</em> I.10, Heiberg I, pp. 43-46) &amp; $pi approx 3;8,30$.</p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="module-contents">
+        <h2>Module Contents<a class="headerlink" href="#module-contents" title="Link to this heading">¶</a></h2>
+        <dl class="py data">
+        <dt class="sig sig-object py" id="geometor.ptolemy.pentagon_chords.PHI">
+        <span class="sig-prename descclassname"><span class="pre">geometor.ptolemy.pentagon_chords.</span></span><span class="sig-name descname"><span class="pre">PHI</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.ptolemy.pentagon_chords.PHI" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py data">
+        <dt class="sig sig-object py" id="geometor.ptolemy.pentagon_chords.PHI_INV">
+        <span class="sig-prename descclassname"><span class="pre">geometor.ptolemy.pentagon_chords.</span></span><span class="sig-name descname"><span class="pre">PHI_INV</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.ptolemy.pentagon_chords.PHI_INV" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py data">
+        <dt class="sig sig-object py" id="geometor.ptolemy.pentagon_chords.PTOLEMY_RADIUS">
+        <span class="sig-prename descclassname"><span class="pre">geometor.ptolemy.pentagon_chords.</span></span><span class="sig-name descname"><span class="pre">PTOLEMY_RADIUS</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Integer</span></span><a class="headerlink" href="#geometor.ptolemy.pentagon_chords.PTOLEMY_RADIUS" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py data">
+        <dt class="sig sig-object py" id="geometor.ptolemy.pentagon_chords.PTOLEMY_DIAMETER">
+        <span class="sig-prename descclassname"><span class="pre">geometor.ptolemy.pentagon_chords.</span></span><span class="sig-name descname"><span class="pre">PTOLEMY_DIAMETER</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Integer</span></span><a class="headerlink" href="#geometor.ptolemy.pentagon_chords.PTOLEMY_DIAMETER" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.ptolemy.pentagon_chords.Sexagesimal">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.ptolemy.pentagon_chords.</span></span><span class="sig-name descname"><span class="pre">Sexagesimal</span></span><a class="headerlink" href="#geometor.ptolemy.pentagon_chords.Sexagesimal" title="Link to this definition">¶</a></dt>
+        <dd><p>Exact representation of a non-negative base-60 sexagesimal quantity <code class="docutils literal notranslate"><span class="pre">p;</span> <span class="pre">d1,</span> <span class="pre">d2,</span> <span class="pre">...</span></code>.</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.pentagon_chords.Sexagesimal.parts">
+        <span class="sig-name descname"><span class="pre">parts</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></span><a class="headerlink" href="#geometor.ptolemy.pentagon_chords.Sexagesimal.parts" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.pentagon_chords.Sexagesimal.digits">
+        <span class="sig-name descname"><span class="pre">digits</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.ptolemy.pentagon_chords.Sexagesimal.digits" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py property">
+        <dt class="sig sig-object py" id="geometor.ptolemy.pentagon_chords.Sexagesimal.rational">
+        <span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">rational</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Rational</span></span><a class="headerlink" href="#geometor.ptolemy.pentagon_chords.Sexagesimal.rational" title="Link to this definition">¶</a></dt>
+        <dd><p>Return the exact <code class="xref py py-class docutils literal notranslate"><span class="pre">sympy.Rational</span></code> value represented by these base-60 digits.</p>
+        </dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.ptolemy.pentagon_chords.Sexagesimal.format_greek_style">
+        <span class="sig-name descname"><span class="pre">format_greek_style</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#geometor.ptolemy.pentagon_chords.Sexagesimal.format_greek_style" title="Link to this definition">¶</a></dt>
+        <dd><p>Format in scholarly astronomical notation <code class="docutils literal notranslate"><span class="pre">parts;d1,d2</span></code> (e.g. <code class="docutils literal notranslate"><span class="pre">37;4,55</span></code>).</p>
+        </dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.ptolemy.pentagon_chords.Sexagesimal.format_prime_style">
+        <span class="sig-name descname"><span class="pre">format_prime_style</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#geometor.ptolemy.pentagon_chords.Sexagesimal.format_prime_style" title="Link to this definition">¶</a></dt>
+        <dd><p>Format with parts, primes, and seconds (e.g. <code class="docutils literal notranslate"><span class="pre">37p</span> <span class="pre">4'</span> <span class="pre">55''</span></code>).</p>
+        </dd></dl>
+
+        </dd></dl>
+
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.ptolemy.pentagon_chords.PentagonDecagonResult">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.ptolemy.pentagon_chords.</span></span><span class="sig-name descname"><span class="pre">PentagonDecagonResult</span></span><a class="headerlink" href="#geometor.ptolemy.pentagon_chords.PentagonDecagonResult" title="Link to this definition">¶</a></dt>
+        <dd><p>Exact symbolic elements and algebraic invariants of <em>Almagest</em> I.10a.</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.pentagon_chords.PentagonDecagonResult.model">
+        <span class="sig-name descname"><span class="pre">model</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">geometor.model.Model</span></span><a class="headerlink" href="#geometor.ptolemy.pentagon_chords.PentagonDecagonResult.model" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.pentagon_chords.PentagonDecagonResult.radius">
+        <span class="sig-name descname"><span class="pre">radius</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.ptolemy.pentagon_chords.PentagonDecagonResult.radius" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.pentagon_chords.PentagonDecagonResult.A">
+        <span class="sig-name descname"><span class="pre">A</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span></span><a class="headerlink" href="#geometor.ptolemy.pentagon_chords.PentagonDecagonResult.A" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.pentagon_chords.PentagonDecagonResult.B">
+        <span class="sig-name descname"><span class="pre">B</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span></span><a class="headerlink" href="#geometor.ptolemy.pentagon_chords.PentagonDecagonResult.B" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.pentagon_chords.PentagonDecagonResult.C">
+        <span class="sig-name descname"><span class="pre">C</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span></span><a class="headerlink" href="#geometor.ptolemy.pentagon_chords.PentagonDecagonResult.C" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.pentagon_chords.PentagonDecagonResult.D">
+        <span class="sig-name descname"><span class="pre">D</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span></span><a class="headerlink" href="#geometor.ptolemy.pentagon_chords.PentagonDecagonResult.D" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.pentagon_chords.PentagonDecagonResult.E">
+        <span class="sig-name descname"><span class="pre">E</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span></span><a class="headerlink" href="#geometor.ptolemy.pentagon_chords.PentagonDecagonResult.E" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.pentagon_chords.PentagonDecagonResult.Z">
+        <span class="sig-name descname"><span class="pre">Z</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span></span><a class="headerlink" href="#geometor.ptolemy.pentagon_chords.PentagonDecagonResult.Z" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.pentagon_chords.PentagonDecagonResult.decagon_segment">
+        <span class="sig-name descname"><span class="pre">decagon_segment</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.geometry.Segment</span></span><a class="headerlink" href="#geometor.ptolemy.pentagon_chords.PentagonDecagonResult.decagon_segment" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.pentagon_chords.PentagonDecagonResult.pentagon_segment">
+        <span class="sig-name descname"><span class="pre">pentagon_segment</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.geometry.Segment</span></span><a class="headerlink" href="#geometor.ptolemy.pentagon_chords.PentagonDecagonResult.pentagon_segment" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.pentagon_chords.PentagonDecagonResult.hexagon_segment">
+        <span class="sig-name descname"><span class="pre">hexagon_segment</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.geometry.Segment</span></span><a class="headerlink" href="#geometor.ptolemy.pentagon_chords.PentagonDecagonResult.hexagon_segment" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.pentagon_chords.PentagonDecagonResult.decagon_length">
+        <span class="sig-name descname"><span class="pre">decagon_length</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.ptolemy.pentagon_chords.PentagonDecagonResult.decagon_length" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.pentagon_chords.PentagonDecagonResult.pentagon_length">
+        <span class="sig-name descname"><span class="pre">pentagon_length</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.ptolemy.pentagon_chords.PentagonDecagonResult.pentagon_length" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.pentagon_chords.PentagonDecagonResult.decagon_over_radius">
+        <span class="sig-name descname"><span class="pre">decagon_over_radius</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.ptolemy.pentagon_chords.PentagonDecagonResult.decagon_over_radius" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        </dd></dl>
+
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.ptolemy.pentagon_chords.ChordEntry">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.ptolemy.pentagon_chords.</span></span><span class="sig-name descname"><span class="pre">ChordEntry</span></span><a class="headerlink" href="#geometor.ptolemy.pentagon_chords.ChordEntry" title="Link to this definition">¶</a></dt>
+        <dd><p>Entry in Ptolemy’s <em>Almagest</em> I.10 radical and sexagesimal chord chain.</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.pentagon_chords.ChordEntry.arc_deg">
+        <span class="sig-name descname"><span class="pre">arc_deg</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Rational</span></span><a class="headerlink" href="#geometor.ptolemy.pentagon_chords.ChordEntry.arc_deg" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.pentagon_chords.ChordEntry.exact_expr">
+        <span class="sig-name descname"><span class="pre">exact_expr</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.ptolemy.pentagon_chords.ChordEntry.exact_expr" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.pentagon_chords.ChordEntry.sexagesimal">
+        <span class="sig-name descname"><span class="pre">sexagesimal</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#geometor.ptolemy.pentagon_chords.Sexagesimal" title="geometor.ptolemy.pentagon_chords.Sexagesimal"><span class="pre">Sexagesimal</span></a></span><a class="headerlink" href="#geometor.ptolemy.pentagon_chords.ChordEntry.sexagesimal" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.pentagon_chords.ChordEntry.heiberg_sexagesimal">
+        <span class="sig-name descname"><span class="pre">heiberg_sexagesimal</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#geometor.ptolemy.pentagon_chords.Sexagesimal" title="geometor.ptolemy.pentagon_chords.Sexagesimal"><span class="pre">Sexagesimal</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></span><a class="headerlink" href="#geometor.ptolemy.pentagon_chords.ChordEntry.heiberg_sexagesimal" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.ptolemy.pentagon_chords.to_sexagesimal">
+        <span class="sig-prename descclassname"><span class="pre">geometor.ptolemy.pentagon_chords.</span></span><span class="sig-name descname"><span class="pre">to_sexagesimal</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.Expr</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">places</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">2</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.ptolemy.pentagon_chords.Sexagesimal" title="geometor.ptolemy.pentagon_chords.Sexagesimal"><span class="pre">Sexagesimal</span></a></span></span><a class="headerlink" href="#geometor.ptolemy.pentagon_chords.to_sexagesimal" title="Link to this definition">¶</a></dt>
+        <dd><p>Round an exact non-negative SymPy real expression to <code class="docutils literal notranslate"><span class="pre">places</span></code> base-60 fractional places.</p>
+        <p>Uses exact integer floor/nearest-integer arithmetic on <code class="docutils literal notranslate"><span class="pre">value</span> <span class="pre">*</span> <span class="pre">60**places</span></code> so
+        rational and quadratic-radical boundaries are decided without floating-point drift.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><ul class="simple">
+        <li><p><strong>value</strong> – Exact non-negative SymPy expression or integer.</p></li>
+        <li><p><strong>places</strong> – Number of fractional base-60 places (default <code class="docutils literal notranslate"><span class="pre">2</span></code> for primes and seconds).</p></li>
+        </ul>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Nearest <a class="reference internal" href="#geometor.ptolemy.pentagon_chords.Sexagesimal" title="geometor.ptolemy.pentagon_chords.Sexagesimal"><code class="xref py py-class docutils literal notranslate"><span class="pre">Sexagesimal</span></code></a> representation.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.ptolemy.pentagon_chords.from_sexagesimal">
+        <span class="sig-prename descclassname"><span class="pre">geometor.ptolemy.pentagon_chords.</span></span><span class="sig-name descname"><span class="pre">from_sexagesimal</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parts</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">digits</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">sympy.Rational</span></span></span><a class="headerlink" href="#geometor.ptolemy.pentagon_chords.from_sexagesimal" title="Link to this definition">¶</a></dt>
+        <dd><p>Convert <code class="docutils literal notranslate"><span class="pre">(parts,</span> <span class="pre">d1,</span> <span class="pre">d2,</span> <span class="pre">...)</span></code> in base 60 to an exact <code class="xref py py-class docutils literal notranslate"><span class="pre">sympy.Rational</span></code>.</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.ptolemy.pentagon_chords.construct_pentagon_decagon">
+        <span class="sig-prename descclassname"><span class="pre">geometor.ptolemy.pentagon_chords.</span></span><span class="sig-name descname"><span class="pre">construct_pentagon_decagon</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">geometor.model.Model</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">radius</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">sympy.Rational</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">60</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.ptolemy.pentagon_chords.PentagonDecagonResult" title="geometor.ptolemy.pentagon_chords.PentagonDecagonResult"><span class="pre">PentagonDecagonResult</span></a></span></span><a class="headerlink" href="#geometor.ptolemy.pentagon_chords.construct_pentagon_decagon" title="Link to this definition">¶</a></dt>
+        <dd><p>Construct the regular decagon side $DZ$ and pentagon side $BZ$ (<em>Almagest</em> I.10, Heiberg I, pp. 32-35).</p>
+        <p>Follows Ptolemy’s exact Euclidean steps with Greek letter mapping
+        ($\mathrm{A}\to A$, $\mathrm{B}\to B$, $\mathrm{\Gamma}\to C$, $\mathrm{\Delta}\to D$,
+        $\mathrm{E}\to E$, $\mathrm{Z}\to Z$):</p>
+        <ul class="simple">
+        <li><p><strong>Given</strong>: Circle $ABC$ on diameter $ADC$ centered at $D = (0, 0)$ with radius $R$,
+        and perpendicular radius $DB \perp AC$.</p></li>
+        <li><p><strong>Construct</strong>: Bisect $DC$ at $E$ (Eucl. I.10); join $EB$; describe circle $(E, B)$
+        meeting $AD$ at $Z$ so $EZ = EB$; join $ZB$.</p></li>
+        <li><p><strong>Demonstrate</strong>:</p>
+        <ol class="arabic simple">
+        <li><p>$CZ \cdot ZD + DE^2 = EZ^2 = EB^2 = ED^2 + DB^2 \implies CZ \cdot ZD = DB^2 = DC^2$
+        (Eucl. II.6, I.47), so $ZC$ is cut in extreme and mean ratio at $D$ and
+        $DZ = R / \phi = s_{10}$ (Eucl. VI.Def.3, XIII.9).</p></li>
+        <li><p>$Q(D, B) + Q(D, Z) = Q(B, Z)$ (Eucl. I.47), so $s_6^2 + s_{10}^2 = BZ^2$ and
+        $BZ = s_5$ is the side of the inscribed regular pentagon (Eucl. XIII.10).</p></li>
+        </ol>
+        </li>
+        </ul>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><ul class="simple">
+        <li><p><strong>model</strong> – Optional target <code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code> (created with <code class="docutils literal notranslate"><span class="pre">auto_intersect=False</span></code> if <code class="docutils literal notranslate"><span class="pre">None</span></code>).</p></li>
+        <li><p><strong>radius</strong> – Exact rational circle radius $R$ (defaults to Ptolemy’s $R = 60$).</p></li>
+        </ul>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Verified <a class="reference internal" href="#geometor.ptolemy.pentagon_chords.PentagonDecagonResult" title="geometor.ptolemy.pentagon_chords.PentagonDecagonResult"><code class="xref py py-class docutils literal notranslate"><span class="pre">PentagonDecagonResult</span></code></a> over $\mathbb{Q}(\phi)$.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.ptolemy.pentagon_chords.supplementary_chord">
+        <span class="sig-prename descclassname"><span class="pre">geometor.ptolemy.pentagon_chords.</span></span><span class="sig-name descname"><span class="pre">supplementary_chord</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">chord_theta</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.Expr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">diameter</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.Expr</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">PTOLEMY_DIAMETER</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">sympy.Expr</span></span></span><a class="headerlink" href="#geometor.ptolemy.pentagon_chords.supplementary_chord" title="Link to this definition">¶</a></dt>
+        <dd><p>Return $\operatorname{crd}(180^\circ - \theta) = \sqrt{D^2 - \operatorname{crd}^2(\theta)}$ (Eucl. I.47, III.31).</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.ptolemy.pentagon_chords.chord_difference">
+        <span class="sig-prename descclassname"><span class="pre">geometor.ptolemy.pentagon_chords.</span></span><span class="sig-name descname"><span class="pre">chord_difference</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">chord_alpha</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.Expr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chord_beta</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.Expr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">diameter</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.Expr</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">PTOLEMY_DIAMETER</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">sympy.Expr</span></span></span><a class="headerlink" href="#geometor.ptolemy.pentagon_chords.chord_difference" title="Link to this definition">¶</a></dt>
+        <dd><p>Return $\operatorname{crd}(\alpha - \beta)$ via Ptolemy’s Theorem (<em>Almagest</em> I.10, Heiberg I, p. 38).</p>
+        <p>$$\operatorname{crd}(\alpha - \beta)
+             = \frac{\operatorname{crd}(\alpha)\operatorname{crd}(180^\circ - \beta)
+                   - \operatorname{crd}(\beta)\operatorname{crd}(180^\circ - \alpha)}{D}$$</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.ptolemy.pentagon_chords.chord_sum">
+        <span class="sig-prename descclassname"><span class="pre">geometor.ptolemy.pentagon_chords.</span></span><span class="sig-name descname"><span class="pre">chord_sum</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">chord_alpha</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.Expr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chord_beta</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.Expr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">diameter</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.Expr</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">PTOLEMY_DIAMETER</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">sympy.Expr</span></span></span><a class="headerlink" href="#geometor.ptolemy.pentagon_chords.chord_sum" title="Link to this definition">¶</a></dt>
+        <dd><p>Return $\operatorname{crd}(\alpha + \beta)$ via Ptolemy’s Theorem (<em>Almagest</em> I.10, Heiberg I, pp. 41-42).</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.ptolemy.pentagon_chords.chord_half_arc">
+        <span class="sig-prename descclassname"><span class="pre">geometor.ptolemy.pentagon_chords.</span></span><span class="sig-name descname"><span class="pre">chord_half_arc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">chord_theta</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.Expr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">diameter</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.Expr</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">PTOLEMY_DIAMETER</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">sympy.Expr</span></span></span><a class="headerlink" href="#geometor.ptolemy.pentagon_chords.chord_half_arc" title="Link to this definition">¶</a></dt>
+        <dd><p>Return $\operatorname{crd}(\theta / 2)$ via Ptolemy’s Half-Arc Lemma (<em>Almagest</em> I.10, Heiberg I, pp. 39-40).</p>
+        <p>$$\operatorname{crd}^2(\theta / 2) = \frac{D}{2} \cdot \left(D - \operatorname{crd}(180^\circ - \theta)\right)$$</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.ptolemy.pentagon_chords.exact_chord">
+        <span class="sig-prename descclassname"><span class="pre">geometor.ptolemy.pentagon_chords.</span></span><span class="sig-name descname"><span class="pre">exact_chord</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">arc_deg</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">sympy.Rational</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">radius</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">sympy.Rational</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">60</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">sympy.Expr</span></span></span><a class="headerlink" href="#geometor.ptolemy.pentagon_chords.exact_chord" title="Link to this definition">¶</a></dt>
+        <dd><p>Return the exact SymPy closed-form radical expression for Ptolemy’s chord of <code class="docutils literal notranslate"><span class="pre">arc_deg</span></code>.</p>
+        <p>Supports Ptolemy’s primary <em>Almagest</em> I.10 geometric sequence:
+        <code class="docutils literal notranslate"><span class="pre">180,</span> <span class="pre">144,</span> <span class="pre">120,</span> <span class="pre">90,</span> <span class="pre">72,</span> <span class="pre">60,</span> <span class="pre">36,</span> <span class="pre">12,</span> <span class="pre">6,</span> <span class="pre">3,</span> <span class="pre">3/2,</span> <span class="pre">3/4</span></code> degrees.</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.ptolemy.pentagon_chords.build_radical_chord_table">
+        <span class="sig-prename descclassname"><span class="pre">geometor.ptolemy.pentagon_chords.</span></span><span class="sig-name descname"><span class="pre">build_radical_chord_table</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">radius</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">sympy.Rational</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">60</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#geometor.ptolemy.pentagon_chords.ChordEntry" title="geometor.ptolemy.pentagon_chords.ChordEntry"><span class="pre">ChordEntry</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.ptolemy.pentagon_chords.build_radical_chord_table" title="Link to this definition">¶</a></dt>
+        <dd><p>Build Ptolemy’s exact <em>Almagest</em> I.10–I.11 radical and sexagesimal chord table.</p>
+        </dd></dl>
+
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.ptolemy.pentagon_chords.PtolemyPiVerification">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.ptolemy.pentagon_chords.</span></span><span class="sig-name descname"><span class="pre">PtolemyPiVerification</span></span><a class="headerlink" href="#geometor.ptolemy.pentagon_chords.PtolemyPiVerification" title="Link to this definition">¶</a></dt>
+        <dd><p>Exact verification of Ptolemy’s Inequality Lemma bounds for <code class="docutils literal notranslate"><span class="pre">crd(1°)</span></code> and <code class="docutils literal notranslate"><span class="pre">pi</span></code>.</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.pentagon_chords.PtolemyPiVerification.exact_lower_bound">
+        <span class="sig-name descname"><span class="pre">exact_lower_bound</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.ptolemy.pentagon_chords.PtolemyPiVerification.exact_lower_bound" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.pentagon_chords.PtolemyPiVerification.exact_upper_bound">
+        <span class="sig-name descname"><span class="pre">exact_upper_bound</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.ptolemy.pentagon_chords.PtolemyPiVerification.exact_upper_bound" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.pentagon_chords.PtolemyPiVerification.ptolemy_crd_1_deg">
+        <span class="sig-name descname"><span class="pre">ptolemy_crd_1_deg</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#geometor.ptolemy.pentagon_chords.Sexagesimal" title="geometor.ptolemy.pentagon_chords.Sexagesimal"><span class="pre">Sexagesimal</span></a></span><a class="headerlink" href="#geometor.ptolemy.pentagon_chords.PtolemyPiVerification.ptolemy_crd_1_deg" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.pentagon_chords.PtolemyPiVerification.ptolemy_pi">
+        <span class="sig-name descname"><span class="pre">ptolemy_pi</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#geometor.ptolemy.pentagon_chords.Sexagesimal" title="geometor.ptolemy.pentagon_chords.Sexagesimal"><span class="pre">Sexagesimal</span></a></span><a class="headerlink" href="#geometor.ptolemy.pentagon_chords.PtolemyPiVerification.ptolemy_pi" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.pentagon_chords.PtolemyPiVerification.pi_rational">
+        <span class="sig-name descname"><span class="pre">pi_rational</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Rational</span></span><a class="headerlink" href="#geometor.ptolemy.pentagon_chords.PtolemyPiVerification.pi_rational" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.pentagon_chords.PtolemyPiVerification.strict_inequality_holds">
+        <span class="sig-name descname"><span class="pre">strict_inequality_holds</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></span><a class="headerlink" href="#geometor.ptolemy.pentagon_chords.PtolemyPiVerification.strict_inequality_holds" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.pentagon_chords.PtolemyPiVerification.matches_to_seconds">
+        <span class="sig-name descname"><span class="pre">matches_to_seconds</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></span><a class="headerlink" href="#geometor.ptolemy.pentagon_chords.PtolemyPiVerification.matches_to_seconds" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.ptolemy.pentagon_chords.verify_ptolemy_pi">
+        <span class="sig-prename descclassname"><span class="pre">geometor.ptolemy.pentagon_chords.</span></span><span class="sig-name descname"><span class="pre">verify_ptolemy_pi</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.ptolemy.pentagon_chords.PtolemyPiVerification" title="geometor.ptolemy.pentagon_chords.PtolemyPiVerification"><span class="pre">PtolemyPiVerification</span></a></span></span><a class="headerlink" href="#geometor.ptolemy.pentagon_chords.verify_ptolemy_pi" title="Link to this definition">¶</a></dt>
+        <dd><p>Verify Ptolemy’s Inequality Lemma (<em>Almagest</em> I.10, Heiberg I, pp. 43-46) &amp; $\pi \approx 3;8,30$.</p>
+        <p>Ptolemy proves geometrically that for $0 &lt; \beta &lt; \alpha &lt; 180^\circ$:</p>
+        <p>$$\frac{\operatorname{crd}(\alpha)}{\operatorname{crd}(\beta)} &lt; \frac{\alpha}{\beta}$$</p>
+        <p>Applying this twice to $(\frac{3}{4}^\circ, 1^\circ)$ and $(1^\circ, 1\frac{1}{2}^\circ)$ yields:</p>
+        <p>$$\frac{2}{3}\operatorname{crd}(1\tfrac{1}{2}^\circ)
+             &lt; \operatorname{crd}(1^\circ)
+             &lt; \frac{4}{3}\operatorname{crd}(\tfrac{3}{4}^\circ)$$</p>
+        <p>Both bounds round in two sexagesimal places to $1;2,50 = \frac{377}{360}$, implying
+        circumference / diameter $approx frac{360 cdot (1;2,50)}{120} = 3 cdot (1;2,50)
+        = 3;8,30 = frac{377}{120} approx 3.1416667$ (<em>Almagest</em> VI.7, Heiberg I, p. 513).</p>
+        </dd></dl>
+
+        </section>
+        </section>
+
+      </div>
+      <footer class="book-footer">
+        <div class="book-footer-ornament">&#10086;</div>
+        <div class="book-footer-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../../../../index.html" title="Modules">&larr; <span class="nav-label">Modules</span></a>
+          </div>
+          <div class="book-nav-center">
+            <a class="book-toc-link" href="../../../../../index.html">GEOMETOR • ptolemy</a>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../cyclic_quadrilateral/index.html" title="geometor.ptolemy.cyclic_quadrilateral"><span class="nav-label">geometor.ptolemy.cyclic_quadrilateral</span> &rarr;</a>
+          </div>
+        </div>
+      </footer>
+    </article>
+  </main>
+  <div class="asides">
+    <aside class="aside-search">
+      <h3>Search</h3>
+      <div id="searchbox" role="search">
+        <form id="rtd-search-form" class="wy-form search-form" action="../../../../../search.html" method="get">
+          <div class="search-field">
+            <input type="search" name="q" placeholder="Search docs..." aria-label="Search docs" autocomplete="off" />
+            <button type="submit" class="search-submit" aria-label="Search" title="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+      </div>
+    </aside>
+  </div>
+  <footer>
+    <hr />
+    <div role="contentinfo">
+      <p>
+        &copy; Copyright c. 150 CE · 1898 / 1907 Teubner · Digital Codex GEOMETOR.
+      </p>
+    </div>
+  </footer>
+
+  <script src="../../../../../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../../../../../_static/documentation_options.js?v=01f34227"></script>
+  <script src="../../../../../_static/doctools.js?v=fd6eb6e6"></script>
+  <script src="../../../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+  <script src="../../../../../_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="../../../../../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script src="../../../../../_static/js/search_highlight.js"></script>
+
+</body>
+</html>

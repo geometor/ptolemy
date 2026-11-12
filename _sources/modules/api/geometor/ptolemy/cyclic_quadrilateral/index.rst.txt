@@ -1,0 +1,151 @@
+geometor.ptolemy.cyclic_quadrilateral
+=====================================
+
+.. py:module:: geometor.ptolemy.cyclic_quadrilateral
+
+.. autoapi-nested-parse::
+
+   Exact symbolic construction & proof of Ptolemy's Theorem on Cyclic Quadrilaterals.
+
+   Implements *Almagest* Book I, Ch. 10b (Heiberg 1898, Vol. I.1, pp. 36-37):
+
+   .. math::
+
+      AC \cdot BD = AB \cdot CD + BC \cdot DA
+
+   Includes:
+
+   1. **Exact Euclidean Construction & Proof** (:func:`construct_ptolemy_quadrilateral`):
+      Constructs canonical rational cyclic quadrilaterals in ``geometor.model`` with
+      ``auto_intersect=False`` and zero ``sp.Float`` coordinates—including the classical
+      Pythagorean-chord cyclic quadrilateral on diameter $65$ with integer sides
+      $(AB, BC, CD, DA) = (25, 39, 60, 52)$ and integer diagonals $(AC, BD) = (56, 63)$
+      ($56 \times 63 = 3528 = 25 \times 60 + 39 \times 52 = 1500 + 2028$), as well as
+      Brahmagupta's $(13, 14, 15)$-derived cyclic quadrilateral—together with Ptolemy's
+      auxiliary point $E \in AC$ satisfying $\angle ABE = \angle DBC$.
+   2. **Universal Algebraic Proof** (:func:`prove_ptolemy_theorem_universally`):
+      Proves Ptolemy's identity universally over $\mathbb{Q}(t_1, t_2, t_3, t_4)$ on the
+      rational parameterization of the circle via Cayley-Menger / Euler four-point identity.
+
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   geometor.ptolemy.cyclic_quadrilateral.CyclicQuadrilateralResult
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.ptolemy.cyclic_quadrilateral.construct_ptolemy_quadrilateral
+   geometor.ptolemy.cyclic_quadrilateral.prove_ptolemy_theorem_universally
+
+
+Module Contents
+---------------
+
+.. py:class:: CyclicQuadrilateralResult
+
+   Exact symbolic verification record for Ptolemy's Theorem (*Almagest* I.10b).
+
+
+   .. py:attribute:: model
+      :type:  geometor.model.Model
+
+
+   .. py:attribute:: preset
+      :type:  str
+
+
+   .. py:attribute:: A
+      :type:  sympy.geometry.Point
+
+
+   .. py:attribute:: B
+      :type:  sympy.geometry.Point
+
+
+   .. py:attribute:: C
+      :type:  sympy.geometry.Point
+
+
+   .. py:attribute:: D
+      :type:  sympy.geometry.Point
+
+
+   .. py:attribute:: E
+      :type:  sympy.geometry.Point
+
+
+   .. py:attribute:: center
+      :type:  sympy.geometry.Point
+
+
+   .. py:attribute:: circle
+      :type:  sympy.geometry.Circle
+
+
+   .. py:attribute:: sides
+      :type:  tuple[sympy.Expr, sympy.Expr, sympy.Expr, sympy.Expr]
+
+
+   .. py:attribute:: diagonals
+      :type:  tuple[sympy.Expr, sympy.Expr]
+
+
+   .. py:attribute:: ae_segment_length
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: ec_segment_length
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: lhs_product
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: rhs_sum
+      :type:  sympy.Expr
+
+
+.. py:function:: construct_ptolemy_quadrilateral(model: geometor.model.Model | None = None, *, preset: str = 'pythagorean_65') -> CyclicQuadrilateralResult
+
+   Construct a rational cyclic quadrilateral and verify Ptolemy's Theorem (*Almagest* I.10, pp. 36-37).
+
+   Supported ``preset`` configurations (100% exact rational coordinates):
+
+   - ``"pythagorean_65"`` (default): Cyclic quadrilateral on the circle $x^2 + y^2 = (65/2)^2$
+     with exact rational vertices $A = (-65/2, 0)$, $B = (-595/26, 300/13)$,
+     $C = (2047/130, 1848/65)$, and $D = (91/10, -156/5)$, yielding **exact integer sides**
+     $(AB, BC, CD, DA) = (25, 39, 60, 52)$ and **exact integer diagonals**
+     $(AC, BD) = (56, 63)$, so $56 \times 63 = 3528 = 25 \times 60 + 39 \times 52$.
+   - ``"brahmagupta"``: Rational orthodiagonal cyclic quadrilateral on $x^2 + y^2 = (65/2)^2$
+     with integer sides $(25, 39, 60, 52)$ in swapped chord order so $AC \perp BD$.
+
+   :param model: Optional :class:`~geometor.model.Model` (created with ``auto_intersect=False`` if ``None``).
+   :param preset: ``"pythagorean_65"`` or ``"brahmagupta"``.
+
+   :returns: Verified :class:`CyclicQuadrilateralResult`.
+
+
+.. py:function:: prove_ptolemy_theorem_universally() -> sympy.Expr
+
+   Prove Ptolemy's Theorem universally over $\mathbb{Z}[t_1, t_2, t_3, t_4]$ on the rational circle.
+
+   On the unit circle parameterized by $P(t) = \left(\frac{1 - t^2}{1 + t^2}, \frac{2t}{1 + t^2}\right)$,
+   the Euclidean chord distance between $P(t_i)$ and $P(t_j)$ for ordered parameters
+   $t_1 < t_2 < t_3 < t_4$ is:
+
+   $$d(t_i, t_j) = \frac{2(t_j - t_i)}{\sqrt{(1 + t_i^2)(1 + t_j^2)}}$$
+
+   Clearing the common positive denominator $\frac{1}{4}(1+t_1^2)(1+t_2^2)(1+t_3^2)(1+t_4^2)$
+   reduces $AC \cdot BD - (AB \cdot CD + BC \cdot DA) = 0$ to Euler's universal four-point
+   polynomial identity, returning ``sp.Integer(0)``.
+
+

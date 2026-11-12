@@ -1,0 +1,392 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-content_root="../../../../../">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>geometor.ptolemy.menelaus_sphaerica &mdash; GEOMETOR • ptolemy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/css/styles.css?v=66998e95" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/ptolemy_greek.css?v=de4239ee" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="../../../../../_static/css/print.css" type="text/css" media="print" />
+  <link rel="icon" href="../../../../../_static/favicon.ico" />
+</head>
+
+<body class="book-theme-classical-serif">
+  <header>
+    <div class="logo">
+      <a href="../../../../../index.html">
+        <h1>GEOMETOR • ptolemy</h1>
+      </a>
+      <div class="org-repo">
+        <span class="org">GEOMETOR</span>
+        •
+        <span class="repo">ptolemy</span>
+      </div>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../../../../../almagest_geometry/index.html"  >Almagest I & Planisphaerium</a>
+        </li>
+        <li>
+          <a href="../../../../../demos/index.html"  >Symbolic Demonstrations</a>
+        </li>
+        <li>
+          <a href="../../../../index.html" class="is-active" aria-selected="true" >Modules</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main class="book-main">
+    <article class="book-layout book-reading-pane">
+      <header class="book-header">
+        <div class="book-header-bar">
+          <div class="book-header-identity">
+            <a class="book-portal-link" href="../../../../../index.html" title="Return to Project Portal">&larr; ptolemy</a>
+            <span class="book-header-sep">/</span>
+            <a class="book-title-link" href="../../../../../index.html">GEOMETOR • ptolemy</a>
+          </div>
+          <div class="book-header-breadcrumbs book-header-badges" role="navigation" aria-label="Breadcrumbs">
+            <a class="book-crumb-link" href="../../../../index.html">Modules</a>
+          </div>
+        </div>
+        <div class="book-header-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../cyclic_quadrilateral/index.html" title="geometor.ptolemy.cyclic_quadrilateral">&larr; <span class="nav-label">Prev</span></a>
+          </div>
+          <div class="book-nav-center">
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../stereographic/index.html" title="geometor.ptolemy.stereographic"><span class="nav-label">Next</span> &rarr;</a>
+          </div>
+        </div>
+      </header>
+      <div class="content body book-content" role="main">
+        <section class="level-1" id="module-geometor.ptolemy.menelaus_sphaerica">
+        <span id="geometor-ptolemy-menelaus-sphaerica"></span><h1>geometor.ptolemy.menelaus_sphaerica<a class="headerlink" href="#module-geometor.ptolemy.menelaus_sphaerica" title="Link to this heading">¶</a></h1>
+        <p>Exact symbolic Planar &amp; Spherical Menelaus Lemmas (<em>Almagest</em> Book I, Chs. 13-14).</p>
+        <p>Implements Heiberg 1898, Vol. I.1, pp. 68-78:</p>
+        <ol class="arabic simple">
+        <li><p><strong>Planar Menelaus Lemma</strong> (<a class="reference internal" href="#geometor.ptolemy.menelaus_sphaerica.construct_planar_menelaus" title="geometor.ptolemy.menelaus_sphaerica.construct_planar_menelaus"><code class="xref py py-func docutils literal notranslate"><span class="pre">construct_planar_menelaus()</span></code></a>, <em>Almagest</em> I.13, pp. 68-70):
+        Constructs Ptolemy’s sector-figure ($AB, AC$ cut by $BE, CD$ meeting at $Z$) and draws
+        auxiliary line $EH \parallel CD$ meeting $AB$ at $H$ (Eucl. I.31, VI.4), proving both
+        <em>kata synthesin</em> ($\frac{CA}{AE} = \frac{CD}{DZ} \cdot \frac{ZB}{BE}$) and
+        <em>kata diairesin</em> ($\frac{CE}{EA} = \frac{CZ}{ZD} \cdot \frac{DB}{BA}$).</p></li>
+        <li><p><strong>Spherical Menelaus Chord Theorem &amp; Solar Declination</strong> (<a class="reference internal" href="#geometor.ptolemy.menelaus_sphaerica.verify_spherical_menelaus" title="geometor.ptolemy.menelaus_sphaerica.verify_spherical_menelaus"><code class="xref py py-func docutils literal notranslate"><span class="pre">verify_spherical_menelaus()</span></code></a>,
+        <a class="reference internal" href="#geometor.ptolemy.menelaus_sphaerica.compute_solar_declination" title="geometor.ptolemy.menelaus_sphaerica.compute_solar_declination"><code class="xref py py-func docutils literal notranslate"><span class="pre">compute_solar_declination()</span></code></a>, <em>Almagest</em> I.13-I.14, pp. 74-78):
+        Verifies Ptolemy’s 3D central projection from the sphere center $H$ onto the plane of
+        $\triangle ACD$ (producing collinear meet points $\Theta, K, \Lambda$ on two intersecting
+        planes, Heiberg I, p. 75) and computes Ptolemy’s exact chord ratio
+        $\operatorname{crd}(2\delta) = \frac{\operatorname{crd}(2\varepsilon)\operatorname{crd}(2\lambda)}{120}$.</p></li>
+        </ol>
+        <section class="level-2" id="classes">
+        <h2>Classes<a class="headerlink" href="#classes" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.ptolemy.menelaus_sphaerica.PlanarMenelausResult" title="geometor.ptolemy.menelaus_sphaerica.PlanarMenelausResult"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PlanarMenelausResult</span></code></a></p></td>
+        <td><p>Exact symbolic elements and compound ratios for <em>Almagest</em> I.13 (pp. 68-70).</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.ptolemy.menelaus_sphaerica.SphericalMenelausResult" title="geometor.ptolemy.menelaus_sphaerica.SphericalMenelausResult"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SphericalMenelausResult</span></code></a></p></td>
+        <td><p>Exact 3D rational sphere verification of <em>Almagest</em> I.13 (pp. 74-76).</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.ptolemy.menelaus_sphaerica.SolarDeclinationEntry" title="geometor.ptolemy.menelaus_sphaerica.SolarDeclinationEntry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SolarDeclinationEntry</span></code></a></p></td>
+        <td><p>Solar declination entry computed by Ptolemy's <em>Almagest</em> I.14 Spherical Menelaus rule.</p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="functions">
+        <h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.ptolemy.menelaus_sphaerica.construct_planar_menelaus" title="geometor.ptolemy.menelaus_sphaerica.construct_planar_menelaus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">construct_planar_menelaus</span></code></a>([model]) → PlanarMenelausResult</p></td>
+        <td><p>Construct Ptolemy's planar Menelaus sector configuration (<em>Almagest</em> I.13, Heiberg I, pp. 68-70).</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.ptolemy.menelaus_sphaerica.verify_spherical_menelaus" title="geometor.ptolemy.menelaus_sphaerica.verify_spherical_menelaus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">verify_spherical_menelaus</span></code></a>() → SphericalMenelausResult</p></td>
+        <td><p>Verify Ptolemy's 3D central-projection proof of Spherical Menelaus (<em>Almagest</em> I.13, pp. 74-76).</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.ptolemy.menelaus_sphaerica.compute_solar_declination" title="geometor.ptolemy.menelaus_sphaerica.compute_solar_declination"><code class="xref py py-obj docutils literal notranslate"><span class="pre">compute_solar_declination</span></code></a>(longitude_deg) → SolarDeclinationEntry</p></td>
+        <td><p>Compute Ptolemy's <em>Almagest</em> I.14–I.15 solar declination for $lambda in {30^circ, 60^circ, 90^circ}$.</p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="module-contents">
+        <h2>Module Contents<a class="headerlink" href="#module-contents" title="Link to this heading">¶</a></h2>
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.ptolemy.menelaus_sphaerica.PlanarMenelausResult">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.ptolemy.menelaus_sphaerica.</span></span><span class="sig-name descname"><span class="pre">PlanarMenelausResult</span></span><a class="headerlink" href="#geometor.ptolemy.menelaus_sphaerica.PlanarMenelausResult" title="Link to this definition">¶</a></dt>
+        <dd><p>Exact symbolic elements and compound ratios for <em>Almagest</em> I.13 (pp. 68-70).</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.menelaus_sphaerica.PlanarMenelausResult.model">
+        <span class="sig-name descname"><span class="pre">model</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">geometor.model.Model</span></span><a class="headerlink" href="#geometor.ptolemy.menelaus_sphaerica.PlanarMenelausResult.model" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.menelaus_sphaerica.PlanarMenelausResult.A">
+        <span class="sig-name descname"><span class="pre">A</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span></span><a class="headerlink" href="#geometor.ptolemy.menelaus_sphaerica.PlanarMenelausResult.A" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.menelaus_sphaerica.PlanarMenelausResult.B">
+        <span class="sig-name descname"><span class="pre">B</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span></span><a class="headerlink" href="#geometor.ptolemy.menelaus_sphaerica.PlanarMenelausResult.B" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.menelaus_sphaerica.PlanarMenelausResult.C">
+        <span class="sig-name descname"><span class="pre">C</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span></span><a class="headerlink" href="#geometor.ptolemy.menelaus_sphaerica.PlanarMenelausResult.C" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.menelaus_sphaerica.PlanarMenelausResult.D">
+        <span class="sig-name descname"><span class="pre">D</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span></span><a class="headerlink" href="#geometor.ptolemy.menelaus_sphaerica.PlanarMenelausResult.D" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.menelaus_sphaerica.PlanarMenelausResult.E">
+        <span class="sig-name descname"><span class="pre">E</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span></span><a class="headerlink" href="#geometor.ptolemy.menelaus_sphaerica.PlanarMenelausResult.E" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.menelaus_sphaerica.PlanarMenelausResult.Z">
+        <span class="sig-name descname"><span class="pre">Z</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span></span><a class="headerlink" href="#geometor.ptolemy.menelaus_sphaerica.PlanarMenelausResult.Z" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.menelaus_sphaerica.PlanarMenelausResult.H">
+        <span class="sig-name descname"><span class="pre">H</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span></span><a class="headerlink" href="#geometor.ptolemy.menelaus_sphaerica.PlanarMenelausResult.H" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.menelaus_sphaerica.PlanarMenelausResult.ratio_ca_ae">
+        <span class="sig-name descname"><span class="pre">ratio_ca_ae</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.ptolemy.menelaus_sphaerica.PlanarMenelausResult.ratio_ca_ae" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.menelaus_sphaerica.PlanarMenelausResult.compound_synthesin">
+        <span class="sig-name descname"><span class="pre">compound_synthesin</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.ptolemy.menelaus_sphaerica.PlanarMenelausResult.compound_synthesin" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.menelaus_sphaerica.PlanarMenelausResult.ratio_ce_ea">
+        <span class="sig-name descname"><span class="pre">ratio_ce_ea</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.ptolemy.menelaus_sphaerica.PlanarMenelausResult.ratio_ce_ea" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.menelaus_sphaerica.PlanarMenelausResult.compound_diairesin">
+        <span class="sig-name descname"><span class="pre">compound_diairesin</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.ptolemy.menelaus_sphaerica.PlanarMenelausResult.compound_diairesin" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        </dd></dl>
+
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.ptolemy.menelaus_sphaerica.SphericalMenelausResult">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.ptolemy.menelaus_sphaerica.</span></span><span class="sig-name descname"><span class="pre">SphericalMenelausResult</span></span><a class="headerlink" href="#geometor.ptolemy.menelaus_sphaerica.SphericalMenelausResult" title="Link to this definition">¶</a></dt>
+        <dd><p>Exact 3D rational sphere verification of <em>Almagest</em> I.13 (pp. 74-76).</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.menelaus_sphaerica.SphericalMenelausResult.center_H">
+        <span class="sig-name descname"><span class="pre">center_H</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Matrix</span></span><a class="headerlink" href="#geometor.ptolemy.menelaus_sphaerica.SphericalMenelausResult.center_H" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.menelaus_sphaerica.SphericalMenelausResult.A">
+        <span class="sig-name descname"><span class="pre">A</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Matrix</span></span><a class="headerlink" href="#geometor.ptolemy.menelaus_sphaerica.SphericalMenelausResult.A" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.menelaus_sphaerica.SphericalMenelausResult.B">
+        <span class="sig-name descname"><span class="pre">B</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Matrix</span></span><a class="headerlink" href="#geometor.ptolemy.menelaus_sphaerica.SphericalMenelausResult.B" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.menelaus_sphaerica.SphericalMenelausResult.C">
+        <span class="sig-name descname"><span class="pre">C</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Matrix</span></span><a class="headerlink" href="#geometor.ptolemy.menelaus_sphaerica.SphericalMenelausResult.C" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.menelaus_sphaerica.SphericalMenelausResult.D">
+        <span class="sig-name descname"><span class="pre">D</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Matrix</span></span><a class="headerlink" href="#geometor.ptolemy.menelaus_sphaerica.SphericalMenelausResult.D" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.menelaus_sphaerica.SphericalMenelausResult.E">
+        <span class="sig-name descname"><span class="pre">E</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Matrix</span></span><a class="headerlink" href="#geometor.ptolemy.menelaus_sphaerica.SphericalMenelausResult.E" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.menelaus_sphaerica.SphericalMenelausResult.Z">
+        <span class="sig-name descname"><span class="pre">Z</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Matrix</span></span><a class="headerlink" href="#geometor.ptolemy.menelaus_sphaerica.SphericalMenelausResult.Z" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.menelaus_sphaerica.SphericalMenelausResult.Theta">
+        <span class="sig-name descname"><span class="pre">Theta</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Matrix</span></span><a class="headerlink" href="#geometor.ptolemy.menelaus_sphaerica.SphericalMenelausResult.Theta" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.menelaus_sphaerica.SphericalMenelausResult.K">
+        <span class="sig-name descname"><span class="pre">K</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Matrix</span></span><a class="headerlink" href="#geometor.ptolemy.menelaus_sphaerica.SphericalMenelausResult.K" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.menelaus_sphaerica.SphericalMenelausResult.Lambda">
+        <span class="sig-name descname"><span class="pre">Lambda</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Matrix</span></span><a class="headerlink" href="#geometor.ptolemy.menelaus_sphaerica.SphericalMenelausResult.Lambda" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.menelaus_sphaerica.SphericalMenelausResult.are_theta_k_lambda_collinear">
+        <span class="sig-name descname"><span class="pre">are_theta_k_lambda_collinear</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></span><a class="headerlink" href="#geometor.ptolemy.menelaus_sphaerica.SphericalMenelausResult.are_theta_k_lambda_collinear" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.menelaus_sphaerica.SphericalMenelausResult.lhs_chord_ratio_sq">
+        <span class="sig-name descname"><span class="pre">lhs_chord_ratio_sq</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.ptolemy.menelaus_sphaerica.SphericalMenelausResult.lhs_chord_ratio_sq" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.menelaus_sphaerica.SphericalMenelausResult.rhs_compound_chord_ratio_sq">
+        <span class="sig-name descname"><span class="pre">rhs_compound_chord_ratio_sq</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.ptolemy.menelaus_sphaerica.SphericalMenelausResult.rhs_compound_chord_ratio_sq" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.ptolemy.menelaus_sphaerica.construct_planar_menelaus">
+        <span class="sig-prename descclassname"><span class="pre">geometor.ptolemy.menelaus_sphaerica.</span></span><span class="sig-name descname"><span class="pre">construct_planar_menelaus</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">geometor.model.Model</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.ptolemy.menelaus_sphaerica.PlanarMenelausResult" title="geometor.ptolemy.menelaus_sphaerica.PlanarMenelausResult"><span class="pre">PlanarMenelausResult</span></a></span></span><a class="headerlink" href="#geometor.ptolemy.menelaus_sphaerica.construct_planar_menelaus" title="Link to this definition">¶</a></dt>
+        <dd><p>Construct Ptolemy’s planar Menelaus sector configuration (<em>Almagest</em> I.13, Heiberg I, pp. 68-70).</p>
+        <p>Follows Heiberg’s Greek letters ($mathrm{A}to A, mathrm{B}to B, mathrm{Gamma}to C,
+        mathrm{Delta}to D, mathrm{E}to E, mathrm{Z}to Z, mathrm{H}to H$):
+        Across two straight lines $AB$ and $AC$, two transversals $BE$ and $CD$ meet at $Z$,
+        and $EH \parallel CD$ meets $AB$ at $H$.</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.ptolemy.menelaus_sphaerica.verify_spherical_menelaus">
+        <span class="sig-prename descclassname"><span class="pre">geometor.ptolemy.menelaus_sphaerica.</span></span><span class="sig-name descname"><span class="pre">verify_spherical_menelaus</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.ptolemy.menelaus_sphaerica.SphericalMenelausResult" title="geometor.ptolemy.menelaus_sphaerica.SphericalMenelausResult"><span class="pre">SphericalMenelausResult</span></a></span></span><a class="headerlink" href="#geometor.ptolemy.menelaus_sphaerica.verify_spherical_menelaus" title="Link to this definition">¶</a></dt>
+        <dd><p>Verify Ptolemy’s 3D central-projection proof of Spherical Menelaus (<em>Almagest</em> I.13, pp. 74-76).</p>
+        <p>Constructs an exact rational spherical Menelaus configuration $(A, B, C, D, E, Z)$ on $S^2$
+        centered at $H = (0, 0, 0)$, computes the three planar intersections $\Theta = AD \cap HB$,
+        $K = CD \cap HZ$, and $\Lambda = AC \cap HE$ (Heiberg I, p. 75), verifies that $\Theta, K, \Lambda$
+        are strictly collinear (lying in the intersection of plane $ACD$ with great-circle plane $HBZE$),
+        and verifies Ptolemy’s exact spherical chord theorem:</p>
+        <p>$$\frac{\operatorname{crd}(2\widehat{CE})}{\operatorname{crd}(2\widehat{EA})}
+             = \frac{\operatorname{crd}(2\widehat{CZ})}{\operatorname{crd}(2\widehat{ZD})}
+             \cdot \frac{\operatorname{crd}(2\widehat{DB})}{\operatorname{crd}(2\widehat{BA})}$$</p>
+        </dd></dl>
+
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.ptolemy.menelaus_sphaerica.SolarDeclinationEntry">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.ptolemy.menelaus_sphaerica.</span></span><span class="sig-name descname"><span class="pre">SolarDeclinationEntry</span></span><a class="headerlink" href="#geometor.ptolemy.menelaus_sphaerica.SolarDeclinationEntry" title="Link to this definition">¶</a></dt>
+        <dd><p>Solar declination entry computed by Ptolemy’s <em>Almagest</em> I.14 Spherical Menelaus rule.</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.menelaus_sphaerica.SolarDeclinationEntry.longitude_deg">
+        <span class="sig-name descname"><span class="pre">longitude_deg</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></span><a class="headerlink" href="#geometor.ptolemy.menelaus_sphaerica.SolarDeclinationEntry.longitude_deg" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.menelaus_sphaerica.SolarDeclinationEntry.crd_2lambda">
+        <span class="sig-name descname"><span class="pre">crd_2lambda</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.ptolemy.menelaus_sphaerica.SolarDeclinationEntry.crd_2lambda" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.menelaus_sphaerica.SolarDeclinationEntry.crd_2delta_sexagesimal">
+        <span class="sig-name descname"><span class="pre">crd_2delta_sexagesimal</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../pentagon_chords/index.html#geometor.ptolemy.pentagon_chords.Sexagesimal" title="geometor.ptolemy.pentagon_chords.Sexagesimal"><span class="pre">geometor.ptolemy.pentagon_chords.Sexagesimal</span></a></span><a class="headerlink" href="#geometor.ptolemy.menelaus_sphaerica.SolarDeclinationEntry.crd_2delta_sexagesimal" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.menelaus_sphaerica.SolarDeclinationEntry.declination_deg_sexagesimal">
+        <span class="sig-name descname"><span class="pre">declination_deg_sexagesimal</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../pentagon_chords/index.html#geometor.ptolemy.pentagon_chords.Sexagesimal" title="geometor.ptolemy.pentagon_chords.Sexagesimal"><span class="pre">geometor.ptolemy.pentagon_chords.Sexagesimal</span></a></span><a class="headerlink" href="#geometor.ptolemy.menelaus_sphaerica.SolarDeclinationEntry.declination_deg_sexagesimal" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.ptolemy.menelaus_sphaerica.SolarDeclinationEntry.heiberg_declination">
+        <span class="sig-name descname"><span class="pre">heiberg_declination</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../pentagon_chords/index.html#geometor.ptolemy.pentagon_chords.Sexagesimal" title="geometor.ptolemy.pentagon_chords.Sexagesimal"><span class="pre">geometor.ptolemy.pentagon_chords.Sexagesimal</span></a></span><a class="headerlink" href="#geometor.ptolemy.menelaus_sphaerica.SolarDeclinationEntry.heiberg_declination" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.ptolemy.menelaus_sphaerica.compute_solar_declination">
+        <span class="sig-prename descclassname"><span class="pre">geometor.ptolemy.menelaus_sphaerica.</span></span><span class="sig-name descname"><span class="pre">compute_solar_declination</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">longitude_deg</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.ptolemy.menelaus_sphaerica.SolarDeclinationEntry" title="geometor.ptolemy.menelaus_sphaerica.SolarDeclinationEntry"><span class="pre">SolarDeclinationEntry</span></a></span></span><a class="headerlink" href="#geometor.ptolemy.menelaus_sphaerica.compute_solar_declination" title="Link to this definition">¶</a></dt>
+        <dd><p>Compute Ptolemy’s <em>Almagest</em> I.14–I.15 solar declination for $\lambda \in \{30^\circ, 60^\circ, 90^\circ\}$.</p>
+        <p>Reproduces Heiberg 1898, Vol. I.1, pp. 77-78 verbatim:
+        With obliquity $2\varepsilon = \frac{11}{83} \cdot 360^\circ = 47^\circ 42' 40''$
+        and Ptolemy’s chord $\operatorname{crd}(2\varepsilon) = 48;31,55$, Menelaus’s theorem gives:</p>
+        <p>$$\operatorname{crd}(2\delta) = \frac{\operatorname{crd}(2\varepsilon) \cdot \operatorname{crd}(2\lambda)}{120}$$</p>
+        <p>yielding $\delta(30^\circ) \approx 11^\circ 40'$ (Heiberg p. 78, l. 12: $\overline{\iota\alpha}\ \overline{\mu}$)
+        and $\delta(60^\circ) \approx 20^\circ 30' 9''$ (Heiberg p. 78, l. 24: $\overline{\kappa}\ \overline{\lambda}\ \overline{\theta}$).</p>
+        </dd></dl>
+
+        </section>
+        </section>
+
+      </div>
+      <footer class="book-footer">
+        <div class="book-footer-ornament">&#10086;</div>
+        <div class="book-footer-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../cyclic_quadrilateral/index.html" title="geometor.ptolemy.cyclic_quadrilateral">&larr; <span class="nav-label">geometor.ptolemy.cyclic_quadrilateral</span></a>
+          </div>
+          <div class="book-nav-center">
+            <a class="book-toc-link" href="../../../../../index.html">GEOMETOR • ptolemy</a>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../stereographic/index.html" title="geometor.ptolemy.stereographic"><span class="nav-label">geometor.ptolemy.stereographic</span> &rarr;</a>
+          </div>
+        </div>
+      </footer>
+    </article>
+  </main>
+  <div class="asides">
+    <aside class="aside-search">
+      <h3>Search</h3>
+      <div id="searchbox" role="search">
+        <form id="rtd-search-form" class="wy-form search-form" action="../../../../../search.html" method="get">
+          <div class="search-field">
+            <input type="search" name="q" placeholder="Search docs..." aria-label="Search docs" autocomplete="off" />
+            <button type="submit" class="search-submit" aria-label="Search" title="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+      </div>
+    </aside>
+  </div>
+  <footer>
+    <hr />
+    <div role="contentinfo">
+      <p>
+        &copy; Copyright c. 150 CE · 1898 / 1907 Teubner · Digital Codex GEOMETOR.
+      </p>
+    </div>
+  </footer>
+
+  <script src="../../../../../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../../../../../_static/documentation_options.js?v=01f34227"></script>
+  <script src="../../../../../_static/doctools.js?v=fd6eb6e6"></script>
+  <script src="../../../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+  <script src="../../../../../_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="../../../../../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script src="../../../../../_static/js/search_highlight.js"></script>
+
+</body>
+</html>

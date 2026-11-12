@@ -1,0 +1,277 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-content_root="../../">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Unit IV · Planisphaerium: Stereographic Projection &amp; Astrolabe Geometry &mdash; Syntaxis Mathematica (Lib. I) &amp; Planisphaerium</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=66998e95" />
+  <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" type="text/css" href="../../_static/ptolemy_greek.css?v=de4239ee" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="../../_static/css/print.css" type="text/css" media="print" />
+  <link rel="icon" href="../../_static/favicon.ico" />
+</head>
+
+<body class="is-book-page book-theme-classical-serif">
+  <header>
+    <div class="logo">
+      <a href="../../index.html">
+        <h1>GEOMETOR • ptolemy</h1>
+      </a>
+      <div class="org-repo">
+        <span class="org">GEOMETOR</span>
+        •
+        <span class="repo">ptolemy</span>
+      </div>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../index.html" class="is-active" aria-selected="true" >Almagest I & Planisphaerium</a>
+        </li>
+        <li>
+          <a href="../../demos/index.html"  >Symbolic Demonstrations</a>
+        </li>
+        <li>
+          <a href="../../modules/index.html"  >Modules</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main class="book-main">
+    <article class="book-layout book-reading-pane">
+      <header class="book-header">
+        <div class="book-header-bar">
+          <div class="book-header-identity">
+            <a class="book-portal-link" href="../../index.html" title="Return to Project Portal">&larr; ptolemy</a>
+            <span class="book-header-sep">/</span>
+            <a class="book-title-link" href="../index.html">Syntaxis Mathematica (Lib. I) & Planisphaerium</a>
+          </div>
+        </div>
+        <div class="book-header-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../unit-3-menelaus-sphaerica/unit-3-menelaus-sphaerica-en.html" title="Unit III · Table of Chords, Ecliptic Obliquity &amp; Menelaus Sphaerica">&larr; <span class="nav-label">Prev</span></a>
+          </div>
+          <div class="book-nav-center">
+            <nav class="book-tracks-nav" aria-label="Document Tracks">
+              <strong class="book-track-item is-active" aria-current="page">English</strong>
+              <span class="book-track-sep">&middot;</span>
+              <a class="book-track-item" href="unit-4-planisphaerium-la.html">Latin</a>
+              <span class="book-track-sep">&middot;</span>
+              <a class="book-track-item" href="unit-4-planisphaerium-summary.html">Summary</a>
+              <span class="book-track-sep">&middot;</span>
+              <a class="book-track-item" href="unit-4-planisphaerium-notes.html">Notes</a>
+            </nav>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../concordance.html" title="Cross-Corpus Geometric Concordance"><span class="nav-label">Next</span> &rarr;</a>
+          </div>
+        </div>
+      </header>
+      <div class="content body book-content folio-book-page" role="main">
+        <section class="level-1" id="unit-iv-planisphaerium-stereographic-projection-astrolabe-geometry">
+        <span id="unit-4-planisphaerium-en"></span><h1>Unit IV · Planisphaerium: Stereographic Projection &amp; Astrolabe Geometry<a class="headerlink" href="#unit-iv-planisphaerium-stereographic-projection-astrolabe-geometry" title="Link to this heading">¶</a></h1>
+        <section class="level-2" id="planisphaerium-sections-14-heiberg-1907-vol-ii-pp-227234">
+        <h2><em>Planisphaerium</em>, Sections 1–4 (<a class="citation-ref" id="occ-cite-heiberg-1907-1" href="../bibliography.html#cite-heiberg-1907" data-cite="heiberg:1907" title="J. L. Heiberg (ed.) — Claudii Ptolemaei Opera quae exstant omnia, Vol. II: Opera Astronomica Minora (Leipzig: B. G. Teubner, 1907, pp. 225–259)">Heiberg 1907, Vol. II, pp. 227–234</a>)<a class="headerlink" href="#planisphaerium-sections-14-heiberg-1907-vol-ii-pp-227234" title="Link to this heading">¶</a></h2>
+        <section class="level-4" id="section-1-stereographic-projection-of-equator-tropics-ecliptic-heiberg-ii-pp-227229">
+        <h4>Section 1 · Stereographic Projection of Equator, Tropics &amp; Ecliptic (<cite>Heiberg II, pp. 227–229</cite>)<a class="headerlink" href="#section-1-stereographic-projection-of-equator-tropics-ecliptic-heiberg-ii-pp-227229" title="Link to this heading">¶</a></h4>
+        <figure class="photon-picture photon-svg">
+            <svg class="euclid-graphic" data-graphic-id="fig09_planisphaerium_stereographic_astrolabe" xmlns="http://www.w3.org/2000/svg" class="euclid-graphic" viewBox="0 0 740 420" role="img" aria-label="Planisphaerium Stereographic Projection and Astrolabe Plate">
+          <defs>
+            <marker id="geom-tick-1" viewBox="-2 -6 4 12" refX="0" refY="0" markerWidth="4" markerHeight="12" orient="auto">
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" stroke="currentColor" stroke-width="1.35" stroke-linecap="round"/>
+            </marker>
+            <marker id="geom-tick-2" viewBox="-4 -6 8 12" refX="0" refY="0" markerWidth="8" markerHeight="12" orient="auto">
+              <line x1="-1.8" y1="-4.5" x2="-1.8" y2="4.5" stroke="currentColor" stroke-width="1.35" stroke-linecap="round"/>
+              <line x1="1.8" y1="-4.5" x2="1.8" y2="4.5" stroke="currentColor" stroke-width="1.35" stroke-linecap="round"/>
+            </marker>
+            <marker id="geom-tick-3" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" orient="auto">
+              <line x1="-3.4" y1="-4.5" x2="-3.4" y2="4.5" stroke="currentColor" stroke-width="1.35" stroke-linecap="round"/>
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" stroke="currentColor" stroke-width="1.35" stroke-linecap="round"/>
+              <line x1="3.4" y1="-4.5" x2="3.4" y2="4.5" stroke="currentColor" stroke-width="1.35" stroke-linecap="round"/>
+            </marker>
+          </defs>
+          <g id="elements">
+            <circle class="geom-circle" cx="180.00" cy="210.00" r="110.00" fill="none" data-ref="sphereCross" stroke-width="1.80"/>
+            <path class="geom-line" d="M 28.00 210.00 L 191.50 210.00 L 355.00 210.00" fill="none" data-ref="planeEq" stroke="var(--geom-assert, #2563eb)" stroke-width="1.90"/>
+            <path class="geom-dashed" d="M 180.00 100.00 L 180.00 210.00 L 180.00 320.00" fill="none" data-ref="axisNS" stroke-dasharray="4 4"/>
+            <path class="geom-line" d="M 79.40 165.50 L 180.00 210.00 L 280.60 254.50" fill="none" data-ref="eclConeDiam" stroke="var(--geom-accent, #d97706)" stroke-width="2.00"/>
+            <path class="geom-dashed" d="M 180.00 320.00 L 144.19 265.00 L 108.37 210.00" fill="none" data-ref="rayCan" stroke="var(--geom-assert, #2563eb)" stroke-width="1.50" stroke-dasharray="5 4"/>
+            <path class="geom-dashed" d="M 180.00 320.00 L 264.47 265.00 L 348.93 210.00" fill="none" data-ref="rayCap" stroke="var(--geom-accent, #d97706)" stroke-width="1.50" stroke-dasharray="5 4"/>
+            <circle class="geom-dashed" cx="545.00" cy="215.00" r="139.50" fill="none" data-ref="cKM" stroke-width="1.50" stroke-dasharray="5 4"/>
+            <circle class="geom-circle" cx="545.00" cy="215.00" r="93.00" fill="none" data-ref="cABGD" stroke="var(--geom-assert, #2563eb)" stroke-width="1.90"/>
+            <circle class="geom-dashed" cx="545.00" cy="215.00" r="62.00" fill="none" data-ref="cTL" stroke="var(--geom-assert, #2563eb)" stroke-width="1.50" stroke-dasharray="4 3"/>
+            <circle class="geom-bold" cx="545.00" cy="176.25" r="100.75" fill="none" data-ref="cMBTD" stroke="var(--geom-accent, #d97706)" stroke-width="2.50"/>
+            <path class="geom-line" d="M 545.00 75.50 L 545.00 215.00 L 545.00 354.50" fill="none" data-ref="MK" stroke-width="1.40"/>
+            <path class="geom-line" d="M 452.00 215.00 L 545.00 215.00 L 638.00 215.00" fill="none" data-ref="BD_ast" stroke-width="1.40"/>
+            <path class="geom-dashed" d="M 545.00 75.50 L 591.50 145.25 L 638.00 215.00" fill="none" data-ref="MD" stroke="var(--geom-accent, #d97706)" stroke-width="1.50" stroke-dasharray="4 3"/>
+            <path class="geom-dashed" d="M 545.00 277.00 L 591.50 246.00 L 638.00 215.00" fill="none" data-ref="TD" stroke="var(--geom-accent, #d97706)" stroke-width="1.50" stroke-dasharray="4 3"/>
+          </g>
+          <g id="graphics">
+            <path class="geom-ang-arc" d="M 632.45 206.68 L 624.13 212.23 L 629.68 220.55" fill="none" stroke="var(--geom-muted, #64748b)" stroke-width="1.25" data-ref="angMDT"/>
+          </g>
+          <g id="highlights">
+            <polygon class="geom-polygon" points="545.00,75.50 638.00,215.00 545.00,277.00" fill="var(--geom-accent, #d97706)" fill-opacity="0.09" stroke="none" data-ref="triMDT"/>
+          </g>
+          <g id="points">
+            <circle class="geom-point" cx="180.00" cy="320.00" r="3.60" data-ref="S"/>
+            <circle class="geom-point" cx="180.00" cy="100.00" r="3.60" data-ref="N_pole"/>
+            <circle class="geom-point" cx="180.00" cy="210.00" r="3.60" data-ref="E_cross"/>
+            <circle class="geom-point" cx="70.00" cy="210.00" r="3.60" data-ref="B_cross"/>
+            <circle class="geom-point" cx="290.00" cy="210.00" r="3.60" data-ref="D_cross"/>
+            <circle class="geom-point" cx="108.37" cy="210.00" r="3.60" data-ref="T_cross"/>
+            <circle class="geom-point" cx="348.93" cy="210.00" r="3.60" data-ref="M_cross"/>
+            <circle class="geom-point" cx="545.00" cy="215.00" r="3.60" data-ref="E"/>
+            <circle class="geom-point" cx="545.00" cy="122.00" r="3.60" data-ref="A"/>
+            <circle class="geom-point" cx="545.00" cy="308.00" r="3.60" data-ref="G"/>
+            <circle class="geom-point" cx="452.00" cy="215.00" r="3.60" data-ref="B"/>
+            <circle class="geom-point" cx="638.00" cy="215.00" r="3.60" data-ref="D"/>
+            <circle class="geom-point" cx="545.00" cy="153.00" r="3.60" data-ref="L"/>
+            <circle class="geom-point" cx="545.00" cy="277.00" r="3.60" data-ref="T"/>
+            <circle class="geom-point" cx="545.00" cy="75.50" r="3.60" data-ref="M"/>
+            <circle class="geom-point" cx="545.00" cy="354.50" r="3.60" data-ref="K"/>
+            <circle class="geom-point" cx="545.00" cy="176.25" r="3.60" data-ref="R"/>
+          </g>
+          <g id="labels">
+            <text class="geom-label" x="180.00" y="336.00" text-anchor="middle" dominant-baseline="central" style="font-style: italic; font-size: 12px;" data-ref="S">South Pole</text>
+            <text class="geom-label" x="180.00" y="85.00" text-anchor="middle" dominant-baseline="central" style="font-style: italic; font-size: 12px;" data-ref="N_pole">North Pole</text>
+            <text class="geom-label" x="170.00" y="224.00" text-anchor="middle" dominant-baseline="central" style="font-style: italic; font-size: 12px;" data-ref="E_cross">e</text>
+            <text class="geom-label" x="58.00" y="198.00" text-anchor="middle" dominant-baseline="central" style="font-style: italic; font-size: 12px;" data-ref="B_cross">b</text>
+            <text class="geom-label" x="300.00" y="198.00" text-anchor="middle" dominant-baseline="central" style="font-style: italic; font-size: 12px;" data-ref="D_cross">d</text>
+            <text class="geom-label" x="108.37" y="226.00" text-anchor="middle" dominant-baseline="central" style="font-style: italic; font-size: 12px;" data-ref="T_cross">t (r_Can)</text>
+            <text class="geom-label" x="354.93" y="195.00" text-anchor="middle" dominant-baseline="central" style="font-style: italic; font-size: 12px;" data-ref="M_cross">m (r_Cap)</text>
+            <text class="geom-label" x="190.00" y="388.00" text-anchor="middle" style="font-size: 13px; opacity: 0.82;">I. Stereographic Section from South Pole (et · em = ed²)</text>
+            <text class="geom-label" x="535.00" y="227.00" text-anchor="middle" dominant-baseline="central" style="font-style: italic; font-size: 13px;" data-ref="E">e</text>
+            <text class="geom-label" x="534.00" y="113.00" text-anchor="middle" dominant-baseline="central" style="font-style: italic; font-size: 13px;" data-ref="A">a</text>
+            <text class="geom-label" x="534.00" y="319.00" text-anchor="middle" dominant-baseline="central" style="font-style: italic; font-size: 13px;" data-ref="G">g</text>
+            <text class="geom-label" x="438.00" y="206.00" text-anchor="middle" dominant-baseline="central" style="font-style: italic; font-size: 13px;" data-ref="B">b</text>
+            <text class="geom-label" x="652.00" y="206.00" text-anchor="middle" dominant-baseline="central" style="font-style: italic; font-size: 13px;" data-ref="D">d</text>
+            <text class="geom-label" x="556.00" y="146.00" text-anchor="middle" dominant-baseline="central" style="font-style: italic; font-size: 13px;" data-ref="L">l</text>
+            <text class="geom-label" x="556.00" y="286.00" text-anchor="middle" dominant-baseline="central" style="font-style: italic; font-size: 13px;" data-ref="T">t</text>
+            <text class="geom-label" x="558.00" y="67.50" text-anchor="middle" dominant-baseline="central" style="font-style: italic; font-size: 13px;" data-ref="M">m</text>
+            <text class="geom-label" x="558.00" y="362.50" text-anchor="middle" dominant-baseline="central" style="font-style: italic; font-size: 13px;" data-ref="K">k</text>
+            <text class="geom-label" x="556.00" y="176.25" text-anchor="middle" dominant-baseline="central" style="font-style: italic; font-size: 13px;" data-ref="R">r</text>
+            <text class="geom-label" x="545.00" y="388.00" text-anchor="middle" style="font-size: 13px; opacity: 0.82;">II. Astrolabe Plate: Equator abgd, Tropics tl & km, Ecliptic mbtd</text>
+          </g>
+        </svg>
+        </figure>
+        <p><sup class="line-num" data-line="p. 227">p. 227</sup> Since it is possible, O <a class="person-ref" id="occ-person-syrus-1" href="../persons.html#person-syrus" data-person="syrus" title="Syrus (Σύρος) (fl. mid-2nd century CE) — Dedicatee of Ptolemy&#x27;s Almagest, Planisphaerium, and Tetrabiblos">Syrus</a> (<em>Jesure</em>), and frequently necessary, that the circles occurring upon the solid sphere be represented in a flat plane just as if it actually were flat, in harmony with those things demonstrated upon the solid sphere, I judged it essential to investigate this method of construction as well.</p>
+        <p>Its principle rests upon placing <strong>one single circle</strong>, <span class="geom-ref" data-ref="cABGD" title="cABGD">abgd</span>, in place of the <strong>celestial equator</strong> (<em>qui rectam speram determinat</em>), described around center <span class="geom-ref" data-ref="E" title="E">e</span>, which takes the place of the <strong>visible [North] Pole</strong> (<em>manifesti poli</em>). Through the center we draw two diameters cutting one another at right angles, <span class="geom-ref" data-ref="MK" title="MK">ag</span> and <span class="geom-ref" data-ref="BD_ast" title="BD_ast">bd</span>, representing two great circles drawn through the poles perpendicular both to the equator and to one another (<em>the solstitial and equinoctial colures</em>).</p>
+        <p>Next, every circle parallel to the equator—because all points along its circumference maintain an equal distance from the poles—will likewise be described in the plane around the same center <span class="geom-ref" data-ref="E" title="E">e</span>, at distances cut off by visual rays drawn <strong>from the hidden [South] Pole</strong> (<span class="geom-ref" data-ref="S" title="S">South Pole</span>):</p>
+        <ul class="simple">
+        <li><p>Circles on the sphere lying toward the <strong>visible [North] Pole</strong> (such as the <strong>Tropic of Cancer</strong>) fall <strong>inside</strong> the equatorial circle <span class="geom-ref" data-ref="cABGD" title="cABGD">abgd</span>, because straight lines drawn from the South Pole through northern parallels meet the equatorial plane closer to <span class="geom-ref" data-ref="E" title="E">e</span> (<span class="geom-ref" data-ref="cTL" title="cTL">tl</span>).</p></li>
+        <li><p>Circles on the sphere lying toward the <strong>hidden [South] Pole</strong> (such as the <strong>Tropic of Capricorn</strong>) fall <strong>outside</strong> the equatorial circle <span class="geom-ref" data-ref="cABGD" title="cABGD">abgd</span>, because rays from the South Pole through southern parallels diverge outward before piercing the extended equatorial plane (<span class="geom-ref" data-ref="cKM" title="cKM">km</span>).</p></li>
+        </ul>
+        <p><sup class="line-num" data-line="p. 228">p. 228</sup> <strong>Theorem (The Projected Oblique Zodiacal Circle Bisects the Equator).</strong> Now let <span class="geom-ref" data-ref="cTL" title="cTL">tl</span> be the parallel nearest the visible pole (Cancer) and <span class="geom-ref" data-ref="cKM" title="cKM">km</span> the parallel nearest the hidden pole (Capricorn), cut by meridian <span class="geom-ref" data-ref="MK" title="MK">km</span> at <span class="geom-ref" data-ref="T" title="T">t</span>, <span class="geom-ref" data-ref="L" title="L">l</span>, <span class="geom-ref" data-ref="K" title="K">k</span>, and <span class="geom-ref" data-ref="M" title="M">m</span>. Bisect segment <span class="geom-ref" data-ref="MK" title="MK">tm</span> at center <span class="geom-ref" data-ref="R" title="R">r</span>, and with radius <cite>rm = rt</cite> describe the <a class="term-ref glossary-term" id="occ-term-circulus-declivis-1" href="../glossary.html#term-circulus-declivis" data-term="circulus-declivis" title="circulus declivis / signifer (oblique / zodiacal circle (projected ecliptic)): Hermann of Carinthia&#x27;s Latin term in Planisphaerium §1 for the ecliptic circle, projected onto the equatorial plane as an eccentric circle on diameter tm tangent to the Tropics of Cancer and Capricorn and bisecting the equator at b and d.">oblique zodiacal circle</a> <span class="geom-ref" data-ref="cMBTD" title="cMBTD">mbtd</span>, tangent to the summer tropic at <span class="geom-ref" data-ref="T" title="T">t</span> and to the winter tropic at <span class="geom-ref" data-ref="M" title="M">m</span>. <strong>I say that this circle passes directly through points</strong> <span class="geom-ref" data-ref="B" title="B">b</span> <strong>and</strong> <span class="geom-ref" data-ref="D" title="D">d</span>, <strong>thereby bisecting the equatorial circle</strong> <span class="geom-ref" data-ref="cABGD" title="cABGD">abgd</span> <strong>in the plane just as the ecliptic bisects the equator on the solid sphere.</strong></p>
+        <p><em>Demonstration.</em> Fold the meridian circle onto the plane so that <span class="geom-ref" data-ref="D" title="D">d</span> serves as the South Pole of projection while <span class="geom-ref" data-ref="B" title="B">b</span> serves as the North Pole, and draw straight rays from <span class="geom-ref" data-ref="D" title="D">d</span> to <span class="geom-ref" data-ref="M" title="M">m</span> (<span class="geom-ref" data-ref="MD" title="MD">dm</span>) and to <span class="geom-ref" data-ref="T" title="T">t</span> (<span class="geom-ref" data-ref="TD" title="TD">dt</span>):</p>
+        <ol class="arabic simple">
+        <li><p>On the meridian circle, the summer solstice and winter solstice are diametrically opposite on the sphere; hence the arc intercepted between the two solstitial points across the circumference is a <strong>semicircle</strong> ($180^\circ$).</p></li>
+        <li><p>Therefore, by <span class="justification" data-ref-target="III.31" title="III.31">Eucl. III.31</span>, the inscribed angle <span class="geom-ref" data-ref="angMDT" title="angMDT">∠mdt</span> subtending that diameter at pole <span class="geom-ref" data-ref="D" title="D">d</span> is a <strong>right angle</strong> (<cite>angulum mdt rectum esse</cite>)!</p></li>
+        <li><p>Consequently, in the right-angled triangle <span class="geom-ref" data-ref="triMDT" title="triMDT">mdt</span> with hypotenuse <cite>tm</cite> bisected at <span class="geom-ref" data-ref="R" title="R">r</span>, the circle described on diameter <cite>tm</cite> around center <span class="geom-ref" data-ref="R" title="R">r</span> <strong>must pass through the right-angled vertex</strong> <span class="geom-ref" data-ref="D" title="D">d</span>—and by symmetry across diameter <cite>km</cite>, through the opposite equinoctial point <span class="geom-ref" data-ref="B" title="B">b</span>!</p></li>
+        </ol>
+        </section>
+        <section class="level-4" id="sections-23-the-horizon-inclined-great-circles-heiberg-ii-pp-229232">
+        <h4>Sections 2–3 · The Horizon &amp; Inclined Great Circles (<cite>Heiberg II, pp. 229–232</cite>)<a class="headerlink" href="#sections-23-the-horizon-inclined-great-circles-heiberg-ii-pp-229232" title="Link to this heading">¶</a></h4>
+        <p><sup class="line-num" data-line="p. 229–232">p. 229–232</sup> By the identical right-angle principle, Ptolemy demonstrates in Sections 2 and 3 that <strong>every great circle inclined to the equator</strong>—in particular the local <strong>Horizon</strong> (<cite>circulus finitor</cite>) for any terrestrial latitude $\varphi$—projects stereographically onto an eccentric circle whose center lies along the meridian line and which <strong>bisects both the equatorial circle</strong> (at <cite>a</cite> and <cite>g</cite>) <strong>and the oblique zodiacal circle</strong> <span class="geom-ref" data-ref="cMBTD" title="cMBTD">mbtd</span> at two diametrically opposite ecliptic degrees (<cite>six signs always rising above the horizon and six below</cite>).</p>
+        </section>
+        <section class="level-4" id="section-4-circular-inversion-numerical-radii-from-the-almagest-heiberg-ii-pp-233234">
+        <h4>Section 4 · Circular Inversion &amp; Numerical Radii from the <em>Almagest</em> (<cite>Heiberg II, pp. 233–234</cite>)<a class="headerlink" href="#section-4-circular-inversion-numerical-radii-from-the-almagest-heiberg-ii-pp-233234" title="Link to this heading">¶</a></h4>
+        <p><sup class="line-num" data-line="p. 233">p. 233</sup> <strong>Theorem (Inversion of Opposite Parallels Across the Equator).</strong> Take any two parallel circles equally distant on opposite sides of the celestial equator—specifically the winter tropic radius <cite>ez</cite> ($= r_{\text{Cap}}$) and the summer tropic radius <cite>ek</cite> ($= r_{\text{Can}}$) along meridian <cite>eg</cite>. Because the stereographic rays from the South Pole form right-angled similar triangles sharing the equatorial radius <span class="geom-ref" data-ref="BD_ast" title="BD_ast">ed</span> ($= R_{\text{eq}}$) as geometric mean:</p>
+        <p>$$\frac{ez}{ed} = \frac{ed}{ek}
+        \quad\Longleftrightarrow\quad
+        r_{\text{Cap}} \cdot r_{\text{Can}} = R_{\text{eq}}^2.$$</p>
+        <p><sup class="line-num" data-line="p. 234">p. 234</sup> <strong>Explicit Sexagesimal Evaluation Citing the *Almagest*.</strong> Ptolemy now inserts his own <em>Almagest</em> I.12 obliquity and I.11 chord values (”<em>quemadmodum in Almagesti constitutum est</em>”) to compute the exact dimensions of an astrolabe plate of equatorial radius $R_{\text{eq}} = ed = 60^p$:</p>
+        <ul>
+        <li><p>Tropical distance from the equator: $\varepsilon = 23^\circ 51' 20''$ (<cite>partibus XXIII punctis LI secundis XX</cite>).</p></li>
+        <li><p>Supplementary colure arcs: $90^\circ + \varepsilon = 113^\circ 51' 20''$, with supplement $90^\circ - \varepsilon = 66^\circ 8' 40''$.</p></li>
+        <li><p>Corresponding <em>Almagest</em> chords ($D = 120^p$):</p>
+        <p>$$\operatorname{crd}(113^\circ 51' 20'') = 100;33,28^p, \qquad \operatorname{crd}(66^\circ 8' 40'') = 65;29,0^p.$$</p>
+        </li>
+        <li><p>Since $ez : ed = ed : ek = 100;33,28 : 65;29,0$ and $ed = 60^p$, Ptolemy obtains:</p>
+        <ol class="arabic">
+        <li><p><strong>Winter Tropic (Capricorn) Radius</strong>:</p>
+        <p>$$r_{\text{Cap}} = ez = 92;8,15^p \qquad (\text{Latin: }\textit{partibus XCII puncta VIII secunde XV}).$$</p>
+        </li>
+        <li><p><strong>Summer Tropic (Cancer) Radius</strong>:</p>
+        <p>$$r_{\text{Can}} = ek = 39;4,19^p \qquad (\text{Latin: }\textit{partes XXXIX puncta IIII secunde XVIIII}).$$</p>
+        </li>
+        <li><p><strong>Total Diameter of the Projected Ecliptic (`tm = ez + ek`)</strong>:</p>
+        <p>$$D_{\text{ecl}} = 92;8,15^p + 39;4,19^p = 131;12,34^p, \qquad R_{\text{ecl}} = 65;36,17^p,$$</p>
+        <p>with inversion check $92;8,15 \times 39;4,19 = 3599.991 \approx 3600 = 60^2$!</p>
+        </li>
+        </ol>
+        </li>
+        </ul>
+        </section>
+        </section>
+        </section>
+
+      </div>
+      <footer class="book-footer">
+        <div class="book-footer-ornament">&#10086;</div>
+        <div class="book-footer-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../unit-3-menelaus-sphaerica/unit-3-menelaus-sphaerica-en.html" title="Unit III · Table of Chords, Ecliptic Obliquity &amp; Menelaus Sphaerica">&larr; <span class="nav-label">Unit III · Table of Chords, Ecliptic Obliquity & Menelaus Sphaerica</span></a>
+          </div>
+          <div class="book-nav-center">
+            <a class="book-toc-link" href="../index.html">Syntaxis Mathematica (Lib. I) & Planisphaerium</a>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../concordance.html" title="Cross-Corpus Geometric Concordance"><span class="nav-label">Cross-Corpus Geometric Concordance</span> &rarr;</a>
+          </div>
+        </div>
+      </footer>
+    </article>
+  </main>
+  <div class="asides">
+    <aside class="aside-search">
+      <h3>Search</h3>
+      <div id="searchbox" role="search">
+        <form id="rtd-search-form" class="wy-form search-form" action="../../search.html" method="get">
+          <div class="search-field">
+            <input type="search" name="q" placeholder="Search docs..." aria-label="Search docs" autocomplete="off" />
+            <button type="submit" class="search-submit" aria-label="Search" title="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+      </div>
+    </aside>
+  </div>
+  <footer>
+    <hr />
+    <div role="contentinfo">
+      <p>
+        &copy; Copyright c. 150 CE · 1898 / 1907 Teubner · Digital Codex GEOMETOR.
+      </p>
+    </div>
+  </footer>
+
+  <script src="../../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../../_static/documentation_options.js?v=01f34227"></script>
+  <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+  <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+  <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="../../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script src="../../_static/js/search_highlight.js"></script>
+
+</body>
+</html>

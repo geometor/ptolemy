@@ -1,0 +1,444 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-content_root="../../">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Unit II · Ptolemy’s Theorem on Cyclic Quadrilaterals &amp; Chord Calculus &mdash; Syntaxis Mathematica (Lib. I) &amp; Planisphaerium</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=66998e95" />
+  <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" type="text/css" href="../../_static/ptolemy_greek.css?v=de4239ee" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="../../_static/css/print.css" type="text/css" media="print" />
+  <link rel="icon" href="../../_static/favicon.ico" />
+</head>
+
+<body class="is-book-page book-theme-classical-serif">
+  <header>
+    <div class="logo">
+      <a href="../../index.html">
+        <h1>GEOMETOR • ptolemy</h1>
+      </a>
+      <div class="org-repo">
+        <span class="org">GEOMETOR</span>
+        •
+        <span class="repo">ptolemy</span>
+      </div>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../index.html" class="is-active" aria-selected="true" >Almagest I & Planisphaerium</a>
+        </li>
+        <li>
+          <a href="../../demos/index.html"  >Symbolic Demonstrations</a>
+        </li>
+        <li>
+          <a href="../../modules/index.html"  >Modules</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main class="book-main">
+    <article class="book-layout book-reading-pane">
+      <header class="book-header">
+        <div class="book-header-bar">
+          <div class="book-header-identity">
+            <a class="book-portal-link" href="../../index.html" title="Return to Project Portal">&larr; ptolemy</a>
+            <span class="book-header-sep">/</span>
+            <a class="book-title-link" href="../index.html">Syntaxis Mathematica (Lib. I) & Planisphaerium</a>
+          </div>
+        </div>
+        <div class="book-header-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../unit-1-pentagon-decagon/unit-1-pentagon-decagon-en.html" title="Unit I · Cosmic Preliminaries &amp; Golden Pentagon–Decagon Construction">&larr; <span class="nav-label">Prev</span></a>
+          </div>
+          <div class="book-nav-center">
+            <nav class="book-tracks-nav" aria-label="Document Tracks">
+              <strong class="book-track-item is-active" aria-current="page">English</strong>
+              <span class="book-track-sep">&middot;</span>
+              <a class="book-track-item" href="unit-2-ptolemy-chords-el.html">Greek (1898)</a>
+              <span class="book-track-sep">&middot;</span>
+              <a class="book-track-item" href="unit-2-ptolemy-chords-summary.html">Summary</a>
+              <span class="book-track-sep">&middot;</span>
+              <a class="book-track-item" href="unit-2-ptolemy-chords-notes.html">Notes</a>
+            </nav>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../unit-3-menelaus-sphaerica/unit-3-menelaus-sphaerica-en.html" title="Unit III · Table of Chords, Ecliptic Obliquity &amp; Menelaus Sphaerica"><span class="nav-label">Next</span> &rarr;</a>
+          </div>
+        </div>
+      </header>
+      <div class="content body book-content folio-book-page" role="main">
+        <section class="level-1" id="unit-ii-ptolemy-s-theorem-on-cyclic-quadrilaterals-chord-calculus">
+        <span id="unit-2-ptolemy-chords-en"></span><h1>Unit II · Ptolemy’s Theorem on Cyclic Quadrilaterals &amp; Chord Calculus<a class="headerlink" href="#unit-ii-ptolemy-s-theorem-on-cyclic-quadrilaterals-chord-calculus" title="Link to this heading">¶</a></h1>
+        <section class="level-2" id="almagest-book-i-chapter-10b-heiberg-1898-vol-i-1-pp-3646">
+        <h2><em>Almagest</em> Book I, Chapter 10b (<a class="citation-ref" id="occ-cite-heiberg-1898-1" href="../bibliography.html#cite-heiberg-1898" data-cite="heiberg:1898" title="J. L. Heiberg (ed.) — Claudii Ptolemaei Opera quae exstant omnia, Vol. I: Syntaxis Mathematica, Pars I (Libros I–VI continens) (Leipzig: B. G. Teubner, 1898)">Heiberg 1898, Vol. I.1, pp. 36–46</a>)<a class="headerlink" href="#almagest-book-i-chapter-10b-heiberg-1898-vol-i-1-pp-3646" title="Link to this heading">¶</a></h2>
+        <section class="level-4" id="ptolemy-s-theorem-on-cyclic-quadrilaterals-heiberg-i-pp-3637">
+        <h4>1. Ptolemy’s Theorem on Cyclic Quadrilaterals (<cite>Heiberg I, pp. 36–37</cite>)<a class="headerlink" href="#ptolemy-s-theorem-on-cyclic-quadrilaterals-heiberg-i-pp-3637" title="Link to this heading">¶</a></h4>
+        <p><sup class="line-num" data-line="p. 36">p. 36</sup> Having obtained these primary chords, the next step is to set forth the corollary that follows directly through the theorem we are about to write down, being most useful on every occasion:</p>
+        <figure class="photon-picture photon-svg">
+            <svg class="euclid-graphic" data-graphic-id="fig03_ptolemy_cyclic_quadrilateral" xmlns="http://www.w3.org/2000/svg" class="euclid-graphic" viewBox="0 0 540 440" role="img" aria-label="Almagest I.10b Ptolemy Theorem on Cyclic Quadrilaterals">
+          <defs>
+            <marker id="geom-tick-1" viewBox="-2 -6 4 12" refX="0" refY="0" markerWidth="4" markerHeight="12" orient="auto">
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" stroke="currentColor" stroke-width="1.35" stroke-linecap="round"/>
+            </marker>
+            <marker id="geom-tick-2" viewBox="-4 -6 8 12" refX="0" refY="0" markerWidth="8" markerHeight="12" orient="auto">
+              <line x1="-1.8" y1="-4.5" x2="-1.8" y2="4.5" stroke="currentColor" stroke-width="1.35" stroke-linecap="round"/>
+              <line x1="1.8" y1="-4.5" x2="1.8" y2="4.5" stroke="currentColor" stroke-width="1.35" stroke-linecap="round"/>
+            </marker>
+            <marker id="geom-tick-3" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" orient="auto">
+              <line x1="-3.4" y1="-4.5" x2="-3.4" y2="4.5" stroke="currentColor" stroke-width="1.35" stroke-linecap="round"/>
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" stroke="currentColor" stroke-width="1.35" stroke-linecap="round"/>
+              <line x1="3.4" y1="-4.5" x2="3.4" y2="4.5" stroke="currentColor" stroke-width="1.35" stroke-linecap="round"/>
+            </marker>
+          </defs>
+          <g id="elements">
+            <circle class="geom-circle" cx="270.00" cy="225.00" r="159.25" fill="none" data-ref="cABCD" stroke-width="1.80"/>
+            <path class="geom-line" d="M 110.75 225.00 L 134.31 168.46 L 157.87 111.92" fill="none" data-ref="AB" stroke-width="1.80"/>
+            <path class="geom-line" d="M 157.87 111.92 L 252.51 98.81 L 347.16 85.69" fill="none" data-ref="BC" stroke-width="1.80"/>
+            <path class="geom-line" d="M 347.16 85.69 L 330.87 231.78 L 314.59 377.88" fill="none" data-ref="CD" stroke-width="1.80"/>
+            <path class="geom-line" d="M 314.59 377.88 L 212.67 301.44 L 110.75 225.00" fill="none" data-ref="DA" stroke-width="1.80"/>
+            <path class="geom-bold" d="M 110.75 225.00 L 161.01 195.38 L 211.26 165.77" fill="none" data-ref="AE" stroke="var(--geom-accent, #d97706)" stroke-width="2.40"/>
+            <path class="geom-bold" d="M 211.26 165.77 L 279.21 125.73 L 347.16 85.69" fill="none" data-ref="EC" stroke="var(--geom-assert, #2563eb)" stroke-width="2.40"/>
+            <path class="geom-line" d="M 157.87 111.92 L 236.23 244.90 L 314.59 377.88" fill="none" data-ref="BD" stroke="var(--geom-assert, #2563eb)" stroke-width="1.90"/>
+            <path class="geom-dashed" d="M 157.87 111.92 L 184.56 138.85 L 211.26 165.77" fill="none" data-ref="BE" stroke="var(--geom-accent, #d97706)" stroke-width="1.90" stroke-dasharray="6 4"/>
+          </g>
+          <g id="graphics">
+            <path class="geom-ang-arc" d="M 147.10 137.77 A 28.00 28.00 0 0 0 177.58 131.80" fill="none" data-ref="angABE" stroke="var(--geom-accent, #d97706)" stroke-width="1.70"/>
+            <path class="geom-ang-arc" d="M 175.13 141.22 A 34.00 34.00 0 0 0 191.54 107.26" fill="none" data-ref="angDBC" stroke="var(--geom-accent, #d97706)" stroke-width="1.70"/>
+          </g>
+          <g id="highlights">
+            <polygon class="geom-polygon" points="110.75,225.00 157.87,111.92 211.26,165.77" fill="var(--geom-accent, #d97706)" fill-opacity="0.14" stroke="none" data-ref="triABE"/>
+            <polygon class="geom-polygon" points="314.59,377.88 157.87,111.92 347.16,85.69" fill="var(--geom-assert, #2563eb)" fill-opacity="0.10" stroke="none" data-ref="triDBC"/>
+          </g>
+          <g id="points">
+            <circle class="geom-point" cx="110.75" cy="225.00" r="3.60" data-ref="A"/>
+            <circle class="geom-point" cx="157.87" cy="111.92" r="3.60" data-ref="B"/>
+            <circle class="geom-point" cx="347.16" cy="85.69" r="3.60" data-ref="C"/>
+            <circle class="geom-point" cx="314.59" cy="377.88" r="3.60" data-ref="D"/>
+            <circle class="geom-point" cx="211.26" cy="165.77" r="3.60" data-ref="E"/>
+          </g>
+          <g id="labels">
+            <text class="geom-label" x="94.75" y="227.00" text-anchor="middle" dominant-baseline="central" style="font-style: italic; font-size: 15px;" data-ref="A">A</text>
+            <text class="geom-label" x="143.87" y="99.92" text-anchor="middle" dominant-baseline="central" style="font-style: italic; font-size: 15px;" data-ref="B">B</text>
+            <text class="geom-label" x="369.16" y="73.69" text-anchor="middle" dominant-baseline="central" style="font-style: italic; font-size: 14px;" data-ref="C">Γ (C)</text>
+            <text class="geom-label" x="336.59" y="389.88" text-anchor="middle" dominant-baseline="central" style="font-style: italic; font-size: 14px;" data-ref="D">Δ (D)</text>
+            <text class="geom-label" x="207.26" y="182.77" text-anchor="middle" dominant-baseline="central" style="font-style: italic; font-size: 15px;" data-ref="E">E</text>
+          </g>
+        </svg>
+        </figure>
+        <p><strong>Proposition (Ptolemy’s Theorem).</strong> Let there be any <a class="term-ref glossary-term" id="occ-term-tetragonon-eggegrammenon-1" href="../glossary.html#term-tetragonon-eggegrammenon" data-term="tetragonon-eggegrammenon" title="τετράπλευρον ἐν κύκλῳ ἐγγεγραμμένον (quadrilateral inscribed in a circle (cyclic quadrilateral)): A four-sided polygon whose vertices lie on a common circle; subject of Ptolemy&#x27;s Theorem (Almagest I.10, pp. 36–37) equating the rectangle of the diagonals to the sum of the rectangles of opposite sides.">quadrilateral inscribed in a circle</a>, <span class="geom-ref" data-ref="cABCD" title="cABCD">ΑΒΓΔ</span>, and let its diagonals <span class="geom-ref" data-ref="AE" title="AE">ΑΓ</span>–<span class="geom-ref" data-ref="EC" title="EC">Γ</span> and <span class="geom-ref" data-ref="BD" title="BD">ΒΔ</span> be joined. <strong>We must prove that the rectangle contained by</strong> <span class="geom-ref" data-ref="ΑΓ" title="ΑΓ">ΑΓ</span> <strong>and</strong> <span class="geom-ref" data-ref="ΒΔ" title="ΒΔ">ΒΔ</span> <strong>is equal to the sum of the rectangles contained by the opposite sides,</strong> <span class="geom-ref" data-ref="ΑΒ · ΔΓ" title="ΑΒ · ΔΓ">ΑΒ · ΔΓ</span> <strong>and</strong> <span class="geom-ref" data-ref="ΑΔ · ΒΓ" title="ΑΔ · ΒΓ">ΑΔ · ΒΓ</span>.</p>
+        <p><em>Construction.</em> Let angle <span class="geom-ref" data-ref="angABE" title="angABE">∠ΑΒΕ</span> be set out <span class="geom-eq-ref" data-assert-equal="angABE = angDBC" title="angABE = angDBC">equal to angle ∠ΔΒΓ</span> by drawing <span class="geom-ref" data-ref="BE" title="BE">ΒΕ</span> to meet diagonal <span class="geom-ref" data-ref="ΑΓ" title="ΑΓ">ΑΓ</span> at <span class="geom-ref" data-ref="E" title="E">Ε</span> (<span class="justification" data-ref-target="I.23" title="I.23">Eucl. I.23</span>).</p>
+        <p><sup class="line-num" data-line="p. 37">p. 37</sup> <em>Demonstration.</em> If to each of the equal angles <span class="geom-ref" data-ref="angABE" title="angABE">∠ΑΒΕ</span> and <span class="geom-ref" data-ref="angDBC" title="angDBC">∠ΔΒΓ</span> we add the common angle <cite>∠ΕΒΔ</cite>, then the whole angle <cite>∠ΑΒΔ</cite> is equal to the whole angle <cite>∠ΕΒΓ</cite>. Yet angle <cite>∠ΒΔΑ</cite> is also equal to angle <cite>∠ΒΓΕ</cite>, for they stand upon the same circumference <span class="geom-ref" data-ref="AB" title="AB">ΑΒ</span> (<span class="justification" data-ref-target="III.21" title="III.21">Eucl. III.21</span>). Therefore triangle <cite>ΑΒΔ</cite> is equiangular with triangle <cite>ΕΒΓ</cite>! Consequently, by <span class="justification" data-ref-target="VI.4" title="VI.4">Eucl. VI.4</span>, their sides about the equal angles are proportional—as <span class="geom-ref" data-ref="BC" title="BC">ΒΓ</span> is to <span class="geom-ref" data-ref="EC" title="EC">ΓΕ</span>, so is <span class="geom-ref" data-ref="BD" title="BD">ΒΔ</span> to <span class="geom-ref" data-ref="DA" title="DA">ΔΑ</span>:</p>
+        <p>$$\frac{B\Gamma}{\Gamma E} = \frac{B\Delta}{\Delta A}
+        \quad\Longrightarrow\quad
+        B\Gamma \cdot \Delta A = B\Delta \cdot \Gamma E \qquad\text{(}:just:`Eucl. VI.16 &lt;VI.16&gt;`\text{)}.$$</p>
+        <p>Again, since angle <span class="geom-ref" data-ref="angABE" title="angABE">∠ΑΒΕ</span> is equal to angle <span class="geom-ref" data-ref="angDBC" title="angDBC">∠ΔΒΓ</span>, and angle <cite>∠ΒΑΕ</cite> is equal to angle <cite>∠ΒΔΓ</cite> (subtending the same arc <span class="geom-ref" data-ref="BC" title="BC">ΒΓ</span>, <span class="justification" data-ref-target="III.21" title="III.21">Eucl. III.21</span>), triangle <span class="geom-ref" data-ref="triABE" title="triABE">ΑΒΕ</span> is equiangular with triangle <span class="geom-ref" data-ref="triDBC" title="triDBC">ΔΒΓ</span>. Therefore proportionally, as <span class="geom-ref" data-ref="AB" title="AB">ΒΑ</span> is to <span class="geom-ref" data-ref="AE" title="AE">ΑΕ</span>, so is <span class="geom-ref" data-ref="BD" title="BD">ΒΔ</span> to <span class="geom-ref" data-ref="CD" title="CD">ΔΓ</span>:</p>
+        <p>$$\frac{BA}{AE} = \frac{B\Delta}{\Delta\Gamma}
+        \quad\Longrightarrow\quad
+        BA \cdot \Delta\Gamma = B\Delta \cdot AE \qquad\text{(}:just:`Eucl. VI.16 &lt;VI.16&gt;`\text{)}.$$</p>
+        <p>Now it was proved above that $B\Gamma \cdot \Delta A = B\Delta \cdot \Gamma E$. Adding the two equalities together and invoking <span class="justification" data-ref-target="II.1" title="II.1">Eucl. II.1</span> ($B\Delta \cdot AE + B\Delta \cdot \Gamma E = B\Delta \cdot A\Gamma$), <strong>the whole rectangle contained by</strong> $A\Gamma$ <strong>and</strong> $B\Delta$ <strong>is equal to the sum of the rectangle</strong> $AB \cdot \Delta\Gamma$ <strong>and the rectangle</strong> $A\Delta \cdot B\Gamma$. <em>Which was to be proved.</em></p>
+        </section>
+        <section class="level-4" id="chord-of-the-difference-heiberg-i-p-38">
+        <h4>2. Chord of the Difference (<cite>Heiberg I, p. 38</cite>)<a class="headerlink" href="#chord-of-the-difference-heiberg-i-p-38" title="Link to this heading">¶</a></h4>
+        <figure class="photon-picture photon-svg">
+            <svg class="euclid-graphic" data-graphic-id="fig04_chord_difference_and_sum" xmlns="http://www.w3.org/2000/svg" class="euclid-graphic" viewBox="0 0 680 340" role="img" aria-label="Almagest I.10b Chord of Difference and Chord of Sum">
+          <defs>
+            <marker id="geom-tick-1" viewBox="-2 -6 4 12" refX="0" refY="0" markerWidth="4" markerHeight="12" orient="auto">
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" stroke="currentColor" stroke-width="1.35" stroke-linecap="round"/>
+            </marker>
+            <marker id="geom-tick-2" viewBox="-4 -6 8 12" refX="0" refY="0" markerWidth="8" markerHeight="12" orient="auto">
+              <line x1="-1.8" y1="-4.5" x2="-1.8" y2="4.5" stroke="currentColor" stroke-width="1.35" stroke-linecap="round"/>
+              <line x1="1.8" y1="-4.5" x2="1.8" y2="4.5" stroke="currentColor" stroke-width="1.35" stroke-linecap="round"/>
+            </marker>
+            <marker id="geom-tick-3" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" orient="auto">
+              <line x1="-3.4" y1="-4.5" x2="-3.4" y2="4.5" stroke="currentColor" stroke-width="1.35" stroke-linecap="round"/>
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" stroke="currentColor" stroke-width="1.35" stroke-linecap="round"/>
+              <line x1="3.4" y1="-4.5" x2="3.4" y2="4.5" stroke="currentColor" stroke-width="1.35" stroke-linecap="round"/>
+            </marker>
+          </defs>
+          <g id="elements">
+            <path class="geom-circle" d="M 305.00 235.00 A 130.00 130.00 0 0 0 45.00 235.00" fill="none" data-ref="semiDiff" stroke-width="1.80"/>
+            <path class="geom-line" d="M 45.00 235.00 L 175.00 235.00 L 305.00 235.00" fill="none" data-ref="AD" stroke-width="1.80"/>
+            <path class="geom-line" d="M 45.00 235.00 L 58.78 194.98 L 72.56 154.96" fill="none" data-ref="AB" stroke="var(--geom-assert, #2563eb)" stroke-width="1.80"/>
+            <path class="geom-line" d="M 45.00 235.00 L 103.21 170.36 L 161.41 105.71" fill="none" data-ref="AG" stroke="var(--geom-assert, #2563eb)" stroke-width="1.80"/>
+            <path class="geom-dashed" d="M 72.56 154.96 L 188.78 194.98 L 305.00 235.00" fill="none" data-ref="BD" stroke-dasharray="5 4"/>
+            <path class="geom-dashed" d="M 161.41 105.71 L 233.21 170.36 L 305.00 235.00" fill="none" data-ref="GD" stroke-dasharray="5 4"/>
+            <path class="geom-bold" d="M 72.56 154.96 L 116.98 130.34 L 161.41 105.71" fill="none" data-ref="BG" stroke="var(--geom-accent, #d97706)" stroke-width="2.70"/>
+            <circle class="geom-circle" cx="505.00" cy="175.00" r="115.00" fill="none" data-ref="circSum" stroke-width="1.80"/>
+            <path class="geom-line" d="M 390.00 175.00 L 505.00 175.00 L 620.00 175.00" fill="none" data-ref="BD_sum" stroke-width="1.80"/>
+            <path class="geom-line" d="M 390.00 175.00 L 409.02 132.27 L 428.05 89.54" fill="none" data-ref="AB_sum" stroke="var(--geom-assert, #2563eb)" stroke-width="1.80"/>
+            <path class="geom-line" d="M 390.00 175.00 L 414.52 222.10 L 439.04 269.20" fill="none" data-ref="BG_sum" stroke="var(--geom-assert, #2563eb)" stroke-width="1.80"/>
+            <path class="geom-dashed" d="M 428.05 89.54 L 524.02 132.27 L 620.00 175.00" fill="none" data-ref="AD_sum" stroke-dasharray="5 4"/>
+            <path class="geom-dashed" d="M 439.04 269.20 L 529.52 222.10 L 620.00 175.00" fill="none" data-ref="GD_sum" stroke-dasharray="5 4"/>
+            <path class="geom-bold" d="M 428.05 89.54 L 433.54 179.37 L 439.04 269.20" fill="none" data-ref="AG_sum" stroke="var(--geom-accent, #d97706)" stroke-width="2.70"/>
+          </g>
+          <g id="graphics">
+          </g>
+          <g id="highlights">
+            <polygon class="geom-polygon" points="45.00,235.00 72.56,154.96 161.41,105.71 305.00,235.00" fill="var(--geom-accent, #d97706)" fill-opacity="0.09" stroke="none" data-ref="quadDiff"/>
+            <polygon class="geom-polygon" points="428.05,89.54 390.00,175.00 439.04,269.20 620.00,175.00" fill="var(--geom-assert, #2563eb)" fill-opacity="0.09" stroke="none" data-ref="quadSum"/>
+          </g>
+          <g id="points">
+            <circle class="geom-point" cx="45.00" cy="235.00" r="3.60" data-ref="A"/>
+            <circle class="geom-point" cx="72.56" cy="154.96" r="3.60" data-ref="B"/>
+            <circle class="geom-point" cx="161.41" cy="105.71" r="3.60" data-ref="G"/>
+            <circle class="geom-point" cx="305.00" cy="235.00" r="3.60" data-ref="D"/>
+            <circle class="geom-point" cx="428.05" cy="89.54" r="3.60" data-ref="A_sum"/>
+            <circle class="geom-point" cx="390.00" cy="175.00" r="3.60" data-ref="B_sum"/>
+            <circle class="geom-point" cx="439.04" cy="269.20" r="3.60" data-ref="G_sum"/>
+            <circle class="geom-point" cx="620.00" cy="175.00" r="3.60" data-ref="D_sum"/>
+            <circle class="geom-point" cx="505.00" cy="175.00" r="3.60" data-ref="E_sum"/>
+          </g>
+          <g id="labels">
+            <text class="geom-label" x="31.00" y="239.00" text-anchor="middle" dominant-baseline="central" style="font-style: italic; font-size: 15px;" data-ref="A">A</text>
+            <text class="geom-label" x="59.56" y="143.96" text-anchor="middle" dominant-baseline="central" style="font-style: italic; font-size: 15px;" data-ref="B">B</text>
+            <text class="geom-label" x="163.41" y="90.71" text-anchor="middle" dominant-baseline="central" style="font-style: italic; font-size: 15px;" data-ref="G">Γ</text>
+            <text class="geom-label" x="319.00" y="239.00" text-anchor="middle" dominant-baseline="central" style="font-style: italic; font-size: 15px;" data-ref="D">Δ</text>
+            <text class="geom-label" x="175.00" y="285.00" text-anchor="middle" style="font-size: 13px; opacity: 0.82;">I. Chord of Difference: BΓ = crd(α − β)</text>
+            <text class="geom-label" x="418.05" y="75.54" text-anchor="middle" dominant-baseline="central" style="font-style: italic; font-size: 15px;" data-ref="A_sum">A</text>
+            <text class="geom-label" x="375.00" y="175.00" text-anchor="middle" dominant-baseline="central" style="font-style: italic; font-size: 15px;" data-ref="B_sum">B</text>
+            <text class="geom-label" x="427.04" y="283.20" text-anchor="middle" dominant-baseline="central" style="font-style: italic; font-size: 15px;" data-ref="G_sum">Γ</text>
+            <text class="geom-label" x="635.00" y="175.00" text-anchor="middle" dominant-baseline="central" style="font-style: italic; font-size: 15px;" data-ref="D_sum">Δ</text>
+            <text class="geom-label" x="509.00" y="162.00" text-anchor="middle" dominant-baseline="central" style="font-style: italic; font-size: 15px;" data-ref="E_sum">E</text>
+            <text class="geom-label" x="505.00" y="315.00" text-anchor="middle" style="font-size: 13px; opacity: 0.82;">II. Chord of Sum: AΓ = crd(α + β)</text>
+          </g>
+        </svg>
+        </figure>
+        <p><sup class="line-num" data-line="p. 38">p. 38</sup> <strong>Corollary (Difference of Two Arcs).</strong> Given a semicircle <span class="geom-ref" data-ref="semiDiff" title="semiDiff">ΑΒΓΔ</span> on diameter <span class="geom-ref" data-ref="AD" title="AD">ΑΔ</span>, suppose the chords <span class="geom-ref" data-ref="AB" title="AB">ΑΒ</span> and <span class="geom-ref" data-ref="AG" title="AG">ΑΓ</span> from <span class="geom-ref" data-ref="A" title="A">Α</span> are given in magnitude. Joining <span class="geom-ref" data-ref="BG" title="BG">ΒΓ</span>, <span class="geom-ref" data-ref="BD" title="BD">ΒΔ</span>, and <span class="geom-ref" data-ref="GD" title="GD">ΓΔ</span>, the supplementary chords <span class="geom-ref" data-ref="BD" title="BD">ΒΔ</span> and <span class="geom-ref" data-ref="GD" title="GD">ΓΔ</span> are immediately given via <span class="justification" data-ref-target="III.31" title="III.31">Eucl. III.31</span> and <span class="justification" data-ref-target="I.47" title="I.47">Eucl. I.47</span> ($\operatorname{crd}^2(180^\circ - \theta) = D^2 - \operatorname{crd}^2\theta$). Since <span class="geom-ref" data-ref="quadDiff" title="quadDiff">ΑΒΓΔ</span> is a cyclic quadrilateral in the circle, Ptolemy’s Theorem gives:</p>
+        <p>$$AB \cdot \Gamma\Delta + A\Delta \cdot B\Gamma = A\Gamma \cdot B\Delta
+        \quad\Longrightarrow\quad
+        B\Gamma = \frac{A\Gamma \cdot B\Delta - AB \cdot \Gamma\Delta}{A\Delta}.$$</p>
+        <p>Applying this immediately to the pentagon arc ($72^\circ$) and hexagon arc ($60^\circ$), Ptolemy obtains the chord of their difference ($12^\circ$):</p>
+        <p>$$\operatorname{crd}(12^\circ)
+          = \frac{\operatorname{crd}(72^\circ)\operatorname{crd}(120^\circ) - \operatorname{crd}(60^\circ)\operatorname{crd}(108^\circ)}{120}
+          \approx 12;32,36^p.$$</p>
+        </section>
+        <section class="level-4" id="half-arc-chord-lemma-heiberg-i-pp-3940">
+        <h4>3. Half-Arc Chord Lemma (<cite>Heiberg I, pp. 39–40</cite>)<a class="headerlink" href="#half-arc-chord-lemma-heiberg-i-pp-3940" title="Link to this heading">¶</a></h4>
+        <p><sup class="line-num" data-line="p. 39">p. 39</sup> Next, if any chord in the circle be given, how do we find the chord subtending <strong>half the same arc</strong>?</p>
+        <figure class="photon-picture photon-svg">
+            <svg class="euclid-graphic" data-graphic-id="fig05_half_arc_chord_lemma" xmlns="http://www.w3.org/2000/svg" class="euclid-graphic" viewBox="0 0 540 380" role="img" aria-label="Almagest I.10b Half-Arc Chord Lemma">
+          <defs>
+            <marker id="geom-tick-1" viewBox="-2 -6 4 12" refX="0" refY="0" markerWidth="4" markerHeight="12" orient="auto">
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" stroke="currentColor" stroke-width="1.35" stroke-linecap="round"/>
+            </marker>
+            <marker id="geom-tick-2" viewBox="-4 -6 8 12" refX="0" refY="0" markerWidth="8" markerHeight="12" orient="auto">
+              <line x1="-1.8" y1="-4.5" x2="-1.8" y2="4.5" stroke="currentColor" stroke-width="1.35" stroke-linecap="round"/>
+              <line x1="1.8" y1="-4.5" x2="1.8" y2="4.5" stroke="currentColor" stroke-width="1.35" stroke-linecap="round"/>
+            </marker>
+            <marker id="geom-tick-3" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" orient="auto">
+              <line x1="-3.4" y1="-4.5" x2="-3.4" y2="4.5" stroke="currentColor" stroke-width="1.35" stroke-linecap="round"/>
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" stroke="currentColor" stroke-width="1.35" stroke-linecap="round"/>
+              <line x1="3.4" y1="-4.5" x2="3.4" y2="4.5" stroke="currentColor" stroke-width="1.35" stroke-linecap="round"/>
+            </marker>
+          </defs>
+          <g id="elements">
+            <path class="geom-circle" d="M 425.00 235.00 A 155.00 155.00 0 0 0 115.00 235.00" fill="none" data-ref="semiABG" stroke-width="1.90"/>
+            <path class="geom-line" d="M 115.00 235.00 L 270.00 235.00 L 425.00 235.00" fill="none" data-ref="AG" stroke-width="1.80"/>
+            <path class="geom-line" d="M 115.00 235.00 L 200.60 157.92 L 286.20 80.85" fill="none" data-ref="AB" stroke-width="1.70" marker-mid="url(#geom-tick-1)"/>
+            <path class="geom-line" d="M 115.00 235.00 L 230.19 235.00 L 345.37 235.00" fill="none" data-ref="AE" stroke="var(--geom-accent, #d97706)" stroke-width="2.00" marker-mid="url(#geom-tick-1)"/>
+            <path class="geom-line" d="M 115.00 235.00 L 250.09 183.14 L 385.19 131.28" fill="none" data-ref="AD" stroke-width="1.50"/>
+            <path class="geom-line" d="M 286.20 80.85 L 335.69 106.07 L 385.19 131.28" fill="none" data-ref="BD" stroke="var(--geom-assert, #2563eb)" stroke-width="1.80" marker-mid="url(#geom-tick-2)"/>
+            <path class="geom-dashed" d="M 385.19 131.28 L 365.28 183.14 L 345.37 235.00" fill="none" data-ref="DE" stroke-width="1.60" stroke-dasharray="5 4" marker-mid="url(#geom-tick-2)"/>
+            <path class="geom-bold" d="M 385.19 131.28 L 405.09 183.14 L 425.00 235.00" fill="none" data-ref="GD" stroke="var(--geom-accent, #d97706)" stroke-width="2.70" marker-mid="url(#geom-tick-2)"/>
+            <path class="geom-dashed" d="M 286.20 80.85 L 355.60 157.92 L 425.00 235.00" fill="none" data-ref="BG" stroke-width="1.40" stroke-dasharray="5 4"/>
+            <path class="geom-line" d="M 385.19 131.28 L 385.19 183.14 L 385.19 235.00" fill="none" data-ref="DZ" stroke="var(--geom-assert, #2563eb)" stroke-width="1.80"/>
+          </g>
+          <g id="graphics">
+            <path class="geom-ang-arc" d="M 374.19 235.00 L 374.19 224.00 L 385.19 224.00" fill="none" stroke="var(--geom-muted, #64748b)" stroke-width="1.25" data-ref="angDZG"/>
+          </g>
+          <g id="highlights">
+            <polygon class="geom-polygon" points="115.00,235.00 286.20,80.85 385.19,131.28" fill="var(--geom-assert, #2563eb)" fill-opacity="0.09" stroke="none" data-ref="triABD"/>
+            <polygon class="geom-polygon" points="115.00,235.00 345.37,235.00 385.19,131.28" fill="var(--geom-accent, #d97706)" fill-opacity="0.11" stroke="none" data-ref="triAED"/>
+          </g>
+          <g id="points">
+            <circle class="geom-point" cx="115.00" cy="235.00" r="3.60" data-ref="A"/>
+            <circle class="geom-point" cx="286.20" cy="80.85" r="3.60" data-ref="B"/>
+            <circle class="geom-point" cx="425.00" cy="235.00" r="3.60" data-ref="G"/>
+            <circle class="geom-point" cx="385.19" cy="131.28" r="3.60" data-ref="D"/>
+            <circle class="geom-point" cx="345.37" cy="235.00" r="3.60" data-ref="E"/>
+            <circle class="geom-point" cx="385.19" cy="235.00" r="3.60" data-ref="Z"/>
+          </g>
+          <g id="labels">
+            <text class="geom-label" x="100.00" y="237.00" text-anchor="middle" dominant-baseline="central" style="font-style: italic; font-size: 15px;" data-ref="A">A</text>
+            <text class="geom-label" x="286.20" y="65.85" text-anchor="middle" dominant-baseline="central" style="font-style: italic; font-size: 15px;" data-ref="B">B</text>
+            <text class="geom-label" x="440.00" y="237.00" text-anchor="middle" dominant-baseline="central" style="font-style: italic; font-size: 15px;" data-ref="G">Γ</text>
+            <text class="geom-label" x="399.19" y="121.28" text-anchor="middle" dominant-baseline="central" style="font-style: italic; font-size: 15px;" data-ref="D">Δ</text>
+            <text class="geom-label" x="341.37" y="253.00" text-anchor="middle" dominant-baseline="central" style="font-style: italic; font-size: 15px;" data-ref="E">E</text>
+            <text class="geom-label" x="389.19" y="253.00" text-anchor="middle" dominant-baseline="central" style="font-style: italic; font-size: 15px;" data-ref="Z">Z</text>
+            <text class="geom-label" x="270.00" y="315.00" text-anchor="middle" style="font-size: 13px; opacity: 0.82;">AE = AB, ΔZ ⊥ AΓ  ⇒  EZ = ZΓ = ½ EΓ  ⇒  ΓΔ² = AΓ · ΓZ = ½ AΓ · EΓ</text>
+          </g>
+        </svg>
+        </figure>
+        <p>Let <span class="geom-ref" data-ref="semiABG" title="semiABG">ΑΒΓ</span> be a semicircle on diameter <span class="geom-ref" data-ref="AG" title="AG">ΑΓ</span>, let chord <span class="geom-ref" data-ref="BG" title="BG">ΓΒ</span> be given, and let its arc be bisected at <span class="geom-ref" data-ref="D" title="D">Δ</span>, joining <span class="geom-ref" data-ref="AB" title="AB">ΑΒ</span>, <span class="geom-ref" data-ref="AD" title="AD">ΑΔ</span>, <span class="geom-ref" data-ref="BD" title="BD">ΒΔ</span>, and <span class="geom-ref" data-ref="GD" title="GD">ΔΓ</span>. Cut off <span class="geom-ref" data-ref="AE" title="AE">ΑΕ</span> along <span class="geom-ref" data-ref="AG" title="AG">ΑΓ</span> <span class="geom-eq-ref" data-assert-equal="AB = AE" title="AB = AE">equal to ΑΒ</span>, and drop perpendicular <span class="geom-ref" data-ref="DZ" title="DZ">ΔΖ</span> onto <span class="geom-ref" data-ref="AG" title="AG">ΑΓ</span> (<span class="geom-ref" data-ref="angDZG" title="angDZG">∠ΔΖΓ</span>).</p>
+        <p><em>Demonstration.</em> Since <span class="geom-eq-ref" data-assert-equal="AB = AE" title="AB = AE">ΑΒ = ΑΕ</span>, <span class="geom-ref" data-ref="AD" title="AD">ΑΔ</span> is common, and <cite>∠ΒΑΔ = ∠ΕΑΔ</cite> (standing on equal half-arcs <span class="geom-ref" data-ref="BD" title="BD">ΒΔ</span> and <span class="geom-ref" data-ref="GD" title="GD">ΔΓ</span>), triangles <span class="geom-ref" data-ref="triABD" title="triABD">ΒΑΔ</span> and <span class="geom-ref" data-ref="triAED" title="triAED">ΕΑΔ</span> are congruent (<span class="justification" data-ref-target="I.4" title="I.4">Eucl. I.4</span>), so <span class="geom-eq-ref" data-assert-equal="BD = DE" title="BD = DE">ΒΔ = ΔΕ</span>. Yet <span class="geom-eq-ref" data-assert-equal="BD = GD" title="BD = GD">ΒΔ = ΔΓ</span> since the arcs are equal; therefore triangle <cite>ΔΕΓ</cite> is isosceles with <span class="geom-eq-ref" data-assert-equal="DE = GD" title="DE = GD">ΔΕ = ΔΓ</span>, and the altitude <span class="geom-ref" data-ref="DZ" title="DZ">ΔΖ</span> bisects the base so <cite>ΕΖ = ΖΓ = ½ ΕΓ</cite>. Now in the right triangle <cite>ΑΔΓ</cite> inscribed in the semicircle (<span class="justification" data-ref-target="III.31" title="III.31">Eucl. III.31</span>), triangle <cite>ΑΔΓ</cite> is similar to triangle <cite>ΔΖΓ</cite> (<span class="justification" data-ref-target="VI.8" title="VI.8">Eucl. VI.8</span>), whence:</p>
+        <p>$$\frac{A\Gamma}{\Gamma\Delta} = \frac{\Gamma\Delta}{\Gamma Z}
+        \quad\Longrightarrow\quad
+        \Gamma\Delta^2 = A\Gamma \cdot \Gamma Z = \frac{1}{2}\,A\Gamma \cdot (A\Gamma - AB)
+        = 60 \cdot \bigl(120 - \operatorname{crd}(180^\circ - \theta)\bigr).$$</p>
+        <p><sup class="line-num" data-line="p. 40">p. 40</sup> Iterating this half-arc formula four times from $\operatorname{crd}(12^\circ) = 12;32,36^p$, Ptolemy derives:</p>
+        <ul class="simple">
+        <li><p>$\operatorname{crd}(6^\circ) \approx 6;16,49^p$</p></li>
+        <li><p>$\operatorname{crd}(3^\circ) \approx 3;8,28^p$</p></li>
+        <li><p>$\operatorname{crd}(1\tfrac{1}{2}^\circ) \approx 1;34,15^p$</p></li>
+        <li><p>$\operatorname{crd}(\tfrac{3}{4}^\circ) \approx 0;47,8^p$</p></li>
+        </ul>
+        </section>
+        <section class="level-4" id="chord-of-the-sum-impossibility-of-trisection-by-lines-heiberg-i-pp-4142">
+        <h4>4. Chord of the Sum &amp; Impossibility of Trisection by Lines (<cite>Heiberg I, pp. 41–42</cite>)<a class="headerlink" href="#chord-of-the-sum-impossibility-of-trisection-by-lines-heiberg-i-pp-4142" title="Link to this heading">¶</a></h4>
+        <p><sup class="line-num" data-line="p. 41">p. 41</sup> Again, let arcs <span class="geom-ref" data-ref="AB_sum" title="AB_sum">ΑΒ</span> and <span class="geom-ref" data-ref="BG_sum" title="BG_sum">ΒΓ</span> be given in a circle around center <span class="geom-ref" data-ref="E_sum" title="E_sum">Ε</span> (Panel II of Figure 4 above), and draw diameter <span class="geom-ref" data-ref="BD_sum" title="BD_sum">ΒΕΔ</span>. Because <span class="geom-ref" data-ref="quadSum" title="quadSum">ΑΒΓΔ</span> is cyclic with diagonal <span class="geom-ref" data-ref="BD_sum" title="BD_sum">ΒΔ</span> equal to the diameter $D = 120^p$, Ptolemy’s Theorem yields the chord of the combined arc <span class="geom-ref" data-ref="AG_sum" title="AG_sum">ΑΓ</span>:</p>
+        <p>$$\operatorname{crd}(\alpha + \beta)
+          = \frac{\operatorname{crd}(\alpha)\operatorname{crd}(180^\circ - \beta)
+                + \operatorname{crd}(\beta)\operatorname{crd}(180^\circ - \alpha)}{120}.$$</p>
+        <p><sup class="line-num" data-line="p. 42">p. 42</sup> By combining $1\frac{1}{2}^\circ$ with all preceding chords, one immediately fills in every multiple of $1\frac{1}{2}^\circ$—yet two intermediates remain inside each $1\frac{1}{2}^\circ$ interval if the table is to advance by half-degrees! For if we possessed $\operatorname{crd}(\frac{1}{2}^\circ)$, both missing entries would follow immediately by sum and difference with $1\frac{1}{2}^\circ$. <strong>However, when a chord such as that of</strong> $1\frac{1}{2}^\circ$ <strong>is given, the chord subtending one-third of the same arc can in no way be found geometrically</strong> <a class="term-ref glossary-term" id="occ-term-dia-ton-grammon-1" href="../glossary.html#term-dia-ton-grammon" data-term="dia-ton-grammon" title="διὰ τῶν γραμμῶν (by means of lines (exact geometric construction)): Compass-and-straightedge (or explicit algebraic curve) construction; Ptolemy notes in Almagest I.10 (p. 42) that given crd(1½°), crd(½°) cannot be found &#x27;by means of lines&#x27; because trisecting a general angle is not ruler-and-compass constructible.">by means of lines</a> (<cite>οὐδαμῶς γίνεται διὰ τῶν γραμμῶν</cite>)—though if that were possible, we would immediately have $\operatorname{crd}(\frac{1}{2}^\circ)$ itself!</p>
+        </section>
+        <section class="level-4" id="ptolemy-s-inequality-lemma-operatorname-crd-1-circ-approx-1-2-50-p-heiberg-i-pp-4346">
+        <h4>5. Ptolemy’s Inequality Lemma &amp; $\operatorname{crd}(1^\circ) \approx 1;2,50^p$ (<cite>Heiberg I, pp. 43–46</cite>)<a class="headerlink" href="#ptolemy-s-inequality-lemma-operatorname-crd-1-circ-approx-1-2-50-p-heiberg-i-pp-4346" title="Link to this heading">¶</a></h4>
+        <p><sup class="line-num" data-line="p. 43">p. 43</sup> Instead, Ptolemy establishes a rigorous geometric sandwich for $\operatorname{crd}(1^\circ)$ from the known chords of $1\frac{1}{2}^\circ$ and $\frac{3}{4}^\circ$:</p>
+        <figure class="photon-picture photon-svg">
+            <svg class="euclid-graphic" data-graphic-id="fig06_ptolemy_inequality_lemma" xmlns="http://www.w3.org/2000/svg" class="euclid-graphic" viewBox="0 0 540 440" role="img" aria-label="Almagest I.10b Ptolemy Inequality Lemma">
+          <defs>
+            <marker id="geom-tick-1" viewBox="-2 -6 4 12" refX="0" refY="0" markerWidth="4" markerHeight="12" orient="auto">
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" stroke="currentColor" stroke-width="1.35" stroke-linecap="round"/>
+            </marker>
+            <marker id="geom-tick-2" viewBox="-4 -6 8 12" refX="0" refY="0" markerWidth="8" markerHeight="12" orient="auto">
+              <line x1="-1.8" y1="-4.5" x2="-1.8" y2="4.5" stroke="currentColor" stroke-width="1.35" stroke-linecap="round"/>
+              <line x1="1.8" y1="-4.5" x2="1.8" y2="4.5" stroke="currentColor" stroke-width="1.35" stroke-linecap="round"/>
+            </marker>
+            <marker id="geom-tick-3" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" orient="auto">
+              <line x1="-3.4" y1="-4.5" x2="-3.4" y2="4.5" stroke="currentColor" stroke-width="1.35" stroke-linecap="round"/>
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" stroke="currentColor" stroke-width="1.35" stroke-linecap="round"/>
+              <line x1="3.4" y1="-4.5" x2="3.4" y2="4.5" stroke="currentColor" stroke-width="1.35" stroke-linecap="round"/>
+            </marker>
+          </defs>
+          <g id="elements">
+            <circle class="geom-circle" cx="265.00" cy="215.00" r="150.00" fill="none" data-ref="cABGD" stroke-width="1.80"/>
+            <path class="geom-line" d="M 116.46 194.12 L 155.52 138.34 L 194.58 82.56" fill="none" data-ref="AB" stroke-width="1.80"/>
+            <path class="geom-line" d="M 194.58 82.56 L 291.97 106.84 L 389.36 131.12" fill="none" data-ref="BG" stroke-width="1.80"/>
+            <path class="geom-line" d="M 116.46 194.12 L 252.91 162.62 L 389.36 131.12" fill="none" data-ref="AG" stroke-width="1.70"/>
+            <path class="geom-line" d="M 194.58 82.56 L 246.66 221.86 L 298.74 361.16" fill="none" data-ref="BD" stroke="var(--geom-assert, #2563eb)" stroke-width="1.70"/>
+            <path class="geom-dashed" d="M 298.74 361.16 L 222.98 291.73 L 147.22 222.31" fill="none" data-ref="DH" stroke-width="1.50" stroke-dasharray="5 4"/>
+            <path class="geom-line" d="M 298.74 361.16 L 344.05 246.14 L 389.36 131.12" fill="none" data-ref="DG" stroke-width="1.50"/>
+            <path class="geom-line" d="M 298.74 361.16 L 275.83 261.89 L 252.91 162.62" fill="none" data-ref="DZ" stroke="var(--geom-accent, #d97706)" stroke-width="1.80"/>
+            <path class="geom-bold" d="M 252.51 160.91 A 205.51 205.51 0 0 0 147.22 222.31" fill="none" data-ref="arcHETheta" stroke="var(--geom-accent, #d97706)" stroke-width="2.20"/>
+          </g>
+          <g id="graphics">
+            <path class="geom-ang-arc" d="M 242.68 164.98 L 245.04 175.22 L 255.27 172.85" fill="none" stroke="var(--geom-muted, #64748b)" stroke-width="1.25" data-ref="angDZA"/>
+          </g>
+          <g id="highlights">
+            <polygon class="geom-polygon" points="298.74,361.16 116.46,194.12 226.77,168.66" fill="var(--geom-assert, #2563eb)" fill-opacity="0.08" stroke="none" data-ref="triDAE"/>
+            <polygon class="geom-polygon" points="298.74,361.16 226.77,168.66 252.91,162.62" fill="var(--geom-accent, #d97706)" fill-opacity="0.14" stroke="none" data-ref="triDEZ"/>
+          </g>
+          <g id="points">
+            <circle class="geom-point" cx="116.46" cy="194.12" r="3.60" data-ref="A"/>
+            <circle class="geom-point" cx="194.58" cy="82.56" r="3.60" data-ref="B"/>
+            <circle class="geom-point" cx="389.36" cy="131.12" r="3.60" data-ref="G"/>
+            <circle class="geom-point" cx="298.74" cy="361.16" r="3.60" data-ref="D"/>
+            <circle class="geom-point" cx="226.77" cy="168.66" r="3.60" data-ref="E"/>
+            <circle class="geom-point" cx="252.91" cy="162.62" r="3.60" data-ref="Z"/>
+            <circle class="geom-point" cx="147.22" cy="222.31" r="3.60" data-ref="H"/>
+            <circle class="geom-point" cx="252.51" cy="160.91" r="3.60" data-ref="Theta"/>
+          </g>
+          <g id="labels">
+            <text class="geom-label" x="101.46" y="190.12" text-anchor="middle" dominant-baseline="central" style="font-style: italic; font-size: 15px;" data-ref="A">A</text>
+            <text class="geom-label" x="186.58" y="67.56" text-anchor="middle" dominant-baseline="central" style="font-style: italic; font-size: 15px;" data-ref="B">B</text>
+            <text class="geom-label" x="404.36" y="123.12" text-anchor="middle" dominant-baseline="central" style="font-style: italic; font-size: 15px;" data-ref="G">Γ</text>
+            <text class="geom-label" x="304.74" y="377.16" text-anchor="middle" dominant-baseline="central" style="font-style: italic; font-size: 15px;" data-ref="D">Δ</text>
+            <text class="geom-label" x="216.77" y="154.66" text-anchor="middle" dominant-baseline="central" style="font-style: italic; font-size: 15px;" data-ref="E">E</text>
+            <text class="geom-label" x="262.91" y="149.62" text-anchor="middle" dominant-baseline="central" style="font-style: italic; font-size: 15px;" data-ref="Z">Z</text>
+            <text class="geom-label" x="132.22" y="214.31" text-anchor="middle" dominant-baseline="central" style="font-style: italic; font-size: 15px;" data-ref="H">H</text>
+            <text class="geom-label" x="266.51" y="164.91" text-anchor="middle" dominant-baseline="central" style="font-style: italic; font-size: 15px;" data-ref="Theta">Θ</text>
+            <text class="geom-label" x="270.00" y="418.00" text-anchor="middle" style="font-size: 13px; opacity: 0.82;">ΔA = ΔΓ > ΔE > ΔZ  ⇒  EZ / EA < ∠EΔZ / ∠EΔA  ⇒  BΓ / BA < arc BΓ / arc BA</text>
+          </g>
+        </svg>
+        </figure>
+        <p><strong>Lemma (Ptolemy’s Chord–Arc Inequality).</strong> In circle <span class="geom-ref" data-ref="cABGD" title="cABGD">ΑΒΓΔ</span>, let two unequal consecutive chords <span class="geom-ref" data-ref="AB" title="AB">ΑΒ</span> $&lt;$ <span class="geom-ref" data-ref="BG" title="BG">ΒΓ</span> be drawn. Bisect angle <cite>∠ΑΒΓ</cite> by <span class="geom-ref" data-ref="BD" title="BD">ΒΔ</span> meeting chord <span class="geom-ref" data-ref="AG" title="AG">ΑΓ</span> at <span class="geom-ref" data-ref="E" title="E">Ε</span> and the circumference at <span class="geom-ref" data-ref="D" title="D">Δ</span>, join <span class="geom-ref" data-ref="DH" title="DH">ΑΔ</span> and <span class="geom-ref" data-ref="DG" title="DG">ΓΔ</span>, and drop perpendicular <span class="geom-ref" data-ref="DZ" title="DZ">ΔΖ</span> onto <span class="geom-ref" data-ref="AG" title="AG">ΑΓ</span> (<span class="geom-ref" data-ref="angDZA" title="angDZA">∠ΔΖΑ</span>).</p>
+        <p><em>Demonstration.</em> Since <cite>∠ΑΒΔ = ∠ΓΒΔ</cite>, chords <cite>ΑΔ</cite> and <span class="geom-ref" data-ref="DG" title="DG">ΓΔ</span> are equal, and since <span class="geom-ref" data-ref="BG" title="BG">ΓΒ</span> $&gt;$ <span class="geom-ref" data-ref="AB" title="AB">ΒΑ</span>, by <span class="justification" data-ref-target="VI.3" title="VI.3">Eucl. VI.3</span> we have <cite>ΓΕ &gt; ΕΑ</cite>, so the foot <span class="geom-ref" data-ref="Z" title="Z">Ζ</span> of the altitude in isosceles triangle <cite>ΑΔΓ</cite> falls between <span class="geom-ref" data-ref="E" title="E">Ε</span> and <span class="geom-ref" data-ref="G" title="G">Γ</span>. Consequently <cite>ΔΑ &gt; ΔΕ &gt; ΔΖ</cite>. Describing the circular arc <span class="geom-ref" data-ref="arcHETheta" title="arcHETheta">ΗΕΘ</span> centered at <span class="geom-ref" data-ref="D" title="D">Δ</span> with radius <cite>ΔΕ</cite> (meeting <cite>ΔΑ</cite> produced at <span class="geom-ref" data-ref="H" title="H">Η</span> and <span class="geom-ref" data-ref="DZ" title="DZ">ΔΖ</span> at <span class="geom-ref" data-ref="Theta" title="Theta">Θ</span>), triangle <span class="geom-ref" data-ref="triDEZ" title="triDEZ">ΔΕΖ</span> is strictly larger than sector <cite>ΔΕΘ</cite>, whereas triangle <span class="geom-ref" data-ref="triDAE" title="triDAE">ΔΕΑ</span> is strictly smaller than sector <cite>ΔΕΗ</cite>:</p>
+        <p>$$\frac{EZ}{EA}
+          = \frac{\operatorname{area}(\triangle \Delta EZ)}{\operatorname{area}(\triangle \Delta EA)}
+          &gt; \frac{\operatorname{area}(\text{sector }\Delta E\Theta)}{\operatorname{area}(\text{sector }\Delta EH)}
+          = \frac{\angle E\Delta Z}{\angle E\Delta A}.$$</p>
+        <p><sup class="line-num" data-line="p. 44–45">p. 44–45</sup> By <em>componendo</em> and doubling (<cite>ΓΑ = 2 ΓΖ</cite>), it follows that $\frac{\Gamma E}{EA} &lt; \frac{\angle\Gamma\Delta B}{\angle B\Delta A}$, and since $\frac{\Gamma B}{BA} = \frac{\Gamma E}{EA}$ (<span class="justification" data-ref-target="VI.3" title="VI.3">Eucl. VI.3</span>) while central/inscribed angles stand as their arcs (<span class="justification" data-ref-target="VI.33" title="VI.33">Eucl. VI.33</span>):</p>
+        <p>$$\frac{\operatorname{crd}(B\Gamma)}{\operatorname{crd}(BA)} &lt; \frac{\operatorname{arc}(B\Gamma)}{\operatorname{arc}(BA)}.$$</p>
+        <p><sup class="line-num" data-line="p. 45–46">p. 45–46</sup> <strong>Pinching $\operatorname{crd}(1^\circ)$ to Sexagesimal Seconds:</strong></p>
+        <ol class="arabic simple">
+        <li><p>Setting $\operatorname{arc}(BA) = \frac{3}{4}^\circ$ and $\operatorname{arc}(B\Gamma) = 1^\circ$ gives $\operatorname{crd}(1^\circ) &lt; \frac{4}{3}\operatorname{crd}(\frac{3}{4}^\circ) = \frac{4}{3}(0;47,8^p) = 1;2,50,40^p \approx 1;2,50^p$.</p></li>
+        <li><p>Setting $\operatorname{arc}(BA) = 1^\circ$ and $\operatorname{arc}(B\Gamma) = 1\frac{1}{2}^\circ$ gives $\operatorname{crd}(1^\circ) &gt; \frac{2}{3}\operatorname{crd}(1\frac{1}{2}^\circ) = \frac{2}{3}(1;34,15^p) = 1;2,50,0^p = 1;2,50^p$.</p></li>
+        </ol>
+        <p>Since $\operatorname{crd}(1^\circ)$ has been proved strictly <strong>both smaller and larger than quantities that agree to</strong> $1;2,50^p$, Ptolemy concludes with complete rigor:</p>
+        <p>$$\operatorname{crd}(1^\circ) = 1;2,50^p = \frac{377}{360}, \qquad \operatorname{crd}(\tfrac{1}{2}^\circ) \approx 0;31,25^p,$$</p>
+        <p>from which every remaining entry in the $360$-row Table of Chords follows!</p>
+        </section>
+        </section>
+        </section>
+
+      </div>
+      <footer class="book-footer">
+        <div class="book-footer-ornament">&#10086;</div>
+        <div class="book-footer-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../unit-1-pentagon-decagon/unit-1-pentagon-decagon-en.html" title="Unit I · Cosmic Preliminaries &amp; Golden Pentagon–Decagon Construction">&larr; <span class="nav-label">Unit I · Cosmic Preliminaries & Golden Pentagon–Decagon Construction</span></a>
+          </div>
+          <div class="book-nav-center">
+            <a class="book-toc-link" href="../index.html">Syntaxis Mathematica (Lib. I) & Planisphaerium</a>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../unit-3-menelaus-sphaerica/unit-3-menelaus-sphaerica-en.html" title="Unit III · Table of Chords, Ecliptic Obliquity &amp; Menelaus Sphaerica"><span class="nav-label">Unit III · Table of Chords, Ecliptic Obliquity & Menelaus Sphaerica</span> &rarr;</a>
+          </div>
+        </div>
+      </footer>
+    </article>
+  </main>
+  <div class="asides">
+    <aside class="aside-search">
+      <h3>Search</h3>
+      <div id="searchbox" role="search">
+        <form id="rtd-search-form" class="wy-form search-form" action="../../search.html" method="get">
+          <div class="search-field">
+            <input type="search" name="q" placeholder="Search docs..." aria-label="Search docs" autocomplete="off" />
+            <button type="submit" class="search-submit" aria-label="Search" title="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+      </div>
+    </aside>
+  </div>
+  <footer>
+    <hr />
+    <div role="contentinfo">
+      <p>
+        &copy; Copyright c. 150 CE · 1898 / 1907 Teubner · Digital Codex GEOMETOR.
+      </p>
+    </div>
+  </footer>
+
+  <script src="../../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../../_static/documentation_options.js?v=01f34227"></script>
+  <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+  <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+  <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="../../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script src="../../_static/js/search_highlight.js"></script>
+
+</body>
+</html>

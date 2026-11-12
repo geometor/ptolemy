@@ -1,0 +1,275 @@
+geometor.ptolemy.stereographic
+==============================
+
+.. py:module:: geometor.ptolemy.stereographic
+
+.. autoapi-nested-parse::
+
+   Exact symbolic 3D-to-2D Stereographic Projection & Astrolabe Geometry (*Planisphaerium*).
+
+   Implements Ptolemy's *Planisphaerium* (ed. J. L. Heiberg, *Opera Astronomica Minora*,
+   Vol. II, Leipzig: Teubner, 1907, §§1-4, pp. 227-234):
+
+   1. **Exact Rational Stereographic Bijection** (:func:`stereographic_forward`, :func:`stereographic_inverse`):
+      Projects $P = (X, Y, Z) \in S^2 \setminus \{(0, 0, -1)\}$ from the South Pole
+      $S = (0, 0, -1)$ onto the equatorial plane $Z = 0$:
+
+      $$(x, y) = \left(\frac{X}{1 + Z},\, \frac{Y}{1 + Z}\right), \qquad
+        (X, Y, Z) = \left(\frac{2x}{1 + x^2 + y^2},\, \frac{2y}{1 + x^2 + y^2},\, \frac{1 - x^2 - y^2}{1 + x^2 + y^2}\right)$$
+
+   2. **Universal Circle-Preservation & Conformal Metric Theorems**
+      (:func:`project_sphere_circle_plane`, :func:`prove_circle_preservation_symbolically`,
+      :func:`prove_conformal_metric_symbolically`, :func:`prove_parallel_inversion_symbolically`):
+      Proves in exact SymPy algebra over $\mathbb{Q}[a, b, c, d, x, y]$ that every plane
+      $aX + bY + cZ + d = 0$ cutting $S^2$ without passing through $S$ ($d \neq c$) projects
+      to an exact Euclidean circle in the equatorial plane, that meridians ($d = c$) project
+      to straight lines through the North Pole, that opposite parallels at :math:`\pm\delta` obey
+      circular inversion :math:`r_+ \cdot r_- = R_{\mathrm{eq}}^2` (*Planisphaerium* §4, p. 233:
+      ``ez : ed = ed : ek``), and that the pulled-back metric is conformally flat
+      :math:`dX^2 + dY^2 + dZ^2 = \frac{4}{(1 + x^2 + y^2)^2}(dx^2 + dy^2)`.
+
+   3. **Exact ``geometor.model`` Astrolabe Tropics, Ecliptic & Almucantar Construction**
+      (:func:`construct_astrolabe_planisphere`, :func:`construct_almucantar_circle`):
+      Constructs Ptolemy's *Planisphaerium* §1 diagram (Heiberg 1907, p. 227: equator $ABGD$,
+      North Pole $E$, Tropic of Cancer $TL$, Tropic of Capricorn $KM$, and oblique ecliptic
+      circle $MBTD$ centered at $R$) in ``geometor.model`` with ``auto_intersect=False``
+      and zero ``sp.Float`` coordinates.
+
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   geometor.ptolemy.stereographic.ProjectedCircleData
+   geometor.ptolemy.stereographic.AstrolabePlanisphereResult
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.ptolemy.stereographic.stereographic_forward
+   geometor.ptolemy.stereographic.stereographic_inverse
+   geometor.ptolemy.stereographic.project_sphere_circle_plane
+   geometor.ptolemy.stereographic.prove_circle_preservation_symbolically
+   geometor.ptolemy.stereographic.prove_conformal_metric_symbolically
+   geometor.ptolemy.stereographic.prove_parallel_inversion_symbolically
+   geometor.ptolemy.stereographic.construct_astrolabe_planisphere
+   geometor.ptolemy.stereographic.construct_almucantar_circle
+
+
+Module Contents
+---------------
+
+.. py:class:: ProjectedCircleData
+
+   Exact algebraic parameters of a plane-sphere intersection under stereographic projection.
+
+
+   .. py:attribute:: plane_coeffs
+      :type:  tuple[sympy.Expr, sympy.Expr, sympy.Expr, sympy.Expr]
+
+
+   .. py:attribute:: is_line
+      :type:  bool
+
+
+   .. py:attribute:: center
+      :type:  tuple[sympy.Expr, sympy.Expr] | None
+
+
+   .. py:attribute:: radius_sq
+      :type:  sympy.Expr | None
+
+
+   .. py:attribute:: cartesian_equation
+      :type:  sympy.Expr
+
+
+.. py:class:: AstrolabePlanisphereResult
+
+   Exact symbolic elements and invariants of Ptolemy's *Planisphaerium* §§1 & 4.
+
+
+   .. py:attribute:: model
+      :type:  geometor.model.Model
+
+
+   .. py:attribute:: equator_radius
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: half_obliquity_tan
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: sin_obliquity
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: cos_obliquity
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: E
+      :type:  sympy.geometry.Point
+
+
+   .. py:attribute:: A
+      :type:  sympy.geometry.Point
+
+
+   .. py:attribute:: B
+      :type:  sympy.geometry.Point
+
+
+   .. py:attribute:: G
+      :type:  sympy.geometry.Point
+
+
+   .. py:attribute:: D
+      :type:  sympy.geometry.Point
+
+
+   .. py:attribute:: T
+      :type:  sympy.geometry.Point
+
+
+   .. py:attribute:: L
+      :type:  sympy.geometry.Point
+
+
+   .. py:attribute:: K
+      :type:  sympy.geometry.Point
+
+
+   .. py:attribute:: M
+      :type:  sympy.geometry.Point
+
+
+   .. py:attribute:: R
+      :type:  sympy.geometry.Point
+
+
+   .. py:attribute:: equator_circle
+      :type:  sympy.geometry.Circle
+
+
+   .. py:attribute:: cancer_circle
+      :type:  sympy.geometry.Circle
+
+
+   .. py:attribute:: capricorn_circle
+      :type:  sympy.geometry.Circle
+
+
+   .. py:attribute:: ecliptic_circle
+      :type:  sympy.geometry.Circle
+
+
+   .. py:attribute:: cancer_radius
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: capricorn_radius
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: ecliptic_radius
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: inversion_product
+      :type:  sympy.Expr
+
+
+.. py:function:: stereographic_forward(X: sympy.Expr, Y: sympy.Expr, Z: sympy.Expr) -> tuple[sympy.Expr, sympy.Expr]
+
+   Project 3D point ``(X, Y, Z)`` from South Pole ``(0, 0, -1)`` onto plane ``Z = 0``.
+
+
+.. py:function:: stereographic_inverse(x: sympy.Expr, y: sympy.Expr) -> tuple[sympy.Expr, sympy.Expr, sympy.Expr]
+
+   Lift planar point ``(x, y)`` back onto the unit sphere $X^2 + Y^2 + Z^2 = 1$.
+
+
+.. py:function:: project_sphere_circle_plane(a: sympy.Expr, b: sympy.Expr, c: sympy.Expr, d: sympy.Expr) -> ProjectedCircleData
+
+   Project the spherical circle cut on $S^2$ by plane $aX + bY + cZ + d = 0$.
+
+   Substituting $(X, Y, Z) = \left(\frac{2x}{1+r^2}, \frac{2y}{1+r^2}, \frac{1-r^2}{1+r^2}\right)$
+   with $r^2 = x^2 + y^2$ yields:
+
+   $$(d - c)(x^2 + y^2) + 2ax + 2by + (d + c) = 0$$
+
+   - When $d = c$ (plane passes through South Pole $S = (0, 0, -1)$), the locus is the
+     exact straight line $ax + by + c = 0$.
+   - When $d \neq c$, completing the square yields an exact Euclidean circle with center
+     $(-\frac{a}{d-c}, -\frac{b}{d-c})$ and squared radius $\frac{a^2 + b^2 + c^2 - d^2}{(d-c)^2}$.
+
+
+.. py:function:: prove_circle_preservation_symbolically() -> dict[str, sympy.Expr]
+
+   Prove stereographic circle preservation universally over $\mathbb{Q}(a, b, c, d, x, y)$.
+
+
+.. py:function:: prove_conformal_metric_symbolically() -> sympy.Expr
+
+   Prove conformality of stereographic projection by computing the Jacobian metric tensor $J^T J$.
+
+   Verifies that for $\Phi(x, y) = (X(x, y), Y(x, y), Z(x, y))$,
+
+   $$J^T J = \frac{4}{(1 + x^2 + y^2)^2} \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}$$
+
+   so angles between intersecting curves on the sphere are preserved identically in the plane.
+
+
+.. py:function:: prove_parallel_inversion_symbolically() -> dict[str, sympy.Expr]
+
+   Prove *Planisphaerium* §4 (Heiberg 1907, p. 233): opposite parallels satisfy :math:`r_+ \cdot r_- = R^2`.
+
+   Parameterizing :math:`\sin\delta = \frac{2t}{1+t^2}, \cos\delta = \frac{1-t^2}{1+t^2}` (:math:`0 < t < 1`),
+   the parallel at :math:`+\delta` (:math:`Z = \sin\delta`) has projected radius :math:`r_+ = R \frac{1 - t}{1 + t}`
+   and the southern parallel at :math:`-\delta` (:math:`Z = -\sin\delta`) has radius :math:`r_- = R \frac{1 + t}{1 - t}`,
+   giving :math:`r_+ \cdot r_- = R^2` (``ez : ed = ed : ek``).
+
+
+.. py:function:: construct_astrolabe_planisphere(model: geometor.model.Model | None = None, *, equator_radius: int | sympy.Rational = 60, half_obliquity_tan: sympy.Rational = sp.Rational(1, 5)) -> AstrolabePlanisphereResult
+
+   Construct Ptolemy's *Planisphaerium* §§1 & 4 astrolabe plate in ``geometor.model``.
+
+   Follows Heiberg 1907, pp. 227-229 & 233 letter labels ($a\to A, b\to B, g\to G,
+   d\to D, e\to E, t\to T, l\to L, k\to K, m\to M, r\to R$):
+
+   - Equator $ABGD$ centered at North Pole $E = (0, 0)$ with orthogonal diameters $AG$ (vertical)
+     and $BD$ (horizontal).
+   - With rational half-obliquity parameter $u = \tan(\varepsilon / 2)$ (default $u = \frac{1}{5}$,
+     so $\sin\varepsilon = \frac{5}{13} \implies \varepsilon \approx 22^\circ 37'$, 100% in $\mathbb{Q}$!),
+     the Tropic of Cancer circle $TL$ has radius $r_{\mathrm{Can}} = R \frac{1 - u}{1 + u}$
+     ($= 40$ when $R = 60, u = \frac{1}{5}$) and the Tropic of Capricorn circle $KM$ has radius
+     $r_{\mathrm{Cap}} = R \frac{1 + u}{1 - u}$ ($= 90$ when $R = 60, u = \frac{1}{5}$),
+     satisfying $40 \times 90 = 3600 = 60^2$ (*Planisphaerium* §4)!
+   - Bisecting segment $TM$ ($T = (0, -r_{\mathrm{Can}})$, $M = (0, r_{\mathrm{Cap}})$) at
+     $R = (0, \frac{r_{\mathrm{Cap}} - r_{\mathrm{Can}}}{2})$ ($= (0, 25)$), the circle on
+     diameter $TM$ centered at $R$ has radius $\frac{r_{\mathrm{Cap}} + r_{\mathrm{Can}}}{2} = 65$
+     and passes **exactly** through opposite equatorial points $B = (-60, 0)$ and $D = (60, 0)$
+     since $25^2 + 60^2 = 65^2$ (*Planisphaerium* §1: $\angle MDT = 90^\circ$)!
+
+
+.. py:function:: construct_almucantar_circle(sin_latitude: sympy.Rational, cos_latitude: sympy.Rational, sin_altitude: sympy.Rational, *, equator_radius: int | sympy.Rational = 60) -> ProjectedCircleData
+
+   Compute the exact projected astrolabe almucantar (constant-altitude circle) over $\mathbb{Q}$.
+
+   For observer latitude $\varphi$ (zenith $Z_0 = (0, \cos\varphi, \sin\varphi)$ on $S^2$)
+   and altitude $h$ above the horizon ($h = 0$ gives Ptolemy's *Planisphaerium* §§2-3 horizon!),
+   the almucantar plane on the unit sphere is:
+
+   $$\cos\varphi \cdot Y + \sin\varphi \cdot Z - \sin h = 0$$
+
+   When $h = 0$ (horizon), $d = 0$, and the projected horizon circle passes through the two
+   diametrically opposite equatorial East/West points $(\pm R, 0)$.
+
+

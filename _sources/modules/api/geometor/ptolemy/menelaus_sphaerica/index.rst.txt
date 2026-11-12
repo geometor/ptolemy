@@ -1,0 +1,222 @@
+geometor.ptolemy.menelaus_sphaerica
+===================================
+
+.. py:module:: geometor.ptolemy.menelaus_sphaerica
+
+.. autoapi-nested-parse::
+
+   Exact symbolic Planar & Spherical Menelaus Lemmas (*Almagest* Book I, Chs. 13-14).
+
+   Implements Heiberg 1898, Vol. I.1, pp. 68-78:
+
+   1. **Planar Menelaus Lemma** (:func:`construct_planar_menelaus`, *Almagest* I.13, pp. 68-70):
+      Constructs Ptolemy's sector-figure ($AB, AC$ cut by $BE, CD$ meeting at $Z$) and draws
+      auxiliary line $EH \parallel CD$ meeting $AB$ at $H$ (Eucl. I.31, VI.4), proving both
+      *kata synthesin* ($\frac{CA}{AE} = \frac{CD}{DZ} \cdot \frac{ZB}{BE}$) and
+      *kata diairesin* ($\frac{CE}{EA} = \frac{CZ}{ZD} \cdot \frac{DB}{BA}$).
+   2. **Spherical Menelaus Chord Theorem & Solar Declination** (:func:`verify_spherical_menelaus`,
+      :func:`compute_solar_declination`, *Almagest* I.13-I.14, pp. 74-78):
+      Verifies Ptolemy's 3D central projection from the sphere center $H$ onto the plane of
+      $\triangle ACD$ (producing collinear meet points $\Theta, K, \Lambda$ on two intersecting
+      planes, Heiberg I, p. 75) and computes Ptolemy's exact chord ratio
+      $\operatorname{crd}(2\delta) = \frac{\operatorname{crd}(2\varepsilon)\operatorname{crd}(2\lambda)}{120}$.
+
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   geometor.ptolemy.menelaus_sphaerica.PlanarMenelausResult
+   geometor.ptolemy.menelaus_sphaerica.SphericalMenelausResult
+   geometor.ptolemy.menelaus_sphaerica.SolarDeclinationEntry
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.ptolemy.menelaus_sphaerica.construct_planar_menelaus
+   geometor.ptolemy.menelaus_sphaerica.verify_spherical_menelaus
+   geometor.ptolemy.menelaus_sphaerica.compute_solar_declination
+
+
+Module Contents
+---------------
+
+.. py:class:: PlanarMenelausResult
+
+   Exact symbolic elements and compound ratios for *Almagest* I.13 (pp. 68-70).
+
+
+   .. py:attribute:: model
+      :type:  geometor.model.Model
+
+
+   .. py:attribute:: A
+      :type:  sympy.geometry.Point
+
+
+   .. py:attribute:: B
+      :type:  sympy.geometry.Point
+
+
+   .. py:attribute:: C
+      :type:  sympy.geometry.Point
+
+
+   .. py:attribute:: D
+      :type:  sympy.geometry.Point
+
+
+   .. py:attribute:: E
+      :type:  sympy.geometry.Point
+
+
+   .. py:attribute:: Z
+      :type:  sympy.geometry.Point
+
+
+   .. py:attribute:: H
+      :type:  sympy.geometry.Point
+
+
+   .. py:attribute:: ratio_ca_ae
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: compound_synthesin
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: ratio_ce_ea
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: compound_diairesin
+      :type:  sympy.Expr
+
+
+.. py:class:: SphericalMenelausResult
+
+   Exact 3D rational sphere verification of *Almagest* I.13 (pp. 74-76).
+
+
+   .. py:attribute:: center_H
+      :type:  sympy.Matrix
+
+
+   .. py:attribute:: A
+      :type:  sympy.Matrix
+
+
+   .. py:attribute:: B
+      :type:  sympy.Matrix
+
+
+   .. py:attribute:: C
+      :type:  sympy.Matrix
+
+
+   .. py:attribute:: D
+      :type:  sympy.Matrix
+
+
+   .. py:attribute:: E
+      :type:  sympy.Matrix
+
+
+   .. py:attribute:: Z
+      :type:  sympy.Matrix
+
+
+   .. py:attribute:: Theta
+      :type:  sympy.Matrix
+
+
+   .. py:attribute:: K
+      :type:  sympy.Matrix
+
+
+   .. py:attribute:: Lambda
+      :type:  sympy.Matrix
+
+
+   .. py:attribute:: are_theta_k_lambda_collinear
+      :type:  bool
+
+
+   .. py:attribute:: lhs_chord_ratio_sq
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: rhs_compound_chord_ratio_sq
+      :type:  sympy.Expr
+
+
+.. py:function:: construct_planar_menelaus(model: geometor.model.Model | None = None) -> PlanarMenelausResult
+
+   Construct Ptolemy's planar Menelaus sector configuration (*Almagest* I.13, Heiberg I, pp. 68-70).
+
+   Follows Heiberg's Greek letters ($\mathrm{A}\to A, \mathrm{B}\to B, \mathrm{\Gamma}\to C,
+   \mathrm{\Delta}\to D, \mathrm{E}\to E, \mathrm{Z}\to Z, \mathrm{H}\to H$):
+   Across two straight lines $AB$ and $AC$, two transversals $BE$ and $CD$ meet at $Z$,
+   and $EH \parallel CD$ meets $AB$ at $H$.
+
+
+.. py:function:: verify_spherical_menelaus() -> SphericalMenelausResult
+
+   Verify Ptolemy's 3D central-projection proof of Spherical Menelaus (*Almagest* I.13, pp. 74-76).
+
+   Constructs an exact rational spherical Menelaus configuration $(A, B, C, D, E, Z)$ on $S^2$
+   centered at $H = (0, 0, 0)$, computes the three planar intersections $\Theta = AD \cap HB$,
+   $K = CD \cap HZ$, and $\Lambda = AC \cap HE$ (Heiberg I, p. 75), verifies that $\Theta, K, \Lambda$
+   are strictly collinear (lying in the intersection of plane $ACD$ with great-circle plane $HBZE$),
+   and verifies Ptolemy's exact spherical chord theorem:
+
+   $$\frac{\operatorname{crd}(2\widehat{CE})}{\operatorname{crd}(2\widehat{EA})}
+     = \frac{\operatorname{crd}(2\widehat{CZ})}{\operatorname{crd}(2\widehat{ZD})}
+     \cdot \frac{\operatorname{crd}(2\widehat{DB})}{\operatorname{crd}(2\widehat{BA})}$$
+
+
+.. py:class:: SolarDeclinationEntry
+
+   Solar declination entry computed by Ptolemy's *Almagest* I.14 Spherical Menelaus rule.
+
+
+   .. py:attribute:: longitude_deg
+      :type:  int
+
+
+   .. py:attribute:: crd_2lambda
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: crd_2delta_sexagesimal
+      :type:  geometor.ptolemy.pentagon_chords.Sexagesimal
+
+
+   .. py:attribute:: declination_deg_sexagesimal
+      :type:  geometor.ptolemy.pentagon_chords.Sexagesimal
+
+
+   .. py:attribute:: heiberg_declination
+      :type:  geometor.ptolemy.pentagon_chords.Sexagesimal
+
+
+.. py:function:: compute_solar_declination(longitude_deg: int) -> SolarDeclinationEntry
+
+   Compute Ptolemy's *Almagest* I.14–I.15 solar declination for $\lambda \in \{30^\circ, 60^\circ, 90^\circ\}$.
+
+   Reproduces Heiberg 1898, Vol. I.1, pp. 77-78 verbatim:
+   With obliquity $2\varepsilon = \frac{11}{83} \cdot 360^\circ = 47^\circ 42' 40''$
+   and Ptolemy's chord $\operatorname{crd}(2\varepsilon) = 48;31,55$, Menelaus's theorem gives:
+
+   $$\operatorname{crd}(2\delta) = \frac{\operatorname{crd}(2\varepsilon) \cdot \operatorname{crd}(2\lambda)}{120}$$
+
+   yielding $\delta(30^\circ) \approx 11^\circ 40'$ (Heiberg p. 78, l. 12: $\overline{\iota\alpha}\ \overline{\mu}$)
+   and $\delta(60^\circ) \approx 20^\circ 30' 9''$ (Heiberg p. 78, l. 24: $\overline{\kappa}\ \overline{\lambda}\ \overline{\theta}$).
+
+
