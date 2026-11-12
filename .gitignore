@@ -1,0 +1,23 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments & build artifacts
+.venv/
+venv/
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+
+# Compiled Sphinx documentation
+docs/
+
+# Archival PDFs & raw scan dumps
+*.pdf
+resources/pdfs/
+resources/scans/
+*.png
+!docsrc/_static/**/*.png
