@@ -31,6 +31,7 @@ Architecture of the Repository
 * **Reader's Guide** (:doc:`usage/index`): Guide to navigating synchronized reading tracks, Heiberg pagination, interactive diagrams, term search highlighting, and Python API.
 * **Symbolic Demonstrations** (:doc:`demos/index`): Pure-symbolic Python constructions (`Model(..., auto_intersect=False)`) free of floating-point coordinates, verifying every chord, cyclic quadrilateral, Menelaus transversal ratio, and stereographic circle over $\mathbb{Q}$, $\mathbb{Q}(\phi)$, and exact radical towers.
 * **Python API Reference** (:doc:`modules/index`): Documented modules in ``geometor.ptolemy`` (`pentagon_chords`, `cyclic_quadrilateral`, `menelaus_sphaerica`, `stereographic`).
+* **About This Edition & Provenance** (:doc:`about/index`): Scholarly methodology, Heiberg Teubner witnesses, Hermann of Carinthia's Latin translation, and the GEOMETOR mission.
 
 .. toctree::
    :maxdepth: 2
@@ -40,3 +41,4 @@ Architecture of the Repository
    usage/index
    demos/index
    modules/index
+   about/index
