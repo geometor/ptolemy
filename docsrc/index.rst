@@ -1,7 +1,9 @@
+:title: GEOMETOR • ptolemy
+
 Claudius Ptolemy
 ================
 
-*Chord Trigonometry, Cyclic Quadrilaterals, Spherical Menelaus Calculus, and Stereographic Projection*
+.. rubric:: Chord Trigonometry, Cyclic Quadrilaterals, Spherical Menelaus Calculus, and Stereographic Projection
 
 .. epigraph::
 
@@ -25,8 +27,9 @@ Overview
 Architecture of the Repository
 ------------------------------
 
-* **Digital Scriptorium Codex** (:doc:`almagest_geometry/index`): Four multi-track units (`:layout: book`) pairing original English translations with verbatim polytonic Greek (1898) and scientific Latin (1907) primary texts, executive geometric summaries, historical commentary, interactive `.euclid-graphic` SVGs, and linked apparatus registries (:doc:`Concordance <almagest_geometry/concordance>`, :doc:`Bibliography <almagest_geometry/bibliography>`, :doc:`Persons <almagest_geometry/persons>`, :doc:`Glossary <almagest_geometry/glossary>`).
-* **Exact Symbolic Demonstrations** (:doc:`demos/index`): Pure-symbolic Python constructions (`Model(..., auto_intersect=False)`) free of floating-point coordinates, verifying every chord, cyclic quadrilateral, Menelaus transversal ratio, and stereographic circle over $\mathbb{Q}$, $\mathbb{Q}(\phi)$, and exact radical towers.
+* **Book Codex** (:doc:`almagest_geometry/index`): Four multi-track units pairing original English translations with verbatim polytonic Greek (1898) and scientific Latin (1907) primary texts, executive geometric summaries, historical commentary, interactive `.euclid-graphic` SVGs, and linked scholarly apparatus (:doc:`Concordance <almagest_geometry/concordance>`, :doc:`Bibliography <almagest_geometry/bibliography>`, :doc:`People <almagest_geometry/persons>`, :doc:`Glossary <almagest_geometry/glossary>`).
+* **Reader's Guide** (:doc:`usage/index`): Guide to navigating synchronized reading tracks, Heiberg pagination, interactive diagrams, term search highlighting, and Python API.
+* **Symbolic Demonstrations** (:doc:`demos/index`): Pure-symbolic Python constructions (`Model(..., auto_intersect=False)`) free of floating-point coordinates, verifying every chord, cyclic quadrilateral, Menelaus transversal ratio, and stereographic circle over $\mathbb{Q}$, $\mathbb{Q}(\phi)$, and exact radical towers.
 * **Python API Reference** (:doc:`modules/index`): Documented modules in ``geometor.ptolemy`` (`pentagon_chords`, `cyclic_quadrilateral`, `menelaus_sphaerica`, `stereographic`).
 
 .. toctree::
@@ -34,5 +37,6 @@ Architecture of the Repository
    :hidden:
 
    almagest_geometry/index
+   usage/index
    demos/index
    modules/index

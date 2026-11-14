@@ -1,7 +1,15 @@
+:navigation: header
+:order: 6
+:nav_title: Bibliography
+:type: apparatus
+
 .. _ptolemy-bibliography:
 
-Bibliography & Primary Editions
-===============================
+============
+Bibliography
+============
+
+.. rubric:: Critical Greek Texts, Renaissance Commentaries, and Mathematical Companions
 
 Primary Public-Domain Editions
 ------------------------------

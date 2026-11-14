@@ -18,7 +18,7 @@ and *Planisphaerium* (ed. J. L. Heiberg 1907):
 
 from __future__ import annotations
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 from geometor.ptolemy.cyclic_quadrilateral import (
     CyclicQuadrilateralResult,
