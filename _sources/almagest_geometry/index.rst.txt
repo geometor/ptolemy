@@ -1,31 +1,31 @@
 :navigation: header
-:order: 10
+:order: 1
+:nav_title: Almagest & Planisphaerium
 :layout: book
-:book_title: Syntaxis Mathematica (Lib. I) & Planisphaerium
-:book_subtitle: Claudius Ptolemy · Chord Trigonometry, Menelaus Sphaerica & Stereographic Projection
+:book_title: Almagest (Book I) & Planisphaerium
+:book_subtitle: Syntaxis Mathematica & Planisphaerium — Claudius Ptolemy (ed. Heiberg)
+:author: Claudius Ptolemy
+:year: c. 150 CE
 
 .. _almagest-geometry-codex:
 
 Almagest I & Planisphaerium
 ===========================
 
-.. rst-class:: title-page
+.. rubric:: Κλαυδίου Πτολεμαίου Μαθηματικὴ Σύνταξις αʹ καὶ Ἐπιφάνεια Σφαίρας
 
-   **ΚΛΑΥΔΙΟΥ ΠΤΟΛΕΜΑΙΟΥ**
+.. container:: title-page
 
-   **ΜΑΘΗΜΑΤΙΚΗΣ ΣΥΝΤΑΞΕΩΣ ΒΙΒΛΙΟΝ ΠΡΩΤΟΝ (ΚΕΦ. Αʹ–ΙΔʹ)**
+   | **Claudius Ptolemy**
+   | *Syntaxis Mathematica (Book I, Chs. 1–14) & Planisphaerium*
+   |
+   | Greek Edition (*Almagest*): J. L. Heiberg (Leipzig: B. G. Teubner, 1898)
+   | Latin Edition (*Planisphaerium*): Hermann of Carinthia (1143), ed. J. L. Heiberg (Leipzig: B. G. Teubner, 1907)
+   | English Translation, Mathematical Proofs & Demonstrations: GEOMETOR Scriptorium
+   |
+   | GEOMETOR Digital Edition · Synchronized Multi-Track Book Codex
 
-   **ET PLANISPHAERIUM**
-
-   *Mathematical Systematic Treatise (Book I, Chs. 1–14) & Planar Representation of the Sphere*
-
-   Greek Text (*Almagest*): J. L. Heiberg (Leipzig: B. G. Teubner, 1898)
-
-   Latin Text (*Planisphaerium*): Hermann of Carinthia (1143), ed. J. L. Heiberg (Leipzig: B. G. Teubner, 1907)
-
-   English Translation, Diagrams & Symbolic Apparatus: GEOMETOR Scriptorium
-
-Conspectus Operis
+Table of Contents
 -----------------
 
 Composed at Alexandria around 150 CE by :person:`Claudius Ptolemy <ptolemy>` and dedicated to :person:`Syrus <syrus>`, the opening fourteen chapters of the :term:`Syntaxis Mathematica <syntaxis-mathematike>` (*Almagest*) and its companion treatise :term:`Planisphaerium <planisphaerium>` constitute the supreme surviving synthesis of classical Greek computational geometry, spherical trigonometry, and conformal cartographic projection. Each unit of this **Multi-Track Book Codex** provides synchronized reading tracks (**English**, **Greek (1898)** or **Latin**, **Summary**, and **Notes**) wired to interactive `.euclid-graphic` figures:
@@ -40,13 +40,13 @@ Editorial & Translation Note
 
 All primary polytonic Greek (*Almagest*) and medieval scientific Latin (*Planisphaerium*) texts in this codex are transcribed directly via multimodal page-scan inspection from :person:`J. L. Heiberg's <heiberg>` public-domain Teubner critical editions (:cite:`Heiberg 1898 <heiberg:1898>`; :cite:`Heiberg 1907 <heiberg:1907>`), cross-checked against the public-domain editions of :person:`N. B. Halma <halma>` (:cite:`1813 <halma:1813>`) and :person:`K. Manitius <manitius>` (:cite:`1912 <manitius:1912>`). Every English translation (`-en`), summary (`-summary`), and commentary (`-notes`) in this repository is **100% originally authored for GEOMETOR** directly from Heiberg's Greek and Latin; no copyrighted modern English translations were consulted or reproduced.
 
-Critical Apparatus & Concordances
----------------------------------
+Scholarly Apparatus
+-------------------
 
-* :doc:`Cross-Corpus Geometric Concordance <concordance>` — Bidirectional mapping linking Ptolemy's propositions to ``euclid``, ``elements``, ``divine``, ``apollonius``, ``archimedes``, ``menelaus``, ``pappus``, ``casey``, and ``altshiller-court``.
-* :doc:`Bibliography & Primary Editions <bibliography>` — Critical editions, ancient mathematical sources, and public-domain provenance.
-* :doc:`Index Nominum (Persons) <persons>` — Prosopographical register of **18** geometers, astronomers, philosophers, and editors.
-* :doc:`Greek & Latin Mathematical Glossary <glossary>` — Lexicon of **15** technical Greek and Latin terms.
+* :doc:`Geometric Concordance <concordance>` — Bidirectional mapping linking Ptolemy's propositions to Euclid, Apollonius, Archimedes, Menelaus, and modern geometry.
+* :doc:`Bibliography <bibliography>` — Critical editions, ancient mathematical sources, and public-domain provenance.
+* :doc:`People <persons>` — Prosopographical register of 18 ancient and modern astronomers, geometers, and editors.
+* :doc:`Glossary <glossary>` — Lexicon of 15 technical Greek and Latin mathematical terms.
 
 .. toctree::
    :maxdepth: 1
@@ -73,7 +73,7 @@ Critical Apparatus & Concordances
 .. toctree::
    :maxdepth: 1
    :hidden:
-   :caption: Apparatus
+   :caption: Scholarly Apparatus
 
    concordance
    bibliography
