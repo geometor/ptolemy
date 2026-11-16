@@ -1,31 +1,37 @@
-================
-GEOMETOR Ptolemy
-================
+GEOMETOR • ptolemy
+==================
 
-Digital Scriptorium Book Codex (``:layout: book``) and **100% exact symbolic SymPy / ``geometor.model`` constructions** for **Claudius Ptolemy (c. 100–170 CE)**:
+**Visit the Online Archive:** https://geometor.github.io/ptolemy/
 
-1. ***Almagest* (*Μαθηματικὴ Σύνταξις*, Book I, Chapters 1–14)** — Grounded in J. L. Heiberg's Teubner critical Greek edition (*Syntaxis Mathematica*, Vol. I.1, Leipzig, 1898): cosmic sphericity, the sexagesimal chord circle ($R = 60^p, D = 120^p$), **Ptolemy's single-circle Golden Pentagon–Decagon construction**, **Ptolemy's Theorem on Cyclic Quadrilaterals** ($AC \cdot BD = AB \cdot CD + BC \cdot DA$), difference/sum/half-arc chord calculus, **Ptolemy's Inequality Lemma** ($\operatorname{crd} 1^\circ \approx 1;2,50 \implies \pi \approx 3;8,30 = \frac{377}{120}$), and **Planar & Spherical Menelaus Trigonometry**.
-2. ***Planisphaerium* (Sections 1–4)** — Grounded in J. L. Heiberg's Teubner critical Latin edition (*Opera Astronomica Minora*, Vol. II, Leipzig, 1907; trans. Hermann of Carinthia, Toulouse, 1143): **stereographic projection** from the South Celestial Pole onto the equatorial plane, conformal circle-preservation via Apollonius *Conics* I.5, circular inversion of opposite parallels ($r_{\text{Cap}} \cdot r_{\text{Can}} = R_{\text{eq}}^2$), and planispheric astrolabe geometry.
+**Claudius Ptolemy • Syntaxis Mathematica (Almagest), Planisphaerium • semantic digital archive**
 
-Highlights
-----------
+Mission
+-------
 
-* **Zero Floating-Point Coordinates**: Every ``geometor.model.Model`` construction runs with ``auto_intersect=False`` strictly over $\mathbb{Q}$, $\mathbb{Q}(\phi)$, and exact SymPy radical towers.
-* **Multi-Track Scholarly Codex**: Synchronized **English**, **Greek (1898)** / **Latin**, **Summary**, and **Notes** tracks paired with 9 interactive ``.euclid-graphic`` SVG figures and cross-corpus GEOMETOR concordances.
+``geometor/ptolemy`` is part of the interconnected `GEOMETOR <https://geometor.com>`_ semantic digital archive. Claudius Ptolemy's landmark treatises established the foundations of ancient mathematical astronomy, chord trigonometry, cyclic quadrilaterals, spherical trigonometry, and stereographic projection. Within this archive, Ptolemy's geometric works are liberated from isolated print bounds into addressable semantic units, synchronized multi-track bilingual codices, calibrated vector diagrams, and exact symbolic algebra across the GEOMETOR corpus.
 
-Quick Start
------------
+Books in This Archive
+---------------------
+
+- **`Syntaxis Mathematica (Almagest) <https://geometor.github.io/ptolemy/almagest_geometry/>`_** — Book I of Ptolemy's Syntaxis Mathematica (c. 150 CE / ed. J. L. Heiberg, 1898), covering the sexagesimal chord table, golden pentagon-decagon construction, and Ptolemy's Theorem on cyclic quadrilaterals.
+- **`Planisphaerium <https://geometor.github.io/ptolemy/planisphaerium/>`_** — Astrolabe geometry and stereographic projection from the South Celestial Pole onto the equator (c. 150 CE / ed. Heiberg), preserving circles and establishing conformal coordinate systems.
+
+Repository Contents
+-------------------
+
+- ``docsrc/`` — Multi-track Book Codex tracks, translation notes, and apparatus compiled by `PHOTON publish <https://github.com/photon-platform/publish>`_.
+- ``resources/`` — Primary source Greek and Latin witness texts, citations, and figure registries.
+- ``src/geometor/ptolemy/`` — Exact SymPy chord constructions, stereographic projection engine, and CLI tools.
+
+Local Build & Verification
+--------------------------
 
 .. code-block:: bash
 
-   # Lint & test
-   ruff check src scripts demos tests
-   /home/phi/PROJECTS/geometor/.venv/bin/python -m pytest
-
-   # Run symbolic Rich demonstrations
-   /home/phi/PROJECTS/geometor/.venv/bin/python demos/pentagon_chords.py
-   /home/phi/PROJECTS/geometor/.venv/bin/python demos/cyclic_quadrilateral.py
-   /home/phi/PROJECTS/geometor/.venv/bin/python demos/stereographic.py
-
-   # Build Book Codex HTML into docs/
    publish build
+   uv run --no-sync pytest
+
+Part of the GEOMETOR Knowledge Archive
+--------------------------------------
+
+Explore all **74 Book Codices** and **11 Mathematical Catalogs** at https://geometor.com/books/.
