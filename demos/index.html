@@ -6,12 +6,32 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Symbolic Demonstrations &mdash; GEOMETOR • ptolemy</title>
+
+  <title>Symbolic Demonstrations — Claudius Ptolemy • GEOMETOR</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="canonical" href="https://geometor.github.io/ptolemy/demos/" />
+  <meta name="description" content="Executable pure-symbolic Python demonstrations (Model(…, auto_intersect=False)) verifying every geometric construction and algebraic identity in Almagest Book I and Planisphaerium with zero…" />
+  <meta property="og:site_name" content="GEOMETOR" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Symbolic Demonstrations — Claudius Ptolemy • GEOMETOR" />
+  <meta property="og:description" content="Executable pure-symbolic Python demonstrations (Model(…, auto_intersect=False)) verifying every geometric construction and algebraic identity in Almagest Book I and Planisphaerium with zero…" />
+  <meta property="og:url" content="https://geometor.github.io/ptolemy/demos/" />
+  <meta property="og:image" content="https://geometor.github.io/ptolemy/_static/social/banner.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Claudius Ptolemy — GEOMETOR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Symbolic Demonstrations — Claudius Ptolemy • GEOMETOR" />
+  <meta name="twitter:description" content="Executable pure-symbolic Python demonstrations (Model(…, auto_intersect=False)) verifying every geometric construction and algebraic identity in Almagest Book I and Planisphaerium with zero…" />
+  <meta name="twitter:image" content="https://geometor.github.io/ptolemy/_static/social/banner.png" />
+  <meta name="twitter:image:alt" content="Claudius Ptolemy — GEOMETOR" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="../_static/css/styles.css?v=99410eb1" />
+  <link rel="stylesheet" type="text/css" href="../_static/css/styles.css?v=81e79cc0" />
   <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
   <link rel="stylesheet" type="text/css" href="../_static/ptolemy_greek.css?v=de4239ee" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
@@ -24,21 +44,24 @@
 <body class="book-theme-classical-serif">
   <header>
     <div class="logo">
-      <a href="../index.html">
-        <img src="../_static/logo.png" class="logo" alt="Logo"/>
+      <a href="../index.html" title="Home">
+        <img src="../_static/logo.png" class="logo" alt="GEOMETOR ptolemy"/>
+        <div class="org-repo">
+          <span class="org">GEOMETOR</span>
+          <span class="sep" aria-hidden="true">&bull;</span>
+          <span class="repo">ptolemy</span>
+        </div>
       </a>
-      <div class="org-repo">
-        <span class="org">GEOMETOR</span>
-        •
-        <span class="repo">ptolemy</span>
-      </div>
     </div>
     <nav aria-label="Header">
       <input type="checkbox" id="nav-Header-toggle" >
       <label for="nav-Header-toggle" >Header</label>
       <ul>
         <li>
-          <a href="../almagest_geometry/index.html"  >Almagest & Planisphaerium</a>
+          <a href="../almagest_geometry/index.html"  >Syntaxis Mathematica</a>
+        </li>
+        <li>
+          <a href="../planisphaerium/index.html"  >Planisphaerium</a>
         </li>
         <li>
           <a href="../almagest_geometry/persons.html"  >People</a>
@@ -66,11 +89,9 @@
     <article class="book-layout book-reading-pane">
       <header class="book-header">
         <div class="book-header-bar">
-          <div class="book-header-identity">
-            <a class="book-portal-link" href="../index.html" title="Return to Project Portal">&larr; ptolemy</a>
-            <span class="book-header-sep">/</span>
-            <a class="book-title-link" href="../index.html">GEOMETOR • ptolemy</a>
-          </div>
+          <nav class="book-breadcrumbs" aria-label="Breadcrumb">
+            <span class="book-crumb-current is-section-root" aria-current="page">Demos</span>
+          </nav>
         </div>
         <div class="book-header-nav">
           <div class="book-nav-prev">
@@ -413,13 +434,13 @@
         <div class="book-footer-ornament">&#10086;</div>
         <div class="book-footer-nav">
           <div class="book-nav-prev">
-            <a class="book-nav-btn" href="../usage/index.html" title="Using This Edition">&larr; <span class="nav-label">Using This Edition</span></a>
+            <a class="book-nav-btn" href="../usage/index.html" title="Using This Edition">&larr; <span class="nav-label">Prev</span></a>
           </div>
           <div class="book-nav-center">
-            <a class="book-toc-link" href="../index.html">GEOMETOR • ptolemy</a>
+            <a class="book-toc-link" href="../index.html">Claudius Ptolemy</a>
           </div>
           <div class="book-nav-next">
-            <a class="book-nav-btn" href="../modules/index.html" title="Modules"><span class="nav-label">Modules</span> &rarr;</a>
+            <a class="book-nav-btn" href="../modules/index.html" title="Modules"><span class="nav-label">Next</span> &rarr;</a>
           </div>
         </div>
       </footer>
@@ -448,6 +469,9 @@
       <h3>Types</h3>
       <ul>
         <li><a href="../types/apparatus.html">apparatus</a></li>
+        <li><a href="../types/book.html">book</a></li>
+        <li><a href="../types/chapter.html">chapter</a></li>
+        <li><a href="../types/section.html">section</a></li>
       </ul>
     </aside>
   </div>
