@@ -2,13 +2,13 @@
 
 .. container:: author-overline
 
-   the works of
+   semantic digital archive • the works of
 
 ================
 Claudius Ptolemy
 ================
 
-The mission of this project is to capture a semantic digital library of the works of :person:`Claudius Ptolemy <ptolemy>` (c. 100–170 CE), the Alexandrian mathematician, astronomer, and geographer whose *Syntaxis Mathematica* (*Almagest*) and *Planisphaerium* established chord trigonometry, cyclic quadrilaterals, spherical trigonometry, and stereographic projection.
+The works of :person:`Claudius Ptolemy <ptolemy>` (c. 100–c. 170 CE), Alexandrian mathematician, astronomer, and geographer, established the foundational models of chord trigonometry, cyclic quadrilaterals, spherical trigonometry, and stereographic projection. Within the interconnected `GEOMETOR <https://geometor.com/books/>`_ semantic digital archive, these landmark treatises are liberated from static print bounds—decomposed into addressable semantic units, synchronized bilingual codices, calibrated vector diagrams, and cross-corpus citations speaking one shared geometric language.
 
 .. collection::
    :type: book
