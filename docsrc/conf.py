@@ -37,7 +37,9 @@ repo_name = "ptolemy"
 
 setup_globals(org, org_name, repo, repo_name)  # noqa: F405
 
-project = "GEOMETOR • ptolemy"
+site_title = "Claudius Ptolemy"
+project = site_title
+html_title = f"{site_title} • {org_name}"
 author = "Claudius Ptolemy (ed. J. L. Heiberg)"
 copyright = "c. 150 CE · 1898 / 1907 Teubner · Digital Codex GEOMETOR"
 

@@ -4,6 +4,7 @@ __pycache__/
 *$py.class
 
 # Virtual environments & build artifacts
+.venv
 .venv/
 venv/
 build/
@@ -23,3 +24,5 @@ resources/pdfs/
 resources/scans/
 *.png
 !docsrc/_static/**/*.png
+!resources/**/folios/*.png
+!resources/**/extracted_graphics/*.png

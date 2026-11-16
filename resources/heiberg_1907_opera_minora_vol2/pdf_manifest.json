@@ -1,0 +1,19 @@
+{
+  "edition": "heiberg_1907_opera_minora_vol2",
+  "source_pdf": "resources/pdfs/heiberg_1907_opera_minora_vol2.pdf",
+  "total_pages": 492,
+  "dpi": 300,
+  "preserve_color": false,
+  "folio_png_count": 492,
+  "rendered_new_count": 492,
+  "extracted_text_pages": 492,
+  "extracted_graphics_count": 6,
+  "extracted_graphics": [
+    "0166-img1.png",
+    "0167-img1.png",
+    "0168-img1.png",
+    "0169-img1.png",
+    "0170-img1.png",
+    "0171-img1.png"
+  ]
+}
