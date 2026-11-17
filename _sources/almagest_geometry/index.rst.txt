@@ -46,7 +46,7 @@ Scholarly Apparatus
 
 * :doc:`Geometric Concordance <concordance>` — Bidirectional mapping linking Ptolemy's propositions to Euclid, Apollonius, Archimedes, Menelaus, and modern geometry.
 * :doc:`Bibliography <bibliography>` — Critical editions, ancient mathematical sources, and public-domain provenance.
-* :doc:`People <persons>` — Prosopographical register of ancient and modern astronomers, geometers, and editors.
+* :doc:`People <people/index>` — Prosopographical register of ancient and modern astronomers, geometers, and editors.
 * :doc:`Glossary <glossary>` — Lexicon of technical Greek and Latin mathematical terms.
 
 .. toctree::
@@ -82,7 +82,7 @@ Scholarly Apparatus
 
    concordance
    bibliography
-   persons
+   people/index
    glossary
 
 .. toctree::

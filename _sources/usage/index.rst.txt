@@ -62,7 +62,7 @@ People, Bibliography & Glossary Tooltips
 
 Rich contextual references are woven into every page:
 
-* **People Hover Cards**: Interactive `:person:` cross-references (such as :person:`Claudius Ptolemy <ptolemy>`, :person:`Hipparchus <hipparchus>`, and :person:`Menelaus <menelaus>`) link directly to biographical profiles in the :doc:`People </almagest_geometry/persons>` register.
+* **People Hover Cards**: Interactive `:person:` cross-references (such as :person:`Claudius Ptolemy <ptolemy>`, :person:`Hipparchus <hipparchus>`, and :person:`Menelaus <menelaus>`) link directly to biographical profiles in the :doc:`People </almagest_geometry/people/index>` register.
 * **Citation Popups**: Inline bibliographic citations (:cite:`Heiberg 1898 <heiberg:1898>`) provide provenance and direct links to the :doc:`Bibliography </almagest_geometry/bibliography>`.
 * **Technical Glossary**: Specialized Greek and Latin terms (e.g., :term:`Syntaxis Mathematica <syntaxis-mathematike>`, :term:`extreme and mean ratio <akron-kai-meson-logon>`) connect directly to the :doc:`Glossary </almagest_geometry/glossary>`.
 * **Theme Switching**: Toggle between Light and Dark reading modes via the header controls.
