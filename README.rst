@@ -3,7 +3,12 @@ GEOMETOR • ptolemy
 
 **Visit the Online Archive:** https://geometor.github.io/ptolemy/
 
-**Claudius Ptolemy • Syntaxis Mathematica (Almagest), Planisphaerium • semantic digital archive**
+.. image:: docsrc/_static/figures/fig01_celestial_sphere_preliminaries.svg
+   :alt: GEOMETOR • ptolemy featured geometric construction
+   :target: https://geometor.github.io/ptolemy/
+   :align: center
+
+**Claudius Ptolemy • The Almagest, Planisphere • semantic digital archive**
 
 Mission
 -------
@@ -13,8 +18,8 @@ Mission
 Books in This Archive
 ---------------------
 
-- **`Syntaxis Mathematica (Almagest) <https://geometor.github.io/ptolemy/almagest_geometry/>`_** — Book I of Ptolemy's Syntaxis Mathematica (c. 150 CE / ed. J. L. Heiberg, 1898), covering the sexagesimal chord table, golden pentagon-decagon construction, and Ptolemy's Theorem on cyclic quadrilaterals.
-- **`Planisphaerium <https://geometor.github.io/ptolemy/planisphaerium/>`_** — Astrolabe geometry and stereographic projection from the South Celestial Pole onto the equator (c. 150 CE / ed. Heiberg), preserving circles and establishing conformal coordinate systems.
+- **`The Almagest <https://geometor.github.io/ptolemy/almagest_geometry/>`_** — Book I of Ptolemy's *Syntaxis Mathematica* (c. 150 CE / ed. J. L. Heiberg, 1898), covering the sexagesimal chord table, golden pentagon-decagon construction, and Ptolemy's Theorem on cyclic quadrilaterals.
+- **`Planisphere <https://geometor.github.io/ptolemy/planisphaerium/>`_** — Astrolabe geometry and stereographic projection from the South Celestial Pole onto the equator (c. 150 CE / ed. Heiberg), preserving circles and establishing conformal coordinate systems.
 
 Repository Contents
 -------------------
