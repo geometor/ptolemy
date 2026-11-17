@@ -18,8 +18,8 @@ Mission
 Books in This Archive
 ---------------------
 
-- **`The Almagest <https://geometor.github.io/ptolemy/almagest_geometry/>`_** — Book I of Ptolemy's *Syntaxis Mathematica* (c. 150 CE / ed. J. L. Heiberg, 1898), covering the sexagesimal chord table, golden pentagon-decagon construction, and Ptolemy's Theorem on cyclic quadrilaterals.
-- **`Planisphere <https://geometor.github.io/ptolemy/planisphaerium/>`_** — Astrolabe geometry and stereographic projection from the South Celestial Pole onto the equator (c. 150 CE / ed. Heiberg), preserving circles and establishing conformal coordinate systems.
+- `The Almagest <https://geometor.github.io/ptolemy/almagest_geometry/>`_ — Book I of Ptolemy's *Syntaxis Mathematica* (c. 150 CE / ed. J. L. Heiberg, 1898), covering the sexagesimal chord table, golden pentagon-decagon construction, and Ptolemy's Theorem on cyclic quadrilaterals.
+- `Planisphere <https://geometor.github.io/ptolemy/planisphaerium/>`_ — Astrolabe geometry and stereographic projection from the South Celestial Pole onto the equator (c. 150 CE / ed. Heiberg), preserving circles and establishing conformal coordinate systems.
 
 Repository Contents
 -------------------
