@@ -1,29 +1,31 @@
 :navigation: header
 :order: 1
 :type: book
-:nav_title: Syntaxis Mathematica
-:breadcrumb_title: Syntaxis Mathematica
+:nav_title: The Almagest
+:breadcrumb_title: The Almagest
 :layout: book
-:book_title: Syntaxis Mathematica (Almagest)
-:book_subtitle: Book I — Claudius Ptolemy (ed. J. L. Heiberg, 1898)
+:book_title: The Almagest
+:book_subtitle: Syntaxis Mathematica, Book I — Claudius Ptolemy (ed. J. L. Heiberg, 1898)
 :author: Claudius Ptolemy
 :year: c. 150 CE
 :folio: heiberg_1898_syntaxis_vol1_pt1:0014
+:tracks: English: index | Greek: title-el
 :excerpt: Ptolemy's foundational treatise on spherical cosmology, sexagesimal chord trigonometry, regular decagon and pentagon construction, Ptolemy's Theorem on cyclic quadrilaterals, chord difference and half-arc lemmas, and spherical Menelaus trigonometry.
 
 .. _almagest-geometry-codex:
 
-Syntaxis Mathematica (Almagest)
-===============================
+============
+The Almagest
+============
 
-.. rubric:: Κλαυδίου Πτολεμαίου Μαθηματικὴ Σύνταξις αʹ
+.. rubric:: *Μαθηματικὴ Σύνταξις* (*Syntaxis Mathematica*) αʹ — Claudius Ptolemy
 
 .. container:: title-page
 
    | **Claudius Ptolemy**
-   | *Syntaxis Mathematica (Book I, Chs. 1–14)*
+   | *The Almagest (Book I, Chs. 1–14)*
    |
-   | Greek Edition (*Almagest*): J. L. Heiberg (Leipzig: B. G. Teubner, 1898)
+   | Greek Edition (*Syntaxis Mathematica*): J. L. Heiberg (Leipzig: B. G. Teubner, 1898)
    | English Translation, Mathematical Proofs & Demonstrations: GEOMETOR Scriptorium
    |
    | GEOMETOR Digital Edition · Synchronized Multi-Track Book Codex
@@ -31,13 +33,13 @@ Syntaxis Mathematica (Almagest)
 Table of Contents
 -----------------
 
-Composed at Alexandria around 150 CE by :person:`Claudius Ptolemy <ptolemy>` and dedicated to :person:`Syrus <syrus>`, the opening fourteen chapters of the :term:`Syntaxis Mathematica <syntaxis-mathematike>` (*Almagest*) constitute the supreme surviving synthesis of classical Greek computational geometry, chord trigonometry, and spherical geometry. Each chapter of this **Multi-Track Book Codex** provides synchronized reading tracks (**English**, **Greek (1898)**, **Summary**, and **Notes**) wired to interactive diagrams.
+Composed at Alexandria around 150 CE by :person:`Claudius Ptolemy <ptolemy>` and dedicated to :person:`Syrus <syrus>`, the opening fourteen chapters of the :term:`Almagest <syntaxis-mathematike>` (*Μαθηματικὴ Σύνταξις*) constitute the supreme surviving synthesis of classical Greek computational geometry, chord trigonometry, and spherical geometry. Each chapter of this **Multi-Track Book Codex** provides synchronized reading tracks (**English**, **Greek**, **Summary**, and **Notes**) wired to interactive diagrams.
 
 .. collection::
    :type: chapter
    :sort: order
 
-For Ptolemy's companion treatise on stereographic projection, see :doc:`Planisphaerium <../planisphaerium/index>`.
+For Ptolemy's companion treatise on stereographic projection, see :doc:`Planisphere <../planisphaerium/index>`.
 
 Scholarly Apparatus
 -------------------
@@ -82,3 +84,10 @@ Scholarly Apparatus
    bibliography
    persons
    glossary
+
+.. toctree::
+   :maxdepth: 1
+   :hidden:
+   :caption: Title Pages
+
+   title-el
