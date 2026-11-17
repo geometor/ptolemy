@@ -21,18 +21,6 @@ Books in This Archive
 - `The Almagest <https://geometor.github.io/ptolemy/almagest_geometry/>`_ — Book I of Ptolemy's *Syntaxis Mathematica* (c. 150 CE / ed. J. L. Heiberg, 1898), covering the sexagesimal chord table, golden pentagon-decagon construction, and Ptolemy's Theorem on cyclic quadrilaterals.
 - `Planisphere <https://geometor.github.io/ptolemy/planisphaerium/>`_ — Astrolabe geometry and stereographic projection from the South Celestial Pole onto the equator (c. 150 CE / ed. Heiberg), preserving circles and establishing conformal coordinate systems.
 
-Python Package & Modules
-------------------------
-
-The ``geometor-ptolemy`` Python package (``import geometor.ptolemy``) provides the executable symbolic geometry, construction, and compilation modules powering this archive:
-
-- ``cyclic_quadrilateral.py`` — Exact symbolic construction & proof of Ptolemy's Theorem on Cyclic Quadrilaterals.
-- ``menelaus_sphaerica.py`` — Exact symbolic Planar & Spherical Menelaus Lemmas (*Almagest* Book I, Chs. 13-14).
-- ``pentagon_chords.py`` — Exact symbolic construction of Ptolemy's Golden Pentagon-Decagon & Sexagesimal Chords.
-- ``stereographic.py`` — Exact symbolic 3D-to-2D Stereographic Projection & Astrolabe Geometry (*Planisphaerium*).
-- ``sphinx_ext.py`` — Runtime Sphinx & photon-platform/publish integration for GEOMETOR Ptolemy.
-
-See the `API Reference <https://geometor.github.io/ptolemy/modules/>`_ for full module documentation.
 
 Repository Contents
 -------------------
