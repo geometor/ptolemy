@@ -1,0 +1,38 @@
+{
+  "repository": "geometor/ptolemy",
+  "rights_category": "public-domain",
+  "sources": [
+    {
+      "id": "heiberg-1898-syntaxis-vol1",
+      "title": "Claudii Ptolemaei Opera quae exstant omnia — Vol. I.1: Syntaxis Mathematica (1898)",
+      "author": "J. L. Heiberg (ed.)",
+      "year": "1898",
+      "era": "Internet Archive",
+      "languages": [
+        "Greek"
+      ],
+      "site_url": "https://archive.org/details/pt1claudiiptolemaei01ptoluoft",
+      "local_path": "resources/pdfs/heiberg_1898_syntaxis_vol1_pt1.pdf",
+      "pages": 562,
+      "publisher": "B. G. Teubner, Leipzig",
+      "rights": "Public Domain (1898)",
+      "excerpt": "Teubner Greek edition of the Almagest (Books I–VI), 562 pp., Internet Archive."
+    },
+    {
+      "id": "heiberg-1907-opera-minora",
+      "title": "Claudii Ptolemaei Opera quae exstant omnia — Vol. II: Opera Astronomica Minora (1907)",
+      "author": "J. L. Heiberg (ed.)",
+      "year": "1907",
+      "era": "Internet Archive",
+      "languages": [
+        "Greek"
+      ],
+      "site_url": "https://archive.org/search?query=Claudii+Ptolemaei+Opera+astronomica+minora+Heiberg+1907",
+      "local_path": "resources/pdfs/heiberg_1907_opera_minora_vol2.pdf",
+      "pages": 492,
+      "publisher": "B. G. Teubner, Leipzig",
+      "rights": "Public Domain (1907)",
+      "excerpt": "Teubner Greek edition of Ptolemy's minor astronomical works (1907), 492 pp."
+    }
+  ]
+}
