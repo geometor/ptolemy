@@ -1,13 +1,13 @@
+.. image:: docsrc/_static/logo.png
+   :alt: GEOMETOR • ptolemy Medallion
+   :target: https://geometor.github.io/ptolemy/
+   :width: 150px
+   :align: right
+
 GEOMETOR • ptolemy
 ==================
 
 **Visit the Online Archive:** https://geometor.github.io/ptolemy/
-
-.. image:: docsrc/_static/logo.png
-   :alt: GEOMETOR • ptolemy Medallion
-   :target: https://geometor.github.io/ptolemy/
-   :width: 180px
-   :align: center
 
 .. image:: docsrc/_static/figures/fig01_celestial_sphere_preliminaries.svg
    :alt: GEOMETOR • ptolemy featured geometric construction
