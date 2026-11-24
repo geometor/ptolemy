@@ -1,6 +1,6 @@
-:order: 5
+:order: 13
 :type: chapter
-:book: Syntaxis Mathematica (Almagest)
+:book: Almagest (Book I)
 :title: Chapter 13 · Summary
 :folio: heiberg_1898_syntaxis_vol1_pt1:0078
 :tracks: English: ch_13-en | Greek: ch_13-el | Summary: ch_13-summary | Notes: ch_13-notes
@@ -10,48 +10,33 @@
 Chapter 13 · Summary
 ====================
 
-The Menelaus Spherical Calculus & Solar Declination
----------------------------------------------------
+The Planar & Spherical Menelaus Lemmas
+--------------------------------------
 
-1. **Planar Menelaus Sector Lemma**:
-   Drawing auxiliary parallel $EH \parallel \Gamma\Delta$ demonstrates the compound ratios:
+1. **Planar Menelaus Sector Lemmas** (*Heiberg I, pp. 68–70*):
+   Drawing an auxiliary parallel establishes both compound ratios by composition (:term:`κατὰ σύνθεσιν <kata-synthesin>`) and by division (:term:`κατὰ διαίρεσιν <kata-diairesin>`):
 
-   $$\frac{\Gamma A}{AE} = \frac{\Gamma\Delta}{\Delta Z}\cdot\frac{ZB}{BE} \qquad\text{(:term:`κατὰ σύνθεσιν <kata-synthesin>`)}.$$
+   .. math::
 
-   $$\frac{\Gamma E}{EA} = \frac{\Gamma Z}{Z\Delta}\cdot\frac{\Delta B}{BA} \qquad\text{(:term:`κατὰ διαίρεσιν <kata-diairesin>`)}.$$
+      \frac{\Gamma A}{AE} = \frac{\Gamma\Delta}{\Delta Z} \cdot \frac{ZB}{BE},
+      \qquad
+      \frac{\Gamma E}{EA} = \frac{\Gamma Z}{\Delta Z} \cdot \frac{\Delta B}{BA}.
 
-2. **3D Central Projection onto the Sphere**:
-   Projecting great-circle intersections from the sphere center $H$ onto the plane of $\triangle A\Gamma\Delta$ maps great circle $BZE$ to the straight line $\Theta K\Lambda$ in space (:just:`Eucl. XI.3 <XI.3>`), establishing the spherical Menelaus theorem for double-arc chords.
+2. **Circular Chord-Ratio Lemmas & Corollaries** (*Heiberg I, pp. 70–74*):
+   Two auxiliary circle lemmas relate chord-ratios of double arcs to straight-line segments cut by an internal or external secant,
+   and each lemma yields a constructive corollary determining the individual arcs whenever the total arc and the double-arc chord ratio are given:
 
-3. **The Solar Declination Law (*Almagest* I.14)**:
-   Specializing Spherical Menelaus to the celestial quadrant between celestial equator and ecliptic reduces the compound ratio to the exact chord equivalent of the modern spherical sine law $\sin\delta = \sin\varepsilon \sin\lambda$:
+   .. math::
 
-   $$\operatorname{crd}(2\delta) = \frac{\operatorname{crd}(2\varepsilon)\cdot\operatorname{crd}(2\lambda)}{120}.$$
+      \frac{\operatorname{crd}(2 AB)}{\operatorname{crd}(2 B\Gamma)} = \frac{AE}{E\Gamma},
+      \qquad
+      \frac{\operatorname{crd}(2 \Gamma A)}{\operatorname{crd}(2 AB)} = \frac{\Gamma E}{EB}.
 
-Exact Symbolic vs. Heiberg (1898) Declination Check
----------------------------------------------------
+3. **3D Central Projection & Spherical Menelaus Theorem** (*Heiberg I, pp. 74–76*):
+   Projecting great-circle intersections from sphere center :math:`H` onto the plane of :math:`\triangle A\Gamma\Delta` maps great circle :math:`BZE` to straight line :math:`\Theta K\Lambda` in space (:just:`Eucl. XI.3 <XI.3>`), establishing both spherical compound chord ratios:
 
-.. list-table::
-   :header-rows: 1
-   :widths: 20 20 20 20 20
+   .. math::
 
-   * - Solar Longitude $\lambda$
-     - $\operatorname{crd}(2\lambda)$
-     - $\operatorname{crd}(2\delta)$
-     - Computed $\delta(\lambda)$
-     - Heiberg (1898, p. 78)
-   * - $30^\circ$ (Taurus / 1 sign)
-     - ``60;0,0``
-     - ``24;15,57``
-     - ``11;40,0°``
-     - ``11° 40'``
-   * - $60^\circ$ (Gemini / 2 signs)
-     - ``103;55,23``
-     - ``42;1,48``
-     - ``20;30,9°``
-     - ``20° 30' 9''``
-   * - $90^\circ$ (Solstice)
-     - ``120;0,0``
-     - ``48;31,55``
-     - ``23;51,20°``
-     - ``23° 51' 20''``
+      \frac{\operatorname{crd}(2 \Gamma E)}{\operatorname{crd}(2 EA)} = \frac{\operatorname{crd}(2 \Gamma Z)}{\operatorname{crd}(2 Z\Delta)} \cdot \frac{\operatorname{crd}(2 \Delta B)}{\operatorname{crd}(2 BA)},
+      \qquad
+      \frac{\operatorname{crd}(2 \Gamma A)}{\operatorname{crd}(2 EA)} = \frac{\operatorname{crd}(2 \Gamma\Delta)}{\operatorname{crd}(2 \Delta Z)} \cdot \frac{\operatorname{crd}(2 ZB)}{\operatorname{crd}(2 BE)}.

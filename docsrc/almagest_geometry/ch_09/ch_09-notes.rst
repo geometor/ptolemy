@@ -1,4 +1,4 @@
-:order: 1
+:order: 9
 :type: chapter
 :book: Syntaxis Mathematica (Almagest)
 :title: Chapter 9 · Notes
@@ -10,14 +10,9 @@
 Chapter 9 · Notes
 =================
 
-Historical & Epistemological Context
-------------------------------------
+Textual & Methodological Notes
+------------------------------
 
-1. **The Dedication to Syrus & Alexandria in the 2nd Century CE**:
-   :person:`Ptolemy <ptolemy>` opens his major treatises (*Syntaxis Mathematica*, *Tetrabiblos*, *Planisphaerium*, *Analemma*) with dedications to :person:`Syrus <syrus>`. Working at or near the Canopus inscription monument (dated to Year 10 of Antoninus Pius, c. 146/147 CE), Ptolemy established the definitive paradigm of mathematical astronomy that dominated Mediterranean, Byzantine, Islamic, and Western European science for fifteen centuries.
-
-2. **The Aristotelian Division of Theoretical Sciences**:
-   Ptolemy's preface in Chapter 1 adopts Aristotle's classification from *Metaphysics* E.1 (1026a18–22). However, Ptolemy elevates mathematics above physics and theology, arguing that while theology deals with invisible entities and physics with unstable matter—leading to endless philosophical disputes—mathematics alone yields certainty through arithmetic and geometric demonstration.
-
-3. **Transmission and Critical Edition**:
-   The primary Greek manuscript tradition descends through Byzantine uncial and minuscule codices, pre-eminently *Vaticanus Graecus 1594* (9th century) and *Marcianus Graecus 313* (10th century). The standard modern critical edition is that of :person:`J. L. Heiberg <heiberg>` (Leipzig: B. G. Teubner, 1898), *Claudii Ptolemaei Opera quae exstant omnia*, Vol. I: *Syntaxis Mathematica*, Pars I (*Libri I–VI*).
+* **Folio Provenance**: Transcribed directly from :person:`J. L. Heiberg's <heiberg>` critical edition (*Syntaxis Mathematica*, Vol. I, Pars I, Leipzig: Teubner, 1898), pp. 30–31 (folios ``heiberg_1898_syntaxis_vol1_pt1:0040``–``0041``).
+* **Greek Textual Variant**: On p. 30, line 19, Heiberg reads ``προδιάληψις`` (whereas MS D corrects from ``προσδιάληψις``). The chapter consists of a single periodic Greek sentence linking the general hypotheses of Chapters 3–8 to the mathematical trigonometry of Chapters 10–16.
+* **Geometrical Proof (*γραμμικῶς*)**: Ptolemy's phrase ``ἅπαξ γε μελλήσοντες ἕκαστα γραμμικῶς ἀποδεικνύειν`` ("since we are going to demonstrate every single thing geometrically") states the deductive manifesto of the *Syntaxis*: unlike purely arithmetical Babylonian astronomy, every celestial calculation will be grounded in Euclidean and spherical linear demonstrations.

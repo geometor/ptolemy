@@ -17,15 +17,21 @@ Ed. :person:`J. L. Heiberg <heiberg>` (*Claudii Ptolemaei Opera Astronomica Mino
 
 .. picture:: /_static/figures/fig09_planisphaerium_stereographic_astrolabe.svg
 
-.. rst-class:: latin-text
+.. container:: latin-text
 
-   **[p. 231]** Designamus deinde circulum alium declivem a circulo equinoctiali loco orizontis, quousque secet solum equinoctialem per medium; unde puncta duo, ubi hic et zodiacus se invicem interceperint, potentialiter per diametrum esse opposita necesse sit; id autem dico, ut linea continuans ea puncta per centrum equinoctialis transeat.
+   .. folio:: heiberg_1907_opera_minora_vol2:0441
+      :page: p. 231
+
+   Designamus deinde circulum alium declivem a circulo equinoctiali loco orizontis, quousque secet solum equinoctialem per medium; unde puncta duo, ubi hic et zodiacus se invicem interceperint, potentialiter per diametrum esse opposita necesse sit; id autem dico, ut linea continuans ea puncta per centrum equinoctialis transeat.
 
    Sit enim, ut consuevimus, circulus equinoctialis :g:`abgd <cABGD>` circa centrum :g:`e <E>`, zodiacus vero :g:`hbtd <cMBTD>`, quorum sectionis puncta continuans diametros :g:`bed <BD_ast>`, orizon autem :g:`hatg` equinoctialem per equalia secans super diametrum :g:`aeg <MK>`, cuius et zodiaci communis sectio ad puncta :g:`h` et :g:`t <T>`.
 
    Dico igitur, quod si applicuerit punctum :g:`h` cum centro :g:`e <E>` linea recta loco circuli meridiani producaturque in directum, necessario per punctum :g:`t <T>` transibit.
 
-   **[p. 232]** Applicet igitur :g:`he` linea recta eatque in directum, quousque orizontem feriat atque interim in puncto :g:`t <T>`. Dico itaque punctum :g:`t <T>` commune quoque circulo zodiaci.
+   .. folio:: heiberg_1907_opera_minora_vol2:0442
+      :page: p. 232
+
+   Applicet igitur :g:`he` linea recta eatque in directum, quousque orizontem feriat atque interim in puncto :g:`t <T>`. Dico itaque punctum :g:`t <T>` commune quoque circulo zodiaci.
 
    Quoniam enim in circulo :g:`hatg` linee due se invicem secant :g:`ag <MK>` et :g:`ht`, erit, quanta :g:`ae` in :g:`eg`, tanta :g:`he` in :g:`et`; igitur et quanta :g:`be` in :g:`ed <BD_ast>`; unde et :g:`bd <BD_ast>` atque :g:`ht` in eodem esse circulo necesse est.
 

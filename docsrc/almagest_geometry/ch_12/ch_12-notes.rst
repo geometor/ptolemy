@@ -1,4 +1,4 @@
-:order: 4
+:order: 12
 :type: chapter
 :book: Syntaxis Mathematica (Almagest)
 :title: Chapter 12 · Notes
