@@ -27,21 +27,21 @@ Works in This Archive
 
    .. container:: home-book-body
 
-      .. rubric:: Heiberg Edition · 1898 · Syntaxis Mathematica Book I (Chs. 9–13)
+      .. rubric:: Heiberg Edition · 1898 · Syntaxis Mathematica Book I (Chs. 1–16)
 
-      **The Almagest (*Μαθηματικὴ Σύνταξις*)** — Constructs the sexagesimal table of chords from the golden pentagon-decagon and Ptolemy's Theorem on cyclic quadrilaterals, and establishes the planar and spherical Menelaus theorems for solving triangles on the celestial sphere.
+      **The Almagest (*Μαθηματικὴ Σύνταξις*)** — Complete Book I from the philosophical preface and spherical cosmology through the sexagesimal Table of Chords (360 rows), Ptolemy's Theorem, planar and spherical Menelaus theorems, Table of Obliquity, and right-sphere ascensions.
 
       .. container:: home-actions
 
          * :doc:`Open The Almagest → <almagest_geometry/index>`
-         * :doc:`Table of Chords (Ch. 10) → <almagest_geometry/ch_10/ch_10-en>`
+         * :doc:`Table of Chords (Ch. 10–11) → <almagest_geometry/ch_10/ch_10-en>`
          * :doc:`Spherical Trigonometry (Ch. 13) → <almagest_geometry/ch_13/ch_13-en>`
 
 .. container:: home-book-hero no-thumb
 
    .. container:: home-book-body
 
-      .. rubric:: Hermann of Carinthia 1143 & Heiberg 1907 · 4 Propositions
+      .. rubric:: Hermann of Carinthia 1143 & Heiberg 1907 · 20 Sections
 
       **Planisphere (*Planisphaerium*)** — Preserved through Hermann of Carinthia's twelfth-century Latin translation from Arabic, proving that stereographic projection from the South Celestial Pole onto the equatorial plane maps circles on the sphere to circles and lines in the plane—the mathematical basis of the astrolabe.
 

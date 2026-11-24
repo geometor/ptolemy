@@ -1,4 +1,4 @@
-:order: 1
+:order: 9
 :type: chapter
 :book: Syntaxis Mathematica (Almagest)
 :title: Chapter 9 · Summary
@@ -10,26 +10,11 @@
 Chapter 9 · Summary
 ===================
 
-Executive Summary of *Almagest* I.1–I.9
----------------------------------------
+Methodological Transition from Cosmology to Trigonometry
+--------------------------------------------------------
 
-1. **Philosophical Grounding (*Almagest* I.1)**: Following :person:`Aristotle <aristotle>` (*Metaphysics* E.1), :person:`Ptolemy <ptolemy>` divides theoretical philosophy into three primary genera:
-   
-   - *Theology*: investigates the first cause of the first motion of the universe (invisible, motionless deity).
-   - *Physics*: investigates corruptible, material, ever-changing qualities below the lunar sphere.
-   - *Mathematics*: investigates forms, figures, numbers, magnitudes, places, and times. Mathematics alone furnishes reliable and unshakable knowledge (`βεβαίαν καὶ ἀμετάπειστον τὴν εἴδησιν`) because its demonstration proceeds along indisputable paths: arithmetic and geometry.
+Chapter 9 (*Heiberg I, pp. 30–31*) forms the brief architectural hinge of Book I of the *Almagest*:
 
-2. **Deductive Cosmological Architecture (*Almagest* I.2–I.8)**:
-   
-   - **I.2**: The general relation of the Earth to the heavens must be established before specific planetary demonstrations.
-   - **I.3**: The heavens rotate spherically, as proved by circumpolar revolutions, uniform star paths, and isoperimetric maximum volume.
-   - **I.4**: The Earth is sensibly spherical as a whole, demonstrated by lunar eclipse timing shifts proportional to longitude and polar altitude changes with latitude.
-   - **I.5**: The Earth occupies the exact center of the celestial sphere; otherwise the horizon would not bisect the zodiac into six signs at all seasons.
-   - **I.6**: The Earth has the ratio of a point to the distance of the heavens, confirmed by identical horizon sights from any terrestrial point.
-   - **I.7**: The Earth makes no translational or diurnal rotational motion.
-   - **I.8**: Two primary motions govern the cosmos: diurnal rotation from east to west parallel to the celestial equator, and counter-rotation along the oblique ecliptic circle.
-
-3. **Methodological Program (*Almagest* I.9)**:
-   
-   - Transition from qualitative cosmological hypotheses to quantitative linear and chord demonstrations.
-   - Need for a concise, uniform geometric method to compute chords in a circle to avoid ad-hoc calculations throughout the treatise.
+1. **Closure of the Cosmological Hypotheses (Chapters 1–8)**: Having established the sphericity of the heavens and the Earth, the central and point-like station of the Earth, its immobility, and the two primary celestial motions (diurnal equatorial rotation and oblique ecliptic motion), :person:`Ptolemy <ptolemy>` closes his qualitative preliminary exposition.
+2. **Launch of Quantitative Spherical Geometry**: The very first quantitative determination required is the magnitude of the arc between the equatorial and ecliptic poles (the obliquity of the ecliptic, :math:`\varepsilon`, treated in Chapter 12) and the arcs intercepted between the equator and ecliptic (Chapters 14–16).
+3. **Necessity of the Table of Chords**: Because every subsequent proof in the thirteen books will proceed geometrically (*γραμμικῶς*), Ptolemy announces that he must first establish a systematic geometric calculus of chords in a circle (Chapters 10–11).
