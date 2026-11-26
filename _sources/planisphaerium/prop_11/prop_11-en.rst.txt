@@ -23,6 +23,12 @@ In order, therefore, to apprehend what we intend—namely the quantity of arc :g
 .. folio:: heiberg_1907_opera_minora_vol2:0455
    :page: p. 245
 
+.. picture:: 0455.g1.png
+   :alt: Folio 0455 diagram (archival scan)
+
+.. picture:: 0455.g1.svg
+   :alt: Folio 0455 diagram (interactive vector)
+
 namely
 of which :math:`26^p 31' 58''` contain line :g:`et`, the distance of the centers of the equinoctial and of the zodiac, out of those parts of which we count :math:`120^p` in line :g:`ec` opposite the right angle, it will be :math:`38^p 33'`, the arc of whose chord is :math:`37^\circ 30'` out of the :math:`360^\circ` of the whole circle containing triangle :g:`ect`.
 Therefore, out of the :math:`360^\circ` that we count in four right angles, angle :g:`∠ect` will contain :math:`18^\circ 45'`, while angle :g:`∠cet`, completing a right angle with it, will contain :math:`71^\circ 15'`. Hence angle :g:`∠aek` must also consist of :math:`18^\circ 45'`, whence it follows that arc :g:`ak` is of the same quantity.

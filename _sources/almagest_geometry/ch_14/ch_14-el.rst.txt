@@ -20,6 +20,12 @@ Ed. :person:`J. L. Heiberg <heiberg>` (*Syntaxis Mathematica*, Pars I, Leipzig: 
    .. folio:: heiberg_1898_syntaxis_vol1_pt1:0086
       :page: p. 76
 
+   .. picture:: 0086.g1.png
+      :alt: Folio 0086 diagram (archival scan)
+
+   .. picture:: 0086.g1.svg
+      :alt: Folio 0086 diagram (interactive vector)
+
    ιδʹ. Περὶ τῶν μεταξὺ τοῦ ἰσημερινοῦ καὶ τοῦ λοξοῦ κύκλου περιφερειῶν.
 
    Τούτου δὴ τοῦ θεωρήματος προεκτεθειμένου ποιησόμεθα πρώτην τὴν τῶν προκειμένων περιφερειῶν ἀπόδειξιν οὕτως.

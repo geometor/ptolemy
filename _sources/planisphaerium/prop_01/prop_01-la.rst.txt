@@ -23,6 +23,12 @@ Ed. :person:`J. L. Heiberg <heiberg>` (*Claudii Ptolemaei Opera Astronomica Mino
    .. folio:: heiberg_1907_opera_minora_vol2:0437
       :page: p. 227
 
+   .. picture:: 0437.g1.png
+      :alt: Folio 0437 diagram (archival scan)
+
+   .. picture:: 0437.g1.svg
+      :alt: Folio 0437 diagram (interactive vector)
+
    Cum sit possibile, :person:`Jesure <syrus>`, et plerumque necessarium, ut in plano repraesententur circuli in sphaeram corpoream incidentes, tamquam plana esset, consultum visum est in veritate scientiae, ut, qui scire velit hec, describat demonstrantem rationem, qua assignari conveniat circulum declivem ac circulos equidistantes circulo equinoctiali pariter et circulos notos per circulum meridianum, et quicquid intenditur adaptum ei, quod apparet in sphaera corporea.
 
    Cogit igitur huiusmodi intentio loco meridiani circuli rectis uti lineis, inter circulos vero equidistantes recto circulo, ut fiat primum circulus magnus declivem assignans hinc inde attingens equidistantes recto pari utrimque distantia, quem medium secet, in hunc modum.

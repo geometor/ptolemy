@@ -16,6 +16,12 @@ Chapter 14 · On the Arcs Between the Equator and the Ecliptic
 .. folio:: heiberg_1898_syntaxis_vol1_pt1:0086
    :page: p. 76
 
+.. picture:: 0086.g1.png
+   :alt: Folio 0086 diagram (archival scan)
+
+.. picture:: 0086.g1.svg
+   :alt: Folio 0086 diagram (interactive vector)
+
 Now that this theorem has been set forth in advance, we shall make the first demonstration of the proposed arcs as follows.
 
 Let the circle through both poles—those of the equator and those of the circle through the middle of the zodiacal signs—be :math:`AB\Gamma\Delta`, let the semicircle of the equator be :math:`AE\Gamma`, and let that of the circle through the middle of the signs be :math:`BE\Delta`, and let point :math:`E` be their intersection at the vernal equinox, so that :math:`B` is the winter solstice and :math:`\Delta` the summer solstice. On arc :math:`AB\Gamma` let there be taken

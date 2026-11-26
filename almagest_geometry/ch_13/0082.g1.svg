@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic" data-graphic-id="0082.g1" data-folio="0082" data-graphic="g1" viewBox="0 0 775 349" width="775" height="349" role="img" aria-label="Almagest I.13 Second Chord Lemma (Folio 0082)">
+  <style>
+    .euclid-graphic {
+      --geom-fg: #1a1a1a;
+      --geom-bg: #ffffff;
+      --geom-accent: #d97706;
+      --geom-assert: #16a34a;
+      --geom-muted: #64748b;
+      color: var(--geom-fg);
+      background: transparent;
+      font-family: "Times New Roman", "Gentium Plus", Georgia, serif;
+    }
+    @media (prefers-color-scheme: dark) {
+      .euclid-graphic {
+        --geom-fg: #e2e8f0;
+        --geom-bg: #0f172a;
+        --geom-accent: #f59e0b;
+        --geom-assert: #22c55e;
+        --geom-muted: #94a3b8;
+      }
+    }
+    .euclid-graphic .geom-line,
+    .euclid-graphic .geom-circle,
+    .euclid-graphic .geom-arc {
+      fill: none;
+      stroke: var(--geom-fg);
+      stroke-width: 1.75;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .euclid-graphic .geom-dashed {
+      fill: none;
+      stroke: var(--geom-muted);
+      stroke-width: 1.25;
+      stroke-dasharray: 5 4;
+    }
+    .euclid-graphic .geom-ang-arc {
+      fill: none;
+      stroke: var(--geom-muted);
+      stroke-width: 1.25;
+    }
+    .euclid-graphic .geom-overlay {
+      fill: none;
+      stroke: transparent;
+      stroke-width: 3.5;
+      stroke-linecap: round;
+    }
+    .euclid-graphic .geom-point {
+      fill: var(--geom-fg);
+      stroke: var(--geom-bg);
+      stroke-width: 1.2;
+    }
+    .euclid-graphic .geom-label {
+      fill: var(--geom-fg);
+      font-style: italic;
+      font-size: 18px;
+      text-anchor: middle;
+      dominant-baseline: central;
+      user-select: none;
+    }
+  </style>
+  <defs>
+    <marker id="geom-tick-1" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="10" markerHeight="10" orient="auto" markerUnits="userSpaceOnUse">
+      <line x1="0" y1="-4.5" x2="0" y2="4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+    </marker>
+    <marker id="geom-tick-2" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="10" markerHeight="10" orient="auto" markerUnits="userSpaceOnUse">
+      <line x1="-2" y1="-4.5" x2="-2" y2="4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      <line x1="2" y1="-4.5" x2="2" y2="4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+    </marker>
+    <marker id="geom-tick-3" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <line x1="-3.6" y1="-4.5" x2="-3.6" y2="4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      <line x1="0" y1="-4.5" x2="0" y2="4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      <line x1="3.6" y1="-4.5" x2="3.6" y2="4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+    </marker>
+  </defs>
+  <g id="elements">
+    <circle class="geom-circle" cx="600.17" cy="174.50" r="156.18" data-ref="( D A )" data-aliases="( A B G )"/>
+    <path class="geom-line" d="M 42.00 174.50 L 361.80 174.50 L 681.60 174.50" data-ref="/ E H /"/>
+    <path class="geom-line" d="M 42.00 174.50 L 361.80 107.87 L 681.60 41.24" data-ref="/ E G /"/>
+    <path class="geom-line" d="M 472.28 84.85 L 472.28 129.67 L 472.28 174.50" data-ref="/ B Z /"/>
+    <path class="geom-line" d="M 681.60 41.24 L 681.60 107.87 L 681.60 174.50" data-ref="/ G H /"/>
+  </g>
+  <g id="graphics">
+
+  </g>
+  <g id="highlights" style="pointer-events: none;">
+    <circle class="geom-overlay" cx="600.17" cy="174.50" r="156.18" data-ref="( D A )" data-aliases="( A B G )"/>
+    <path class="geom-overlay" d="M 42.00 174.50 L 361.80 174.50 L 681.60 174.50" data-ref="/ E H /"/>
+    <path class="geom-overlay" d="M 42.00 174.50 L 361.80 107.87 L 681.60 41.24" data-ref="/ E G /"/>
+    <path class="geom-overlay" d="M 472.28 84.85 L 472.28 129.67 L 472.28 174.50" data-ref="/ B Z /"/>
+    <path class="geom-overlay" d="M 681.60 41.24 L 681.60 107.87 L 681.60 174.50" data-ref="/ G H /"/>
+  </g>
+  <g id="points">
+    <circle class="geom-point" cx="443.99" cy="174.50" r="3.00" data-ref="A"/>
+    <circle class="geom-point" cx="472.28" cy="84.85" r="3.00" data-ref="B"/>
+    <circle class="geom-point" cx="681.60" cy="41.24" r="3.00" data-ref="G"/>
+    <circle class="geom-point" cx="600.17" cy="174.50" r="3.00" data-ref="D"/>
+    <circle class="geom-point" cx="42.00" cy="174.50" r="3.00" data-ref="E"/>
+    <circle class="geom-point" cx="472.28" cy="174.50" r="3.00" data-ref="Z"/>
+    <circle class="geom-point" cx="681.60" cy="174.50" r="3.00" data-ref="H"/>
+  </g>
+  <g id="labels">
+    <text class="geom-label" x="429.99" y="192.50" data-ref="A">Α</text>
+    <text class="geom-label" x="460.28" y="66.85" data-ref="B">Β</text>
+    <text class="geom-label" x="693.60" y="23.24" data-ref="G">Γ</text>
+    <text class="geom-label" x="600.17" y="192.50" data-ref="D">Δ</text>
+    <text class="geom-label" x="24.00" y="178.50" data-ref="E">Ε</text>
+    <text class="geom-label" x="472.28" y="192.50" data-ref="Z">Ζ</text>
+    <text class="geom-label" x="681.60" y="192.50" data-ref="H">Η</text>
+  </g>
+</svg>

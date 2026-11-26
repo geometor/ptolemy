@@ -25,6 +25,12 @@ Ed. :person:`J. L. Heiberg <heiberg>` (*Claudii Ptolemaei Opera Astronomica Mino
    .. folio:: heiberg_1907_opera_minora_vol2:0452
       :page: p. 242
 
+   .. picture:: 0452.g1.png
+      :alt: Folio 0452 diagram (archival scan)
+
+   .. picture:: 0452.g1.svg
+      :alt: Folio 0452 diagram (interactive vector)
+
    ratio,
    quam qui in spera recta constitutus est. sequemur itaque modum exempli dati in libro Almagesti de circulo transeunte per Rhodos insulam,
    cuius orizonti polus septemtrionalis XXXVI gradibus ascendit, cuius semidiametron, ut inter supradicta constitutum est, metiuntur partes CII puncta IIII secunde XLV,

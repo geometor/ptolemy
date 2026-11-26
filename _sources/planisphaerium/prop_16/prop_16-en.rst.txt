@@ -24,6 +24,12 @@ and it will also bisect the circle parallel to the equinoctial whose diameter is
 .. folio:: heiberg_1907_opera_minora_vol2:0463
    :page: p. 253
 
+.. picture:: 0463.g1.png
+   :alt: Folio 0463 diagram (archival scan)
+
+.. picture:: 0463.g1.svg
+   :alt: Folio 0463 diagram (interactive vector)
+
 at the meridian circle whose diameter is :g:`bd`, which we describe at the length :g:`ce` between points :g:`c`, :g:`y`, and :g:`f`, which the circle described about :g:`mn` will bisect, passing through points :g:`y` and :g:`f`,
 and will divide circle :g:`cy` into two halves, just as happens in the corporeal sphere. Therefore straight lines will join :g:`b` with :g:`z` and :g:`b` with :g:`q`; and :g:`kl` and :g:`dt` will go straight forward until they meet at point :g:`r`, which lastly will join with :g:`b`.
 Since therefore the two angles :g:`∠bzd` and :g:`∠bhq` are right, it follows that points :g:`b`, :g:`h`, :g:`z`, :g:`q` lie upon the circumference of a circle; whence angle :g:`∠bqh` must equal angle :g:`∠bzh`, which equals angle :g:`∠bdt`, since their bases are the same;

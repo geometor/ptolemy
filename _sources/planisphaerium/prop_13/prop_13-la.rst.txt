@@ -26,6 +26,12 @@ Ed. :person:`J. L. Heiberg <heiberg>` (*Claudii Ptolemaei Opera Astronomica Mino
    .. folio:: heiberg_1907_opera_minora_vol2:0458
       :page: p. 248
 
+   .. picture:: 0458.g1.png
+      :alt: Folio 0458 diagram (archival scan)
+
+   .. picture:: 0458.g1.svg
+      :alt: Folio 0458 diagram (interactive vector)
+
    modo perficiantur. unde lineam :g:`et` utpote semidiametron
    equidistantis circuli designati ad caput aquarii accrescere necesse est, quousque partes quidem LXXXVI puncta XXIX secundas XLII contineat;
    per quam ubi diuiserimus supradictam differentiam IIIDC sequentiaque per ordinem supradicto modo expleuerimus, colligemus ut ante lineam :g:`ey`

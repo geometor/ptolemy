@@ -21,6 +21,12 @@ The Horizon as an Inclined Great Circle (`Heiberg II, p. 230`)
 .. folio:: heiberg_1907_opera_minora_vol2:0440
    :page: p. 230
 
+.. picture:: 0440.g1.png
+   :alt: Folio 0440 diagram (archival scan)
+
+.. picture:: 0440.g1.svg
+   :alt: Folio 0440 diagram (interactive vector)
+
 Every horizon will next be designated just as we designated the oblique circle—not only because it bisects the equinoctial circle, but also because it potentially bisects the zodiac; by which I mean that it must be designated through parts that potentially correspond to those diametrically opposite on the corporeal sphere.
 
 For let the equinoctial circle be described as before with letters :g:`a, b, g, d <cABGD>` around center :g:`e <E>`, and the oblique circle with letters :g:`z, b, h, d <cMBTD>` bisecting the equinoctial at points :g:`b <B>` and :g:`d <D>`. We then draw through pole :g:`e <E>` in place of the meridian circle a straight line in any direction, say through :g:`z, a, e, h, g <MK>`.

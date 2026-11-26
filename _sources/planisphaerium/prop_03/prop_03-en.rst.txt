@@ -33,6 +33,12 @@ Demonstration via Intersecting Chords (`Heiberg II, p. 232`)
 .. folio:: heiberg_1907_opera_minora_vol2:0442
    :page: p. 232
 
+.. picture:: 0442.g1.png
+   :alt: Folio 0442 diagram (archival scan)
+
+.. picture:: 0442.g1.svg
+   :alt: Folio 0442 diagram (interactive vector)
+
 *Demonstration.* Let the straight line :g:`he` be drawn, and let it go straight until it strikes the horizon, and let it strike it at point :g:`t <T>`.
 
 **I say that** point :g:`t <T>` is also common to the circle of the zodiac.

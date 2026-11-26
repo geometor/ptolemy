@@ -29,6 +29,12 @@ Ed. :person:`J. L. Heiberg <heiberg>` (*Claudii Ptolemaei Opera Astronomica Mino
    .. folio:: heiberg_1907_opera_minora_vol2:0466
       :page: p. 256
 
+   .. picture:: 0466.g1.png
+      :alt: Folio 0466 diagram (archival scan)
+
+   .. picture:: 0466.g1.svg
+      :alt: Folio 0466 diagram (interactive vector)
+
    apparentis lineam :g:`zh`, diametron circuli hunc secantis
    de equidistantibus zodiaco lineam :g:`tkl`. quibus ita positis designamus supra lineam :g:`zh` semicirculum :g:`zmh` erigimusque lineam
    a puncto :g:`k` in :g:`m` equidistantem linee :g:`de`. ex quo itaque, si produxerimus lineas :g:`agn` et :g:`dhn` atque :g:`dlc`,
@@ -38,6 +44,12 @@ Ed. :person:`J. L. Heiberg <heiberg>` (*Claudii Ptolemaei Opera Astronomica Mino
 
    .. folio:: heiberg_1907_opera_minora_vol2:0467
       :page: p. 257
+
+   .. picture:: 0467.g1.png
+      :alt: Folio 0467 diagram (archival scan)
+
+   .. picture:: 0467.g1.svg
+      :alt: Folio 0467 diagram (interactive vector)
 
    commune medium superficiebus eorum.
    applicet igitur :g:`f` cum :g:`m`, fiatque ad punctum :g:`e` super lineam :g:`ea` angulus equalis angulo :g:`mfk`, qui sit angulus :g:`aey`;

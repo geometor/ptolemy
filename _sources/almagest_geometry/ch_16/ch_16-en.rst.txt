@@ -16,6 +16,12 @@ Chapter 16 · On Risings on the Right Sphere
 .. folio:: heiberg_1898_syntaxis_vol1_pt1:0092
    :page: p. 82
 
+.. picture:: 0092.g1.png
+   :alt: Folio 0092 diagram (archival scan)
+
+.. picture:: 0092.g1.svg
+   :alt: Folio 0092 diagram (interactive vector)
+
 Next it will be fitting to demonstrate also the magnitudes of the arcs of the equator cut off by the circles described through its poles and given segments of the oblique circle; for thus we shall have in how many equatorial time-degrees the segments of the zodiacal circle cross both the meridian everywhere and the horizon on the right sphere, because the horizon too is then alone described through the poles of the equator.
 
 Let, then, the previously demonstrated figure be set out, and with arc :math:`EH` of the oblique circle given first as :math:`30` degrees, let it be required to find arc :math:`E\Theta` of the equator.

@@ -27,6 +27,12 @@ Ed. :person:`J. L. Heiberg <heiberg>` (*Claudii Ptolemaei Opera Astronomica Mino
    .. folio:: heiberg_1907_opera_minora_vol2:0443
       :page: p. 233
 
+   .. picture:: 0443.g1.png
+      :alt: Folio 0443 diagram (archival scan)
+
+   .. picture:: 0443.g1.svg
+      :alt: Folio 0443 diagram (interactive vector)
+
    supra signa circuli declivis, ad semidiametrum circuli recti, quousque deprehendamus ortum eorum certoque metiamur numero, prout apparet in spera corporea applanes et declivi.
 
    Describatur itaque circulus equinoctialis :g:`abgd <cABGD>` circa centrum :g:`e <E>`, cuius diametra orthogonaliter se invicem secantia :g:`ag <MK>` et :g:`db <BD_ast>`, et protrahemus :g:`ag <MK>` secundum rectitudinem usque ad punctum :g:`z`, deinde circa :g:`g <K>` resecabimus duos arcus equales :g:`gt` et :g:`gh`, producenturque pariter linee :g:`dkh` et :g:`dtz` ea quidem ratione, qua constituimus, equidistantium circulorum septemtrionalem quidem fieri circa centrum :g:`e <E>` ad mensuram :g:`ek <EK>`, australem vero circa idem centrum ad mensuram :g:`ez`.

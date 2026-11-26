@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic" data-graphic-id="0452.g1" data-folio="0452" data-graphic="g1" viewBox="0 0 742 755" width="742" height="755" role="img" aria-label="Planisphaerium §10 Oblique Ascension at Rhodes (Folio 0452)">
+  <style>
+    .euclid-graphic {
+      --geom-fg: #1a1a1a;
+      --geom-bg: #ffffff;
+      --geom-accent: #d97706;
+      --geom-assert: #16a34a;
+      --geom-muted: #64748b;
+      color: var(--geom-fg);
+      background: transparent;
+      font-family: "Times New Roman", "Gentium Plus", Georgia, serif;
+    }
+    @media (prefers-color-scheme: dark) {
+      .euclid-graphic {
+        --geom-fg: #e2e8f0;
+        --geom-bg: #0f172a;
+        --geom-accent: #f59e0b;
+        --geom-assert: #22c55e;
+        --geom-muted: #94a3b8;
+      }
+    }
+    .euclid-graphic .geom-line,
+    .euclid-graphic .geom-circle,
+    .euclid-graphic .geom-arc {
+      fill: none;
+      stroke: var(--geom-fg);
+      stroke-width: 1.75;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .euclid-graphic .geom-dashed {
+      fill: none;
+      stroke: var(--geom-muted);
+      stroke-width: 1.25;
+      stroke-dasharray: 5 4;
+    }
+    .euclid-graphic .geom-ang-arc {
+      fill: none;
+      stroke: var(--geom-muted);
+      stroke-width: 1.25;
+    }
+    .euclid-graphic .geom-overlay {
+      fill: none;
+      stroke: transparent;
+      stroke-width: 3.5;
+      stroke-linecap: round;
+    }
+    .euclid-graphic .geom-point {
+      fill: var(--geom-fg);
+      stroke: var(--geom-bg);
+      stroke-width: 1.2;
+    }
+    .euclid-graphic .geom-label {
+      fill: var(--geom-fg);
+      font-style: italic;
+      font-size: 18px;
+      text-anchor: middle;
+      dominant-baseline: central;
+      user-select: none;
+    }
+  </style>
+  <defs>
+    <marker id="geom-tick-1" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="10" markerHeight="10" orient="auto" markerUnits="userSpaceOnUse">
+      <line x1="0" y1="-4.5" x2="0" y2="4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+    </marker>
+    <marker id="geom-tick-2" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="10" markerHeight="10" orient="auto" markerUnits="userSpaceOnUse">
+      <line x1="-2" y1="-4.5" x2="-2" y2="4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      <line x1="2" y1="-4.5" x2="2" y2="4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+    </marker>
+    <marker id="geom-tick-3" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <line x1="-3.6" y1="-4.5" x2="-3.6" y2="4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      <line x1="0" y1="-4.5" x2="0" y2="4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      <line x1="3.6" y1="-4.5" x2="3.6" y2="4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+    </marker>
+  </defs>
+  <g id="elements">
+    <circle class="geom-circle" cx="403.60" cy="317.58" r="272.24" data-ref="( e z )"/>
+    <circle class="geom-circle" cx="403.60" cy="317.58" r="271.98" data-ref="( t a )"/>
+    <path class="geom-line" d="M 131.36 317.58 L 403.60 317.58 L 675.84 317.58" data-ref="/ b d /"/>
+    <path class="geom-line" d="M 403.60 45.34 L 403.60 317.58 L 403.60 589.82" data-ref="/ z g /"/>
+    <path class="geom-line" d="M 54.52 283.14 L 365.18 300.36 L 675.84 317.58" data-ref="/ y d /"/>
+    <path class="geom-line" d="M 267.61 82.05 L 370.84 331.30 L 474.06 580.55" data-ref="/ k l /"/>
+    <path class="geom-line" d="M 539.59 82.05 L 436.36 331.30 L 333.14 580.55" data-ref="/ m n /"/>
+    <path class="geom-line" d="M 54.52 283.14 L 229.06 436.35 L 403.60 589.56" data-ref="/ y h /"/>
+  </g>
+  <g id="graphics">
+
+  </g>
+  <g id="highlights" style="pointer-events: none;">
+    <circle class="geom-overlay" cx="403.60" cy="317.58" r="272.24" data-ref="( e z )"/>
+    <circle class="geom-overlay" cx="403.60" cy="317.58" r="271.98" data-ref="( t a )"/>
+    <path class="geom-overlay" d="M 131.36 317.58 L 403.60 317.58 L 675.84 317.58" data-ref="/ b d /"/>
+    <path class="geom-overlay" d="M 403.60 45.34 L 403.60 317.58 L 403.60 589.82" data-ref="/ z g /"/>
+    <path class="geom-overlay" d="M 54.52 283.14 L 365.18 300.36 L 675.84 317.58" data-ref="/ y d /"/>
+    <path class="geom-overlay" d="M 267.61 82.05 L 370.84 331.30 L 474.06 580.55" data-ref="/ k l /"/>
+    <path class="geom-overlay" d="M 539.59 82.05 L 436.36 331.30 L 333.14 580.55" data-ref="/ m n /"/>
+    <path class="geom-overlay" d="M 54.52 283.14 L 229.06 436.35 L 403.60 589.56" data-ref="/ y h /"/>
+  </g>
+  <g id="points">
+    <circle class="geom-point" cx="403.60" cy="45.61" r="3.00" data-ref="a"/>
+    <circle class="geom-point" cx="131.36" cy="317.58" r="3.00" data-ref="b"/>
+    <circle class="geom-point" cx="675.84" cy="317.58" r="3.00" data-ref="d"/>
+    <circle class="geom-point" cx="403.60" cy="317.58" r="3.00" data-ref="e"/>
+    <circle class="geom-point" cx="403.60" cy="589.82" r="3.00" data-ref="g"/>
+    <circle class="geom-point" cx="403.60" cy="589.56" r="3.00" data-ref="h"/>
+    <circle class="geom-point" cx="267.61" cy="82.05" r="3.00" data-ref="k"/>
+    <circle class="geom-point" cx="474.06" cy="580.55" r="3.00" data-ref="l"/>
+    <circle class="geom-point" cx="539.59" cy="82.05" r="3.00" data-ref="m"/>
+    <circle class="geom-point" cx="333.14" cy="580.55" r="3.00" data-ref="n"/>
+    <circle class="geom-point" cx="403.60" cy="317.58" r="3.00" data-ref="t"/>
+    <circle class="geom-point" cx="54.52" cy="283.14" r="3.00" data-ref="y"/>
+    <circle class="geom-point" cx="403.60" cy="45.34" r="3.00" data-ref="z"/>
+  </g>
+  <g id="labels">
+    <text class="geom-label" x="417.60" y="31.61" data-ref="a">a</text>
+    <text class="geom-label" x="117.36" y="331.58" data-ref="b">b</text>
+    <text class="geom-label" x="689.84" y="331.58" data-ref="d">d</text>
+    <text class="geom-label" x="417.60" y="331.58" data-ref="e">e</text>
+    <text class="geom-label" x="417.60" y="603.82" data-ref="g">g</text>
+    <text class="geom-label" x="417.60" y="603.56" data-ref="h">h</text>
+    <text class="geom-label" x="253.61" y="68.05" data-ref="k">k</text>
+    <text class="geom-label" x="488.06" y="594.55" data-ref="l">l</text>
+    <text class="geom-label" x="553.59" y="68.05" data-ref="m">m</text>
+    <text class="geom-label" x="319.14" y="594.55" data-ref="n">n</text>
+    <text class="geom-label" x="417.60" y="331.58" data-ref="t">t</text>
+    <text class="geom-label" x="40.52" y="269.14" data-ref="y">y</text>
+    <text class="geom-label" x="417.60" y="31.34" data-ref="z">z</text>
+  </g>
+</svg>

@@ -27,6 +27,12 @@ Ed. :person:`J. L. Heiberg <heiberg>` (*Claudii Ptolemaei Opera Astronomica Mino
    .. folio:: heiberg_1907_opera_minora_vol2:0460
       :page: p. 250
 
+   .. picture:: 0460.g1.png
+      :alt: Folio 0460 diagram (archival scan)
+
+   .. picture:: 0460.g1.svg
+      :alt: Folio 0460 diagram (interactive vector)
+
    alios infra se continet,
    eumque describimus notis :g:`a`, :g:`b`, :g:`g`, :g:`d` circa centrum :g:`e` loco circulorum meridianorum; cuius diametra ortogonaliter se inuicem
    secantia :g:`ag` et :g:`bd`. quo facto resecamus a puncto :g:`d` arcum :g:`dz`, cuius quantitas ad mensuram distantie
@@ -40,6 +46,12 @@ Ed. :person:`J. L. Heiberg <heiberg>` (*Claudii Ptolemaei Opera Astronomica Mino
 
    .. folio:: heiberg_1907_opera_minora_vol2:0461
       :page: p. 251
+
+   .. picture:: 0461.g1.png
+      :alt: Folio 0461 diagram (archival scan)
+
+   .. picture:: 0461.g1.svg
+      :alt: Folio 0461 diagram (interactive vector)
 
    quod ita plane sumi potest.
    est enim, quanta :g:`de` ad lineam :g:`eg`, tanta :g:`dt` ad lineam :g:`tk`. est autem :g:`de` equalis :g:`eg`; est igitur

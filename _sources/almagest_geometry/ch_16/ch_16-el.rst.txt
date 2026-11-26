@@ -20,6 +20,12 @@ Ed. :person:`J. L. Heiberg <heiberg>` (*Syntaxis Mathematica*, Pars I, Leipzig: 
    .. folio:: heiberg_1898_syntaxis_vol1_pt1:0092
       :page: p. 82
 
+   .. picture:: 0092.g1.png
+      :alt: Folio 0092 diagram (archival scan)
+
+   .. picture:: 0092.g1.svg
+      :alt: Folio 0092 diagram (interactive vector)
+
    ιϛʹ. Περὶ τῶν ἐπ' ὀρθῆς τῆς σφαίρας ἀναφορῶν.
 
    Ἑξῆς δ' ἂν εἴη συναποδεῖξαι τῶν τοῦ ἰσημερινοῦ περιφερειῶν τὰς γινομένας πηλικότητας ὑπὸ τῶν γραφομένων κύκλων διά τε τῶν πόλων αὐτοῦ

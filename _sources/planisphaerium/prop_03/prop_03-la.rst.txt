@@ -31,6 +31,12 @@ Ed. :person:`J. L. Heiberg <heiberg>` (*Claudii Ptolemaei Opera Astronomica Mino
    .. folio:: heiberg_1907_opera_minora_vol2:0442
       :page: p. 232
 
+   .. picture:: 0442.g1.png
+      :alt: Folio 0442 diagram (archival scan)
+
+   .. picture:: 0442.g1.svg
+      :alt: Folio 0442 diagram (interactive vector)
+
    Applicet igitur :g:`he` linea recta eatque in directum, quousque orizontem feriat atque interim in puncto :g:`t <T>`. Dico itaque punctum :g:`t <T>` commune quoque circulo zodiaci.
 
    Quoniam enim in circulo :g:`hatg` linee due se invicem secant :g:`ag <MK>` et :g:`ht`, erit, quanta :g:`ae` in :g:`eg`, tanta :g:`he` in :g:`et`; igitur et quanta :g:`be` in :g:`ed <BD_ast>`; unde et :g:`bd <BD_ast>` atque :g:`ht` in eodem esse circulo necesse est.

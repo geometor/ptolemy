@@ -23,12 +23,24 @@ the diameter of the equinoctial circle :g:`ag`, the diameter of the circle paral
 .. folio:: heiberg_1907_opera_minora_vol2:0466
    :page: p. 256
 
+.. picture:: 0466.g1.png
+   :alt: Folio 0466 diagram (archival scan)
+
+.. picture:: 0466.g1.svg
+   :alt: Folio 0466 diagram (interactive vector)
+
 visible as line :g:`zh`, and the diameter of the circle cutting it among the parallels to the zodiac as line :g:`tkl`. These being so placed, we draw semicircle :g:`zmh` upon line :g:`zh` and raise a line from point :g:`k` to :g:`m` parallel to line :g:`de`.
 From which therefore, if we draw lines :g:`agn` and :g:`dhn` as well as :g:`dlc`, the circle described at length :g:`en` through points :g:`n`, :g:`y`, :g:`q` will be one of the circles perpetually denied to the planisphere. And the circle described in place of the circle upon line :g:`tkl` must pass through point :g:`c`,
 cutting circle :g:`nyq` into arcs similar to arcs :g:`hm` and :g:`mz`, since line :g:`km` is
 
 .. folio:: heiberg_1907_opera_minora_vol2:0467
    :page: p. 257
+
+.. picture:: 0467.g1.png
+   :alt: Folio 0467 diagram (archival scan)
+
+.. picture:: 0467.g1.svg
+   :alt: Folio 0467 diagram (interactive vector)
 
 a common mean proportional to their surfaces. Let :g:`f` therefore join with :g:`m`, and at point :g:`e` upon line :g:`ea` let an angle be made equal to angle :g:`∠mfk`, which is angle :g:`∠aey`;
 whence the line produced to point :g:`y` shows arc :g:`yq` similar to arc :g:`mz`. Thus the circle is designated in place of the circle upon line :g:`tkl` parallel to the zodiac, whose distance from the equinoctial is in the quantity of arc :g:`gl`,

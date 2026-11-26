@@ -25,6 +25,12 @@ Ed. :person:`J. L. Heiberg <heiberg>` (*Claudii Ptolemaei Opera Astronomica Mino
    .. folio:: heiberg_1907_opera_minora_vol2:0447
       :page: p. 237
 
+   .. picture:: 0447.g1.png
+      :alt: Folio 0447 diagram (archival scan)
+
+   .. picture:: 0447.g1.svg
+      :alt: Folio 0447 diagram (interactive vector)
+
    Esto enim, ut
    solet, circulus equinoctialis :g:`abgd` circa centrum :g:`e`, zodiacus vero :g:`zbhd` circa centrum :g:`t`, diametrorum ortogonaliter super :g:`e` deductorum
    loco meridiani circuli alterum puncta sectionum continuans :g:`b` et :g:`d`, que et equinoctialia, alterum per utrumque centrum :g:`gh` et :g:`az`,

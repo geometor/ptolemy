@@ -26,6 +26,12 @@ These things having been established, we must now consider the ratio of the semi
 .. folio:: heiberg_1907_opera_minora_vol2:0443
    :page: p. 233
 
+.. picture:: 0443.g1.png
+   :alt: Folio 0443 diagram (archival scan)
+
+.. picture:: 0443.g1.svg
+   :alt: Folio 0443 diagram (interactive vector)
+
 above the signs of the oblique circle to the semidiameter of the right circle, until we apprehend their rising and measure them with a definite number, as appears in the corporeal sphere—both upright and inclined.
 
 Let the equinoctial circle :g:`abgd <cABGD>` be described around center :g:`e <E>`, whose diameters cutting each other orthogonally are :g:`ag <MK>` and :g:`db <BD_ast>`. We extend :g:`ag <MK>` straight to point :g:`z`, and around :g:`g <K>` cut off two equal arcs :g:`gt` and :g:`gh`. Straight lines :g:`dkh` and :g:`dtz` are drawn, in the manner we established, so that of the parallel circles the northern parallel is made around center :g:`e <E>` at radius :g:`ek <EK>`, and the southern parallel around the same center at radius :g:`ez`.
