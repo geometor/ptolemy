@@ -37,6 +37,12 @@ Transcribed directly from :person:`J. L. Heiberg's <heiberg>` Teubner edition (*
    .. folio:: heiberg_1898_syntaxis_vol1_pt1:0079
       :page: p. 69
 
+   .. picture:: 0079.g1.png
+      :alt: Folio 0079 diagram (archival scan)
+
+   .. picture:: 0079.g1.svg
+      :alt: Folio 0079 diagram (interactive vector)
+
    δύο εὐθεῖαι ἥ τε :g:`ΒΕ <BE>` καὶ ἡ :g:`ΓΔ <GD>` τεμνέτωσαν ἀλλήλας κατὰ τὸ :g:`Ζ <Z>` σημεῖον.
 
    λέγω, ὅτι ὁ τῆς :g:`ΓΑ <AG>` πρὸς ΑΕ λόγος συνῆπται ἔκ τε τοῦ τῆς :g:`ΓΔ <GD>` πρὸς ΔΖ καὶ τοῦ τῆς ΖΒ πρὸς :g:`ΒΕ <BE>`.
@@ -53,6 +59,18 @@ Transcribed directly from :person:`J. L. Heiberg's <heiberg>` Teubner edition (*
    .. folio:: heiberg_1898_syntaxis_vol1_pt1:0080
       :page: p. 70
 
+   .. picture:: 0080.g2.png
+      :alt: Folio 0080 second diagram (archival scan)
+
+   .. picture:: 0080.g2.svg
+      :alt: Folio 0080 second diagram (interactive vector)
+
+   .. picture:: 0080.g1.png
+      :alt: Folio 0080 first diagram (archival scan)
+
+   .. picture:: 0080.g1.svg
+      :alt: Folio 0080 first diagram (interactive vector)
+
    ἐστιν ἡ ΑΗ τῇ ΕΖ, ἔστιν, ὡς ἡ ΓΕ πρὸς ΕΑ, ἡ ΓΖ πρὸς ΖΗ [:just:`Eucl. VI, 2 <VI.2>`].
    ἀλλὰ τῆς ΖΔ ἔξωθεν λαμβανομένης ὁ τῆς ΓΖ πρὸς ΖΗ λόγος σύγκειται ἔκ τε τοῦ τῆς ΓΖ πρὸς ΖΔ καὶ τοῦ τῆς ΔΖ πρὸς ΖΗ·
    ἔστιν δὲ ὁ τῆς ΔΖ πρὸς ΖΗ λόγος ὁ αὐτὸς τῷ τῆς ΔΒ πρὸς ΒΑ διὰ τὸ εἰς παραλλήλους τὰς ΑΗ καὶ ΖΒ διῆχθαι τὰς ΒΑ καὶ ΖΗ·
@@ -66,6 +84,12 @@ Transcribed directly from :person:`J. L. Heiberg's <heiberg>` Teubner edition (*
 
    .. folio:: heiberg_1898_syntaxis_vol1_pt1:0081
       :page: p. 71
+
+   .. picture:: 0081.g1.png
+      :alt: Folio 0081 diagram (archival scan)
+
+   .. picture:: 0081.g1.svg
+      :alt: Folio 0081 diagram (interactive vector)
 
    λέγω, ὅτι ἐστίν, ὡς ἡ ὑπὸ τὴν διπλῆν τῆς ΑΒ περιφερείας πρὸς τὴν ὑπὸ τὴν διπλῆν τῆς ΒΓ, οὕτως ἡ ΑΕ εὐθεῖα πρὸς τὴν ΕΓ εὐθεῖαν.
 
@@ -81,6 +105,12 @@ Transcribed directly from :person:`J. L. Heiberg's <heiberg>` Teubner edition (*
    .. folio:: heiberg_1898_syntaxis_vol1_pt1:0082
       :page: p. 72
 
+   .. picture:: 0082.g1.png
+      :alt: Folio 0082 diagram (archival scan)
+
+   .. picture:: 0082.g1.svg
+      :alt: Folio 0082 diagram (interactive vector)
+
    γωνία τὴν ἡμίσειαν αὐτῆς ὑποτείνουσα δεδομένη ἔσται καὶ ὅλον τὸ ΑΔΖ τρίγωνον, δῆλον·
    ἐπεὶ δὲ τῆς ΑΓ εὐθείας ὅλης δεδομένης ὑπόκειται καὶ ὁ τῆς ΑΕ πρὸς ΕΓ λόγος ὁ αὐτὸς ὢν τῷ τῆς ὑπὸ τὴν διπλῆν τῆς
    ΑΒ πρὸς τὴν ὑπὸ τὴν διπλῆν τῆς ΒΓ, ἥ τε ΑΕ ἔσται δοθεῖσα [dat. 7] καὶ λοιπὴ ἡ ΖΕ.
@@ -93,6 +123,12 @@ Transcribed directly from :person:`J. L. Heiberg's <heiberg>` Teubner edition (*
 
    .. folio:: heiberg_1898_syntaxis_vol1_pt1:0083
       :page: p. 73
+
+   .. picture:: 0083.g1.png
+      :alt: Folio 0083 diagram (archival scan)
+
+   .. picture:: 0083.g1.svg
+      :alt: Folio 0083 diagram (interactive vector)
 
    λέγω, ὅτι ἐστίν, ὡς ἡ ὑπὸ τὴν διπλῆν τῆς ΓΑ περιφερείας πρὸς τὴν ὑπὸ τὴν διπλῆν τῆς ΑΒ, οὕτως ἡ ΓΕ εὐθεῖα πρὸς τὴν ΒΕ.
 
@@ -124,6 +160,12 @@ Transcribed directly from :person:`J. L. Heiberg's <heiberg>` Teubner edition (*
 
    .. folio:: heiberg_1898_syntaxis_vol1_pt1:0085
       :page: p. 75
+
+   .. picture:: 0085.g1.png
+      :alt: Folio 0085 diagram (archival scan)
+
+   .. picture:: 0085.g1.svg
+      :alt: Folio 0085 diagram (interactive vector)
 
    ἐπιζευχθεῖσαι αἱ ΔΓ καὶ ΑΓ τεμνέτωσαν τὰς :g:`ΗΖ <HZ>` καὶ ΗΕ κατὰ τὸ :g:`Κ <K>` καὶ :g:`Λ <Lambda>` σημεῖον·
    ἐπὶ μιᾶς δὴ γίνεται εὐθείας τὰ :g:`Θ <Theta>`, :g:`Κ <K>`, :g:`Λ <Lambda>` σημεῖα διὰ τὸ ἐν δυσὶν ἅμα εἶναι ἐπιπέδοις τῷ τε τοῦ ΑΓΔ τριγώνου καὶ τῷ τοῦ ΒΖΕ κύκλου,

@@ -29,6 +29,12 @@ Ed. :person:`J. L. Heiberg <heiberg>` (*Claudii Ptolemaei Opera Astronomica Mino
    .. folio:: heiberg_1907_opera_minora_vol2:0455
       :page: p. 245
 
+   .. picture:: 0455.g1.png
+      :alt: Folio 0455 diagram (archival scan)
+
+   .. picture:: 0455.g1.svg
+      :alt: Folio 0455 diagram (interactive vector)
+
    videlicet,
    quarum lineam :g:`et`, distantiam scilicet centrorum equinoctialis et zodiaci, continent XXVI puncta XXXI secunde LVIII, ex partibus,
    quarum in linea :g:`ec` recto angulo opposita numeramus CXX, erunt partes XXXVIII puncta XXXIII; cuius corde arcus graduum XXXVII cum punctis XXX

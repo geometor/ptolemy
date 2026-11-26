@@ -20,6 +20,12 @@ Ed. :person:`J. L. Heiberg <heiberg>` (*Claudii Ptolemaei Opera Astronomica Mino
    .. folio:: heiberg_1907_opera_minora_vol2:0456
       :page: p. 246
 
+   .. picture:: 0456.g1.png
+      :alt: Folio 0456 diagram (archival scan)
+
+   .. picture:: 0456.g1.svg
+      :alt: Folio 0456 diagram (interactive vector)
+
    Deinceps igitur ad metiendum signorum ortum in hoc climate constituemus item equinoctialem circulum :g:`abgd` circa centrum :g:`e`, zodiacum vero :g:`hdzb`.
    quo facto de zodiaco resecabimus arcum :g:`bt`, primumque ad mensuram unius signi, quod pisces esse constans est, continuabimus[que] :g:`tel` lineam rectam
    pariterque circinabimus circulum orizontis latitudine graduum XXXVI ut ante per puncta :g:`t` et :g:`l` transeuntem atque equinoctialem ad puncta :g:`m` et :g:`n` secantem

@@ -16,6 +16,12 @@ Section 12 · Rising of the Signs in the Clime of Rhodes: First Sign
 .. folio:: heiberg_1907_opera_minora_vol2:0456
    :page: p. 246
 
+.. picture:: 0456.g1.png
+   :alt: Folio 0456 diagram (archival scan)
+
+.. picture:: 0456.g1.svg
+   :alt: Folio 0456 diagram (interactive vector)
+
 Next, therefore, in order to measure the rising of the signs in this clime, we shall likewise set up the equinoctial circle :g:`abgd` around center :g:`e`, and the zodiac :g:`hdzb`. This done, we shall cut off from the zodiac arc :g:`bt`, first to the measure of one sign—which is established to be Pisces—
 and join straight line :g:`tel`, and likewise describe the horizon circle for the latitude of :math:`36^\circ`, as before, passing through points :g:`t` and :g:`l` and cutting the equinoctial at points :g:`m` and :g:`n`. And we shall draw line :g:`nem`, and likewise from the horizon center :g:`c`, placed as before,
 straight lines :g:`ce` and :g:`ct`, and lastly also the perpendicular to line :g:`tl`, namely line :g:`cy`.

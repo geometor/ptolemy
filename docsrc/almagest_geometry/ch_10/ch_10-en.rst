@@ -23,6 +23,12 @@ that is, how many :term:`parts <tmema>` they are when the diameter is divided in
 .. folio:: heiberg_1898_syntaxis_vol1_pt1:0042
    :page: p. 32
 
+.. picture:: 0042.g1.png
+   :alt: Folio 0042 diagram (archival scan)
+
+.. picture:: 0042.g1.svg
+   :alt: Folio 0042 diagram (interactive vector)
+
 possess the magnitudes of the chords set out without inspection, but may also readily manage their verification through their methodical geometric construction. In general, however, we shall employ numerical procedures after the :term:`sexagesimal <hexekoston>` manner because of the awkwardness of unit fractions,
 and in multiplications and divisions we shall always aim at the nearest approximation, insofar as what is omitted differs by nothing significant from what is accurate to sense.
 
@@ -102,6 +108,12 @@ For let angle :g:`ΑΒΕ <angABE>` be placed equal to angle :g:`ΔΒΓ <angDBC>`
 .. folio:: heiberg_1898_syntaxis_vol1_pt1:0047
    :page: p. 37
 
+.. picture:: 0047.g1.png
+   :alt: Folio 0047 diagram (archival scan)
+
+.. picture:: 0047.g1.svg
+   :alt: Folio 0047 diagram (interactive vector)
+
 is equal to angle :math:`B\Gamma E` [:just:`Eucl. III, 21 <III.21>`], for they subtend the same segment; therefore triangle :math:`AB\Delta` is equiangular with triangle :math:`B\Gamma E`. So that it is also proportional: as :g:`ΒΓ <BC>` is to :g:`ΓΕ <EC>`, so is :g:`ΒΔ <BD>` to :g:`ΔΑ <DA>` [:just:`Eucl. VI, 4 <VI.4>`];
 therefore the rectangle contained by :g:`ΒΓ <BC>`, :g:`ΑΔ <DA>` is equal to the rectangle contained by :g:`ΒΔ <BD>`, :g:`ΓΕ <EC>` [:just:`Eucl. VI, 16 <VI.16>`].
 
@@ -127,6 +139,12 @@ This having been set forth beforehand, let there be a semicircle :g:`ΑΒΓΔ <s
 .. folio:: heiberg_1898_syntaxis_vol1_pt1:0048
    :page: p. 38
 
+.. picture:: 0048.g1.png
+   :alt: Folio 0048 diagram (archival scan)
+
+.. picture:: 0048.g1.svg
+   :alt: Folio 0048 diagram (interactive vector)
+
 chords :g:`ΑΒ <AB>`, :g:`ΑΓ <AG>` be drawn through, and let each of them be given in magnitude, of such parts as the diameter is given as :math:`120`, and let :g:`ΒΓ <BG>` be joined.
 I say that this also is given. For let :g:`ΒΔ <BD>`, :g:`ΓΔ <GD>` be joined; clearly these also are given because they are the chords remaining to complete the semicircle. Since then :g:`ΑΒΓΔ <quadDiff>` is a quadrilateral in a circle, the rectangle contained by :g:`ΑΒ <AB>`, :g:`ΓΔ <GD>` together with the rectangle contained by :g:`ΑΔ <AD>`, :g:`ΒΓ <BG>` is equal to the rectangle contained by :g:`ΑΓ <AG>`, :g:`ΒΔ <BD>`.
 And both the rectangle contained by :g:`ΑΓ <AG>`, :g:`ΒΔ <BD>` and the rectangle contained by :g:`ΑΒ <AB>`, :g:`ΓΔ <GD>` are given; therefore the remaining rectangle contained by :g:`ΑΔ <AD>`, :g:`ΒΓ <BG>` is given. And :g:`ΑΔ <AD>` is a diameter; therefore the straight line :g:`ΒΓ <BG>` is also given.
@@ -139,6 +157,12 @@ And it has become clear to us that, if two arcs and the straight lines subtendin
 
 .. folio:: heiberg_1898_syntaxis_vol1_pt1:0049
    :page: p. 39
+
+.. picture:: 0049.g1.png
+   :alt: Folio 0049 diagram (archival scan)
+
+.. picture:: 0049.g1.svg
+   :alt: Folio 0049 diagram (interactive vector)
 
 and in particular the straight line subtending twelve degrees, since we possess both that subtending :math:`60` and that subtending :math:`72`.
 
@@ -169,6 +193,12 @@ And through this theorem again very many others will be obtained at the halves o
 .. folio:: heiberg_1898_syntaxis_vol1_pt1:0051
    :page: p. 41
 
+.. picture:: 0051.g1.png
+   :alt: Folio 0051 diagram (archival scan)
+
+.. picture:: 0051.g1.svg
+   :alt: Folio 0051 diagram (interactive vector)
+
 that the straight line subtending one and a half degrees is approximately :math:`1;34,15` of such parts as the diameter is :math:`120`, and that subtending three-quarters of a degree is :math:`0;47,8` of the same.
 
 5. Chord of the Sum (`Heiberg I, pp. 41–42`)
@@ -197,6 +227,12 @@ And since, when a certain straight line such as that subtending :math:`1\frac{1}
 .. folio:: heiberg_1898_syntaxis_vol1_pt1:0053
    :page: p. 43
 
+.. picture:: 0053.g1.png
+   :alt: Folio 0053 diagram (archival scan)
+
+.. picture:: 0053.g1.svg
+   :alt: Folio 0053 diagram (interactive vector)
+
 we shall first treat the chord subtending :math:`1` degree from both that subtending :math:`1\frac{1}{2}` degrees and that subtending :math:`\frac{3}{4}` of a degree, laying down a lemma which, even if it cannot determine their magnitudes in general, yet for quantities so very small will be able to preserve agreement with those that are determinate.
 
 6. Inequality Lemma and the Chord of One Degree (`Heiberg I, pp. 43–47`)
@@ -221,6 +257,12 @@ and taking the doubles of the antecedents, straight line :g:`ΓΑ <AG>` has to :
 
 .. folio:: heiberg_1898_syntaxis_vol1_pt1:0055
    :page: p. 45
+
+.. picture:: 0055.g1.png
+   :alt: Folio 0055 diagram (archival scan)
+
+.. picture:: 0055.g1.svg
+   :alt: Folio 0055 diagram (interactive vector)
 
 angle :math:`E\Delta A`; and by division, straight line :math:`\Gamma E` has to :math:`EA` a lesser ratio than angle :math:`\Gamma\Delta E` has to angle :math:`E\Delta A`.
 But as straight line :math:`\Gamma E` is to :math:`EA`, so is straight line :g:`ΓΒ <BG>` to :g:`ΒΑ <AB>` [:just:`Eucl. VI, 3 <VI.3>`], and as angle :math:`\Gamma\Delta B` is to angle :math:`B\Delta A`, so is arc :g:`ΓΒ <BG>` to :g:`ΒΑ <AB>` [:just:`Eucl. VI, 33 <VI.33>`]; therefore straight line :g:`ΓΒ <BG>` has to :g:`ΒΑ <AB>` a lesser ratio than arc :g:`ΓΒ <BG>` has to arc :g:`ΒΑ <AB>`.

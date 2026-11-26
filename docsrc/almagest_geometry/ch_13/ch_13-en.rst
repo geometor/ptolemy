@@ -27,6 +27,12 @@ Across two straight lines :g:`AB <AB>` and :g:`AΓ <AG>`, let there be drawn
 .. folio:: heiberg_1898_syntaxis_vol1_pt1:0079
    :page: p. 69
 
+.. picture:: 0079.g1.png
+   :alt: Folio 0079 diagram (archival scan)
+
+.. picture:: 0079.g1.svg
+   :alt: Folio 0079 diagram (interactive vector)
+
 two straight lines :g:`BE <BE>` and :g:`ΓΔ <GD>`, intersecting one another at point :g:`Z <Z>`.
 
 I say that the ratio of :g:`ΓA <AG>` to :math:`AE` is compounded of the ratio of :g:`ΓΔ <GD>` to :math:`\Delta Z` and the ratio of :math:`ZB` to :g:`BE <BE>`.
@@ -45,6 +51,18 @@ In the same way it will be shown also by division that the ratio of :math:`\Gamm
 .. folio:: heiberg_1898_syntaxis_vol1_pt1:0080
    :page: p. 70
 
+.. picture:: 0080.g2.png
+   :alt: Folio 0080 second diagram (archival scan)
+
+.. picture:: 0080.g2.svg
+   :alt: Folio 0080 second diagram (interactive vector)
+
+.. picture:: 0080.g1.png
+   :alt: Folio 0080 first diagram (archival scan)
+
+.. picture:: 0080.g1.svg
+   :alt: Folio 0080 first diagram (interactive vector)
+
 :math:`AH` is parallel to :math:`EZ`, as :math:`\Gamma E` is to :math:`EA`, so is :math:`\Gamma Z` to :math:`ZH` [:just:`Eucl. VI, 2 <VI.2>`].
 But when :math:`Z\Delta` is taken externally, the ratio of :math:`\Gamma Z` to :math:`ZH` is compounded of the ratio of :math:`\Gamma Z` to :math:`Z\Delta` and the ratio of :math:`\Delta Z` to :math:`ZH`;
 and the ratio of :math:`\Delta Z` to :math:`ZH` is the same as that of :math:`\Delta B` to :math:`BA`, because :math:`BA` and :math:`ZH` are drawn across the parallels :math:`AH` and :math:`ZB`;
@@ -60,6 +78,12 @@ and let the same condition be understood for the arcs taken hereafter; and let :
 
 .. folio:: heiberg_1898_syntaxis_vol1_pt1:0081
    :page: p. 71
+
+.. picture:: 0081.g1.png
+   :alt: Folio 0081 diagram (archival scan)
+
+.. picture:: 0081.g1.svg
+   :alt: Folio 0081 diagram (interactive vector)
 
 I say that, as the chord subtending double the arc :math:`AB` is to the chord subtending double the arc :math:`B\Gamma`, so is the straight line :math:`AE` to the straight line :math:`E\Gamma`.
 
@@ -77,6 +101,12 @@ For with the same figure set out, let :math:`A\Delta` be joined, and from :math:
 .. folio:: heiberg_1898_syntaxis_vol1_pt1:0082
    :page: p. 72
 
+.. picture:: 0082.g1.png
+   :alt: Folio 0082 diagram (archival scan)
+
+.. picture:: 0082.g1.svg
+   :alt: Folio 0082 diagram (interactive vector)
+
 subtending half of it—will be given, and the whole triangle :math:`A\Delta Z` as well, is clear; and since, when the whole straight line :math:`A\Gamma` is given,
 the ratio of :math:`AE` to :math:`E\Gamma`, being the same as that of the chord subtending double :math:`AB` to the chord subtending double :math:`B\Gamma`, is also supposed given, both :math:`AE` will be given [Eucl. Data 7] and the remainder :math:`ZE`.
 And for this reason, since :math:`\Delta Z` is also given, both the angle :math:`E\Delta Z` of the right-angled triangle :math:`E\Delta Z` and the whole angle :math:`A\Delta B` will be given; so that both the arc :math:`AB` and the remainder :math:`B\Gamma` will be given; which was to be proved.
@@ -86,6 +116,12 @@ and let the same condition be understood for the arcs taken hereafter; and let :
 
 .. folio:: heiberg_1898_syntaxis_vol1_pt1:0083
    :page: p. 73
+
+.. picture:: 0083.g1.png
+   :alt: Folio 0083 diagram (archival scan)
+
+.. picture:: 0083.g1.svg
+   :alt: Folio 0083 diagram (interactive vector)
 
 I say that, as the chord subtending double the arc :math:`\Gamma A` is to the chord subtending double the arc :math:`AB`, so is the straight line :math:`\Gamma E` to :math:`BE`.
 
@@ -121,6 +157,12 @@ and let :math:`A\Delta` be joined, produced, and meet :math:`HB`, likewise produ
 
 .. folio:: heiberg_1898_syntaxis_vol1_pt1:0085
    :page: p. 75
+
+.. picture:: 0085.g1.png
+   :alt: Folio 0085 diagram (archival scan)
+
+.. picture:: 0085.g1.svg
+   :alt: Folio 0085 diagram (interactive vector)
 
 let :math:`\Delta\Gamma` and :math:`A\Gamma`, when joined, cut :g:`HZ <HZ>` and :math:`HE` at points :g:`K <K>` and :g:`Λ <Lambda>`.
 Then points :g:`Θ <Theta>`, :g:`K <K>`, :g:`Λ <Lambda>` come to lie on one straight line because they lie simultaneously in two planes, both that of triangle :math:`A\Gamma\Delta` and that of circle :math:`BZE`;

@@ -22,6 +22,12 @@ Ed. :person:`J. L. Heiberg <heiberg>` (*Claudii Ptolemaei Opera Astronomica Mino
    .. folio:: heiberg_1907_opera_minora_vol2:0440
       :page: p. 230
 
+   .. picture:: 0440.g1.png
+      :alt: Folio 0440 diagram (archival scan)
+
+   .. picture:: 0440.g1.svg
+      :alt: Folio 0440 diagram (interactive vector)
+
    Designabitur deinde omnis orizon, quemadmodum circulum declivem designavimus, non quia equinoctialem per equalia secat, quin etiam zodiacum potentia per medium secet; id autem dico, quoniam designari habet per partes potentia respicientes eas, que per diametrum opponuntur in spera corporea.
 
    Describatur enim circulus equinoctialis ut ante notis :g:`a, b, g, d <cABGD>` circa centrum :g:`e <E>`, declivis vero circulus notis :g:`z, b, h, d <cMBTD>` medium equinoctialem secans ad puncta :g:`b <B>` et :g:`d <D>`. Deducemus deinde per polum :g:`e <E>` loco circuli meridiani lineam rectam utcunque atque, si placet, per :g:`z, a, e, h, g <MK>`.

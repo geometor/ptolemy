@@ -22,6 +22,12 @@ Exordium to Syrus & Construction of the Equatorial Plane (`Heiberg II, p. 227`)
 .. folio:: heiberg_1907_opera_minora_vol2:0437
    :page: p. 227
 
+.. picture:: 0437.g1.png
+   :alt: Folio 0437 diagram (archival scan)
+
+.. picture:: 0437.g1.svg
+   :alt: Folio 0437 diagram (interactive vector)
+
 Since it is possible, O :person:`Syrus <syrus>` (*Jesure*), and frequently necessary, that the circles occurring upon the solid sphere be represented in a flat plane just as if it actually were flat, it seemed advisable in the truth of science that one who wishes to know this should set forth a demonstrating rationale whereby it is proper to assign the oblique circle, the circles parallel to the equinoctial circle, and the circles known through the meridian circle, and whatever is intended to be adapted to that which appears in the corporeal sphere.
 
 This intention requires that in place of the meridian circle we use straight lines, and between the parallel circles to the right circle, that first a great circle be made assigning the oblique circle, reaching on this side and that the parallels to the right circle at equal distance on both sides, which it bisects in this manner:

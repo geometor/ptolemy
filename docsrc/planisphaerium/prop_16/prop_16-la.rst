@@ -31,6 +31,12 @@ Ed. :person:`J. L. Heiberg <heiberg>` (*Claudii Ptolemaei Opera Astronomica Mino
    .. folio:: heiberg_1907_opera_minora_vol2:0463
       :page: p. 253
 
+   .. picture:: 0463.g1.png
+      :alt: Folio 0463 diagram (archival scan)
+
+   .. picture:: 0463.g1.svg
+      :alt: Folio 0463 diagram (interactive vector)
+
    apud circulum meridianum, cuius diametros :g:`bd`,
    quem ad quantitatem :g:`ce` describimus inter notas :g:`c`, :g:`y`, :g:`f`, quem per medium secabit circulus circa :g:`mn` descriptus
    per puncta :g:`y`, :g:`f` transiens et diuidet circulum :g:`cy` in duas medietates, sicut contingit in spera corporea.

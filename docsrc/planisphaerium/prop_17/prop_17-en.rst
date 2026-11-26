@@ -16,6 +16,12 @@ Section 17 · Non-Concentricity of Projected Parallels to the Zodiac
 .. folio:: heiberg_1907_opera_minora_vol2:0464
    :page: p. 254
 
+.. picture:: 0464.g1.png
+   :alt: Folio 0464 diagram (archival scan)
+
+.. picture:: 0464.g1.svg
+   :alt: Folio 0464 diagram (interactive vector)
+
 Circles parallel to the zodiac designated in this manner must always have different centers. For let there be as before the meridian circle :g:`abgd` around center :g:`e`, axis line :g:`bed`, diameter of the equinoctial circle line :g:`ag`, and diameters of circles parallel to the zodiac lines :g:`zh` and :g:`tk`;
 and let lines :g:`dlz`, :g:`dmh`, :g:`dnt`, and :g:`dck` be drawn. Next we describe circle :g:`dyf` around triangle :g:`dnc`, and having drawn line :g:`yf`, we divide line :g:`lm` into halves at point :g:`o`. Since therefore it is certain that the circle whose diameter is :g:`zh` can be described about diameter :g:`lm`,
 and thus the circle whose diameter is :g:`tk` about diameter :g:`nc`, **I say that** these two circles are by no means of the same center—that is, point :g:`o` is not at all the midpoint on diameter :g:`nc`. For since arc :g:`zt` equals arc :g:`kh`, arc :g:`yn` will also equal arc :g:`cf`; whence lines :g:`lm` and :g:`fy` are parallel.

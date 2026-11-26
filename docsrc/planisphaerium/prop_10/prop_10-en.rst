@@ -21,6 +21,12 @@ With these things thus confirmed, we must next examine whether the rising of the
 .. folio:: heiberg_1907_opera_minora_vol2:0452
    :page: p. 242
 
+.. picture:: 0452.g1.png
+   :alt: Folio 0452 diagram (archival scan)
+
+.. picture:: 0452.g1.svg
+   :alt: Folio 0452 diagram (interactive vector)
+
 method is required than the one established in the right sphere. We shall therefore follow the manner of the example given in the book of the *Almagest* concerning the parallel passing through the island of Rhodes,
 to whose horizon the northern pole rises by :math:`36^\circ`, whose semidiameter, as was established among the things stated above, is measured by :math:`102^p 4' 45''`, and the distance of its center from the equinoctial center by :math:`82^p 35' 3''`.
 

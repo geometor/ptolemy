@@ -22,6 +22,12 @@ to the quantity of two signs—namely Pisces and Aquarius—until the rest are c
 .. folio:: heiberg_1907_opera_minora_vol2:0458
    :page: p. 248
 
+.. picture:: 0458.g1.png
+   :alt: Folio 0458 diagram (archival scan)
+
+.. picture:: 0458.g1.svg
+   :alt: Folio 0458 diagram (interactive vector)
+
 Whence line :g:`et`, as the semidiameter of the parallel circle designated at the head of Aquarius, must increase until it contains :math:`86^p 29' 42''`.
 When we divide the aforesaid difference :math:`3600` by this and complete the subsequent steps in order as before, we obtain as previously line :g:`ey` of :math:`22^p 25' 42''`. Therefore, out of the parts in which we number line :g:`ec` opposite the right angle as :math:`120^p`,
 line :g:`ey` will contain :math:`32^p 36'`, whose chord belongs to an arc of :math:`31^\circ 32'` out of the :math:`360^\circ` of the whole circle circumscribing right triangle :g:`ecy`. Therefore, out of the degrees of which we number :math:`360^\circ` in four right angles, angle :g:`∠ecy` will have :math:`15^\circ 46'`.

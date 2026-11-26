@@ -21,6 +21,12 @@ With these matters settled, it is next fitting to measure the quantity of the ri
 .. folio:: heiberg_1907_opera_minora_vol2:0447
    :page: p. 237
 
+.. picture:: 0447.g1.png
+   :alt: Folio 0447 diagram (archival scan)
+
+.. picture:: 0447.g1.svg
+   :alt: Folio 0447 diagram (interactive vector)
+
 there be, as usual, the equinoctial circle :g:`abgd` around center :g:`e`, and the zodiac :g:`zbhd` around center :g:`t`,
 with the diameters drawn orthogonally through :g:`e` in place of the meridian circle, one joining the points of intersection :g:`b` and :g:`d`, which are also the equinoctial points, and the other passing through both centers, :g:`gh` and :g:`az`, whose tropic points are :g:`h` and :g:`z`.
 

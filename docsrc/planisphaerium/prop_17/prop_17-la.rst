@@ -20,6 +20,12 @@ Ed. :person:`J. L. Heiberg <heiberg>` (*Claudii Ptolemaei Opera Astronomica Mino
    .. folio:: heiberg_1907_opera_minora_vol2:0464
       :page: p. 254
 
+   .. picture:: 0464.g1.png
+      :alt: Folio 0464 diagram (archival scan)
+
+   .. picture:: 0464.g1.svg
+      :alt: Folio 0464 diagram (interactive vector)
+
    Circulorum equidistantium zodiaco in hunc modum designatorum diuersa semper esse centra necesse est.
    sit enim ut ante circulus meridianus :g:`abgd` circa centrum :g:`e`, axis linea :g:`bed`, diametros circuli equinoctialis linea :g:`ag`,
    diametra circulorum equidistantium zodiaco linee :g:`zh` et :g:`tk`; producentur et linee :g:`dlz`, :g:`dmh`, :g:`dnt`, :g:`dck`. designamus deinde
