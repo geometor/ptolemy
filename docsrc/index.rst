@@ -34,8 +34,8 @@ Works in This Archive
       .. container:: home-actions
 
          * :doc:`Open The Almagest → <almagest_geometry/index>`
-         * :doc:`Table of Chords (Ch. 10–11) → <almagest_geometry/ch_10/ch_10-en>`
-         * :doc:`Spherical Trigonometry (Ch. 13) → <almagest_geometry/ch_13/ch_13-en>`
+         * :doc:`Table of Chords (Ch. 10–11) → <almagest_geometry/ch_10/index>`
+         * :doc:`Spherical Trigonometry (Ch. 13) → <almagest_geometry/ch_13/index>`
 
 .. container:: home-book-hero no-thumb
 
@@ -48,7 +48,7 @@ Works in This Archive
       .. container:: home-actions
 
          * :doc:`Open Planisphere → <planisphaerium/index>`
-         * :doc:`Proposition 1 → <planisphaerium/prop_01/prop_01-en>`
+         * :doc:`Proposition 1 → <planisphaerium/prop_01/index>`
 
 Key Features
 ------------
