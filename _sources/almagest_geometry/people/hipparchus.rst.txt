@@ -11,4 +11,4 @@ Hipparchus
 ==========
 
 **Hipparchus of Nicaea (Ἵππαρχος ὁ Νικαεύς, c. 190 – c. 120 BCE)**
-   Founder of Greek chord trigonometry (author of a lost 12-book treatise on chords in a circle) and quantitative solar/lunar theory; cited in *Almagest* I.12 for using Eratosthenes' $\frac{11}{83}$ tropical ratio.
+   Founder of Greek chord trigonometry (author of a lost 12-book treatise on chords in a circle) and quantitative solar/lunar theory; cited in *Almagest* I.12 for using Eratosthenes' :math:`\frac{11}{83}` tropical ratio.

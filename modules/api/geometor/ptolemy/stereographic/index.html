@@ -111,26 +111,27 @@
         Vol. II, Leipzig: Teubner, 1907, §§1-4, pp. 227-234):</p>
         <ol class="arabic">
         <li><p><strong>Exact Rational Stereographic Bijection</strong> (<a class="reference internal" href="#geometor.ptolemy.stereographic.stereographic_forward" title="geometor.ptolemy.stereographic.stereographic_forward"><code class="xref py py-func docutils literal notranslate"><span class="pre">stereographic_forward()</span></code></a>, <a class="reference internal" href="#geometor.ptolemy.stereographic.stereographic_inverse" title="geometor.ptolemy.stereographic.stereographic_inverse"><code class="xref py py-func docutils literal notranslate"><span class="pre">stereographic_inverse()</span></code></a>):
-        Projects $P = (X, Y, Z) \in S^2 \setminus \{(0, 0, -1)\}$ from the South Pole
-        $S = (0, 0, -1)$ onto the equatorial plane $Z = 0$:</p>
-        <p>$$(x, y) = \left(\frac{X}{1 + Z},\, \frac{Y}{1 + Z}\right), \qquad
-                (X, Y, Z) = \left(\frac{2x}{1 + x^2 + y^2},\, \frac{2y}{1 + x^2 + y^2},\, \frac{1 - x^2 - y^2}{1 + x^2 + y^2}\right)$$</p>
+        Projects <span class="math notranslate nohighlight">\(P = (X, Y, Z) \in S^2 \setminus \{(0, 0, -1)\}\)</span> from the South Pole
+        <span class="math notranslate nohighlight">\(S = (0, 0, -1)\)</span> onto the equatorial plane <span class="math notranslate nohighlight">\(Z = 0\)</span>:</p>
+        <div class="math notranslate nohighlight">
+        \[(x, y) = \left(\frac{X}{1 + Z},\, \frac{Y}{1 + Z}\right), \qquad
+                (X, Y, Z) = \left(\frac{2x}{1 + x^2 + y^2},\, \frac{2y}{1 + x^2 + y^2},\, \frac{1 - x^2 - y^2}{1 + x^2 + y^2}\right)\]</div>
         </li>
         <li><p><strong>Universal Circle-Preservation &amp; Conformal Metric Theorems</strong>
         (<a class="reference internal" href="#geometor.ptolemy.stereographic.project_sphere_circle_plane" title="geometor.ptolemy.stereographic.project_sphere_circle_plane"><code class="xref py py-func docutils literal notranslate"><span class="pre">project_sphere_circle_plane()</span></code></a>, <a class="reference internal" href="#geometor.ptolemy.stereographic.prove_circle_preservation_symbolically" title="geometor.ptolemy.stereographic.prove_circle_preservation_symbolically"><code class="xref py py-func docutils literal notranslate"><span class="pre">prove_circle_preservation_symbolically()</span></code></a>,
         <a class="reference internal" href="#geometor.ptolemy.stereographic.prove_conformal_metric_symbolically" title="geometor.ptolemy.stereographic.prove_conformal_metric_symbolically"><code class="xref py py-func docutils literal notranslate"><span class="pre">prove_conformal_metric_symbolically()</span></code></a>, <a class="reference internal" href="#geometor.ptolemy.stereographic.prove_parallel_inversion_symbolically" title="geometor.ptolemy.stereographic.prove_parallel_inversion_symbolically"><code class="xref py py-func docutils literal notranslate"><span class="pre">prove_parallel_inversion_symbolically()</span></code></a>):
-        Proves in exact SymPy algebra over $\mathbb{Q}[a, b, c, d, x, y]$ that every plane
-        $aX + bY + cZ + d = 0$ cutting $S^2$ without passing through $S$ ($d \neq c$) projects
-        to an exact Euclidean circle in the equatorial plane, that meridians ($d = c$) project
+        Proves in exact SymPy algebra over <span class="math notranslate nohighlight">\(\mathbb{Q}[a, b, c, d, x, y]\)</span> that every plane
+        <span class="math notranslate nohighlight">\(aX + bY + cZ + d = 0\)</span> cutting <span class="math notranslate nohighlight">\(S^2\)</span> without passing through <span class="math notranslate nohighlight">\(S\)</span> (<span class="math notranslate nohighlight">\(d \neq c\)</span>) projects
+        to an exact Euclidean circle in the equatorial plane, that meridians (<span class="math notranslate nohighlight">\(d = c\)</span>) project
         to straight lines through the North Pole, that opposite parallels at <span class="math notranslate nohighlight">\(\pm\delta\)</span> obey
         circular inversion <span class="math notranslate nohighlight">\(r_+ \cdot r_- = R_{\mathrm{eq}}^2\)</span> (<em>Planisphaerium</em> §4, p. 233:
         <code class="docutils literal notranslate"><span class="pre">ez</span> <span class="pre">:</span> <span class="pre">ed</span> <span class="pre">=</span> <span class="pre">ed</span> <span class="pre">:</span> <span class="pre">ek</span></code>), and that the pulled-back metric is conformally flat
         <span class="math notranslate nohighlight">\(dX^2 + dY^2 + dZ^2 = \frac{4}{(1 + x^2 + y^2)^2}(dx^2 + dy^2)\)</span>.</p></li>
         <li><p><strong>Exact ``geometor.model`` Astrolabe Tropics, Ecliptic &amp; Almucantar Construction</strong>
         (<a class="reference internal" href="#geometor.ptolemy.stereographic.construct_astrolabe_planisphere" title="geometor.ptolemy.stereographic.construct_astrolabe_planisphere"><code class="xref py py-func docutils literal notranslate"><span class="pre">construct_astrolabe_planisphere()</span></code></a>, <a class="reference internal" href="#geometor.ptolemy.stereographic.construct_almucantar_circle" title="geometor.ptolemy.stereographic.construct_almucantar_circle"><code class="xref py py-func docutils literal notranslate"><span class="pre">construct_almucantar_circle()</span></code></a>):
-        Constructs Ptolemy’s <em>Planisphaerium</em> §1 diagram (Heiberg 1907, p. 227: equator $ABGD$,
-        North Pole $E$, Tropic of Cancer $TL$, Tropic of Capricorn $KM$, and oblique ecliptic
-        circle $MBTD$ centered at $R$) in <code class="docutils literal notranslate"><span class="pre">geometor.model</span></code> with <code class="docutils literal notranslate"><span class="pre">auto_intersect=False</span></code>
+        Constructs Ptolemy’s <em>Planisphaerium</em> §1 diagram (Heiberg 1907, p. 227: equator <span class="math notranslate nohighlight">\(ABGD\)</span>,
+        North Pole <span class="math notranslate nohighlight">\(E\)</span>, Tropic of Cancer <span class="math notranslate nohighlight">\(TL\)</span>, Tropic of Capricorn <span class="math notranslate nohighlight">\(KM\)</span>, and oblique ecliptic
+        circle <span class="math notranslate nohighlight">\(MBTD\)</span> centered at <span class="math notranslate nohighlight">\(R\)</span>) in <code class="docutils literal notranslate"><span class="pre">geometor.model</span></code> with <code class="docutils literal notranslate"><span class="pre">auto_intersect=False</span></code>
         and zero <code class="docutils literal notranslate"><span class="pre">sp.Float</span></code> coordinates.</p></li>
         </ol>
         <section class="level-2" id="classes">
@@ -340,36 +341,38 @@
         <dl class="py function">
         <dt class="sig sig-object py" id="geometor.ptolemy.stereographic.stereographic_inverse">
         <span class="sig-prename descclassname"><span class="pre">geometor.ptolemy.stereographic.</span></span><span class="sig-name descname"><span class="pre">stereographic_inverse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.Expr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.Expr</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.ptolemy.stereographic.stereographic_inverse" title="Link to this definition">¶</a></dt>
-        <dd><p>Lift planar point <code class="docutils literal notranslate"><span class="pre">(x,</span> <span class="pre">y)</span></code> back onto the unit sphere $X^2 + Y^2 + Z^2 = 1$.</p>
+        <dd><p>Lift planar point <code class="docutils literal notranslate"><span class="pre">(x,</span> <span class="pre">y)</span></code> back onto the unit sphere <span class="math notranslate nohighlight">\(X^2 + Y^2 + Z^2 = 1\)</span>.</p>
         </dd></dl>
 
         <dl class="py function">
         <dt class="sig sig-object py" id="geometor.ptolemy.stereographic.project_sphere_circle_plane">
         <span class="sig-prename descclassname"><span class="pre">geometor.ptolemy.stereographic.</span></span><span class="sig-name descname"><span class="pre">project_sphere_circle_plane</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.Expr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.Expr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.Expr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">d</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.Expr</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.ptolemy.stereographic.ProjectedCircleData" title="geometor.ptolemy.stereographic.ProjectedCircleData"><span class="pre">ProjectedCircleData</span></a></span></span><a class="headerlink" href="#geometor.ptolemy.stereographic.project_sphere_circle_plane" title="Link to this definition">¶</a></dt>
-        <dd><p>Project the spherical circle cut on $S^2$ by plane $aX + bY + cZ + d = 0$.</p>
-        <p>Substituting $(X, Y, Z) = \left(\frac{2x}{1+r^2}, \frac{2y}{1+r^2}, \frac{1-r^2}{1+r^2}\right)$
-        with $r^2 = x^2 + y^2$ yields:</p>
-        <p>$$(d - c)(x^2 + y^2) + 2ax + 2by + (d + c) = 0$$</p>
+        <dd><p>Project the spherical circle cut on <span class="math notranslate nohighlight">\(S^2\)</span> by plane <span class="math notranslate nohighlight">\(aX + bY + cZ + d = 0\)</span>.</p>
+        <p>Substituting <span class="math notranslate nohighlight">\((X, Y, Z) = \left(\frac{2x}{1+r^2}, \frac{2y}{1+r^2}, \frac{1-r^2}{1+r^2}\right)\)</span>
+        with <span class="math notranslate nohighlight">\(r^2 = x^2 + y^2\)</span> yields:</p>
+        <div class="math notranslate nohighlight">
+        \[(d - c)(x^2 + y^2) + 2ax + 2by + (d + c) = 0\]</div>
         <ul class="simple">
-        <li><p>When $d = c$ (plane passes through South Pole $S = (0, 0, -1)$), the locus is the
-        exact straight line $ax + by + c = 0$.</p></li>
-        <li><p>When $d \neq c$, completing the square yields an exact Euclidean circle with center
-        $(-\frac{a}{d-c}, -\frac{b}{d-c})$ and squared radius $\frac{a^2 + b^2 + c^2 - d^2}{(d-c)^2}$.</p></li>
+        <li><p>When <span class="math notranslate nohighlight">\(d = c\)</span> (plane passes through South Pole <span class="math notranslate nohighlight">\(S = (0, 0, -1)\)</span>), the locus is the
+        exact straight line <span class="math notranslate nohighlight">\(ax + by + c = 0\)</span>.</p></li>
+        <li><p>When <span class="math notranslate nohighlight">\(d \neq c\)</span>, completing the square yields an exact Euclidean circle with center
+        <span class="math notranslate nohighlight">\((-\frac{a}{d-c}, -\frac{b}{d-c})\)</span> and squared radius <span class="math notranslate nohighlight">\(\frac{a^2 + b^2 + c^2 - d^2}{(d-c)^2}\)</span>.</p></li>
         </ul>
         </dd></dl>
 
         <dl class="py function">
         <dt class="sig sig-object py" id="geometor.ptolemy.stereographic.prove_circle_preservation_symbolically">
         <span class="sig-prename descclassname"><span class="pre">geometor.ptolemy.stereographic.</span></span><span class="sig-name descname"><span class="pre">prove_circle_preservation_symbolically</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.ptolemy.stereographic.prove_circle_preservation_symbolically" title="Link to this definition">¶</a></dt>
-        <dd><p>Prove stereographic circle preservation universally over $\mathbb{Q}(a, b, c, d, x, y)$.</p>
+        <dd><p>Prove stereographic circle preservation universally over <span class="math notranslate nohighlight">\(\mathbb{Q}(a, b, c, d, x, y)\)</span>.</p>
         </dd></dl>
 
         <dl class="py function">
         <dt class="sig sig-object py" id="geometor.ptolemy.stereographic.prove_conformal_metric_symbolically">
         <span class="sig-prename descclassname"><span class="pre">geometor.ptolemy.stereographic.</span></span><span class="sig-name descname"><span class="pre">prove_conformal_metric_symbolically</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">sympy.Expr</span></span></span><a class="headerlink" href="#geometor.ptolemy.stereographic.prove_conformal_metric_symbolically" title="Link to this definition">¶</a></dt>
-        <dd><p>Prove conformality of stereographic projection by computing the Jacobian metric tensor $J^T J$.</p>
-        <p>Verifies that for $\Phi(x, y) = (X(x, y), Y(x, y), Z(x, y))$,</p>
-        <p>$$J^T J = \frac{4}{(1 + x^2 + y^2)^2} \begin{pmatrix} 1 &amp; 0 \\ 0 &amp; 1 \end{pmatrix}$$</p>
+        <dd><p>Prove conformality of stereographic projection by computing the Jacobian metric tensor <span class="math notranslate nohighlight">\(J^T J\)</span>.</p>
+        <p>Verifies that for <span class="math notranslate nohighlight">\(\Phi(x, y) = (X(x, y), Y(x, y), Z(x, y))\)</span>,</p>
+        <div class="math notranslate nohighlight">
+        \[\begin{split}J^T J = \frac{4}{(1 + x^2 + y^2)^2} \begin{pmatrix} 1 &amp; 0 \\ 0 &amp; 1 \end{pmatrix}\end{split}\]</div>
         <p>so angles between intersecting curves on the sphere are preserved identically in the plane.</p>
         </dd></dl>
 
@@ -390,32 +393,33 @@
         <p>Follows Heiberg 1907, pp. 227-229 &amp; 233 letter labels ($ato A, bto B, gto G,
         dto D, eto E, tto T, lto L, kto K, mto M, rto R$):</p>
         <ul class="simple">
-        <li><p>Equator $ABGD$ centered at North Pole $E = (0, 0)$ with orthogonal diameters $AG$ (vertical)
-        and $BD$ (horizontal).</p></li>
-        <li><p>With rational half-obliquity parameter $u = \tan(\varepsilon / 2)$ (default $u = \frac{1}{5}$,
-        so $\sin\varepsilon = \frac{5}{13} \implies \varepsilon \approx 22^\circ 37'$, 100% in $\mathbb{Q}$!),
-        the Tropic of Cancer circle $TL$ has radius $r_{\mathrm{Can}} = R \frac{1 - u}{1 + u}$
-        ($= 40$ when $R = 60, u = \frac{1}{5}$) and the Tropic of Capricorn circle $KM$ has radius
-        $r_{\mathrm{Cap}} = R \frac{1 + u}{1 - u}$ ($= 90$ when $R = 60, u = \frac{1}{5}$),
-        satisfying $40 \times 90 = 3600 = 60^2$ (<em>Planisphaerium</em> §4)!</p></li>
-        <li><p>Bisecting segment $TM$ ($T = (0, -r_{\mathrm{Can}})$, $M = (0, r_{\mathrm{Cap}})$) at
-        $R = (0, \frac{r_{\mathrm{Cap}} - r_{\mathrm{Can}}}{2})$ ($= (0, 25)$), the circle on
-        diameter $TM$ centered at $R$ has radius $\frac{r_{\mathrm{Cap}} + r_{\mathrm{Can}}}{2} = 65$
-        and passes <strong>exactly</strong> through opposite equatorial points $B = (-60, 0)$ and $D = (60, 0)$
-        since $25^2 + 60^2 = 65^2$ (<em>Planisphaerium</em> §1: $\angle MDT = 90^\circ$)!</p></li>
+        <li><p>Equator <span class="math notranslate nohighlight">\(ABGD\)</span> centered at North Pole <span class="math notranslate nohighlight">\(E = (0, 0)\)</span> with orthogonal diameters <span class="math notranslate nohighlight">\(AG\)</span> (vertical)
+        and <span class="math notranslate nohighlight">\(BD\)</span> (horizontal).</p></li>
+        <li><p>With rational half-obliquity parameter <span class="math notranslate nohighlight">\(u = \tan(\varepsilon / 2)\)</span> (default <span class="math notranslate nohighlight">\(u = \frac{1}{5}\)</span>,
+        so <span class="math notranslate nohighlight">\(\sin\varepsilon = \frac{5}{13} \implies \varepsilon \approx 22^\circ 37'\)</span>, 100% in <span class="math notranslate nohighlight">\(\mathbb{Q}\)</span>!),
+        the Tropic of Cancer circle <span class="math notranslate nohighlight">\(TL\)</span> has radius <span class="math notranslate nohighlight">\(r_{\mathrm{Can}} = R \frac{1 - u}{1 + u}\)</span>
+        (<span class="math notranslate nohighlight">\(= 40\)</span> when <span class="math notranslate nohighlight">\(R = 60, u = \frac{1}{5}\)</span>) and the Tropic of Capricorn circle <span class="math notranslate nohighlight">\(KM\)</span> has radius
+        <span class="math notranslate nohighlight">\(r_{\mathrm{Cap}} = R \frac{1 + u}{1 - u}\)</span> (<span class="math notranslate nohighlight">\(= 90\)</span> when <span class="math notranslate nohighlight">\(R = 60, u = \frac{1}{5}\)</span>),
+        satisfying <span class="math notranslate nohighlight">\(40 \times 90 = 3600 = 60^2\)</span> (<em>Planisphaerium</em> §4)!</p></li>
+        <li><p>Bisecting segment <span class="math notranslate nohighlight">\(TM\)</span> (<span class="math notranslate nohighlight">\(T = (0, -r_{\mathrm{Can}})\)</span>, <span class="math notranslate nohighlight">\(M = (0, r_{\mathrm{Cap}})\)</span>) at
+        <span class="math notranslate nohighlight">\(R = (0, \frac{r_{\mathrm{Cap}} - r_{\mathrm{Can}}}{2})\)</span> (<span class="math notranslate nohighlight">\(= (0, 25)\)</span>), the circle on
+        diameter <span class="math notranslate nohighlight">\(TM\)</span> centered at <span class="math notranslate nohighlight">\(R\)</span> has radius <span class="math notranslate nohighlight">\(\frac{r_{\mathrm{Cap}} + r_{\mathrm{Can}}}{2} = 65\)</span>
+        and passes <strong>exactly</strong> through opposite equatorial points <span class="math notranslate nohighlight">\(B = (-60, 0)\)</span> and <span class="math notranslate nohighlight">\(D = (60, 0)\)</span>
+        since <span class="math notranslate nohighlight">\(25^2 + 60^2 = 65^2\)</span> (<em>Planisphaerium</em> §1: <span class="math notranslate nohighlight">\(\angle MDT = 90^\circ\)</span>)!</p></li>
         </ul>
         </dd></dl>
 
         <dl class="py function">
         <dt class="sig sig-object py" id="geometor.ptolemy.stereographic.construct_almucantar_circle">
         <span class="sig-prename descclassname"><span class="pre">geometor.ptolemy.stereographic.</span></span><span class="sig-name descname"><span class="pre">construct_almucantar_circle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sin_latitude</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.Rational</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cos_latitude</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.Rational</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sin_altitude</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.Rational</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">equator_radius</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">sympy.Rational</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">60</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.ptolemy.stereographic.ProjectedCircleData" title="geometor.ptolemy.stereographic.ProjectedCircleData"><span class="pre">ProjectedCircleData</span></a></span></span><a class="headerlink" href="#geometor.ptolemy.stereographic.construct_almucantar_circle" title="Link to this definition">¶</a></dt>
-        <dd><p>Compute the exact projected astrolabe almucantar (constant-altitude circle) over $\mathbb{Q}$.</p>
-        <p>For observer latitude $\varphi$ (zenith $Z_0 = (0, \cos\varphi, \sin\varphi)$ on $S^2$)
-        and altitude $h$ above the horizon ($h = 0$ gives Ptolemy’s <em>Planisphaerium</em> §§2-3 horizon!),
+        <dd><p>Compute the exact projected astrolabe almucantar (constant-altitude circle) over <span class="math notranslate nohighlight">\(\mathbb{Q}\)</span>.</p>
+        <p>For observer latitude <span class="math notranslate nohighlight">\(\varphi\)</span> (zenith <span class="math notranslate nohighlight">\(Z_0 = (0, \cos\varphi, \sin\varphi)\)</span> on <span class="math notranslate nohighlight">\(S^2\)</span>)
+        and altitude <span class="math notranslate nohighlight">\(h\)</span> above the horizon (<span class="math notranslate nohighlight">\(h = 0\)</span> gives Ptolemy’s <em>Planisphaerium</em> §§2-3 horizon!),
         the almucantar plane on the unit sphere is:</p>
-        <p>$$\cos\varphi \cdot Y + \sin\varphi \cdot Z - \sin h = 0$$</p>
-        <p>When $h = 0$ (horizon), $d = 0$, and the projected horizon circle passes through the two
-        diametrically opposite equatorial East/West points $(\pm R, 0)$.</p>
+        <div class="math notranslate nohighlight">
+        \[\cos\varphi \cdot Y + \sin\varphi \cdot Z - \sin h = 0\]</div>
+        <p>When <span class="math notranslate nohighlight">\(h = 0\)</span> (horizon), <span class="math notranslate nohighlight">\(d = 0\)</span>, and the projected horizon circle passes through the two
+        diametrically opposite equatorial East/West points <span class="math notranslate nohighlight">\((\pm R, 0)\)</span>.</p>
         </dd></dl>
 
         </section>

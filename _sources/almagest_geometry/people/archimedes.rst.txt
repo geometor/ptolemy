@@ -13,7 +13,7 @@ Archimedes
 ==========
 
 **Archimedes of Syracuse (Ἀρχιμήδης, c. 287 – 212 BCE)**
-   Bounded $\pi$ between $3\frac{10}{71}$ and $3\frac{1}{7}$, an interval explicitly cited by Ptolemy (*Almagest* VI.7) in connection with $\pi \approx 3;8,30 = \frac{377}{120}$.
+   Bounded :math:`\pi` between :math:`3\frac{10}{71}` and :math:`3\frac{1}{7}`, an interval explicitly cited by Ptolemy (*Almagest* VI.7) in connection with :math:`\pi \approx 3;8,30 = \frac{377}{120}`.
 
 * **GEOMETOR Website**: `Archimedes <https://geometor.github.io/archimedes/>`_
 * **GitHub Repository**: `https://github.com/geometor/archimedes <https://github.com/geometor/archimedes>`_

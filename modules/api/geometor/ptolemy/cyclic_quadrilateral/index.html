@@ -115,13 +115,13 @@
         <li><p><strong>Exact Euclidean Construction &amp; Proof</strong> (<a class="reference internal" href="#geometor.ptolemy.cyclic_quadrilateral.construct_ptolemy_quadrilateral" title="geometor.ptolemy.cyclic_quadrilateral.construct_ptolemy_quadrilateral"><code class="xref py py-func docutils literal notranslate"><span class="pre">construct_ptolemy_quadrilateral()</span></code></a>):
         Constructs canonical rational cyclic quadrilaterals in <code class="docutils literal notranslate"><span class="pre">geometor.model</span></code> with
         <code class="docutils literal notranslate"><span class="pre">auto_intersect=False</span></code> and zero <code class="docutils literal notranslate"><span class="pre">sp.Float</span></code> coordinates—including the classical
-        Pythagorean-chord cyclic quadrilateral on diameter $65$ with integer sides
-        $(AB, BC, CD, DA) = (25, 39, 60, 52)$ and integer diagonals $(AC, BD) = (56, 63)$
-        ($56 \times 63 = 3528 = 25 \times 60 + 39 \times 52 = 1500 + 2028$), as well as
-        Brahmagupta’s $(13, 14, 15)$-derived cyclic quadrilateral—together with Ptolemy’s
-        auxiliary point $E \in AC$ satisfying $\angle ABE = \angle DBC$.</p></li>
+        Pythagorean-chord cyclic quadrilateral on diameter <span class="math notranslate nohighlight">\(65\)</span> with integer sides
+        <span class="math notranslate nohighlight">\((AB, BC, CD, DA) = (25, 39, 60, 52)\)</span> and integer diagonals <span class="math notranslate nohighlight">\((AC, BD) = (56, 63)\)</span>
+        (<span class="math notranslate nohighlight">\(56 \times 63 = 3528 = 25 \times 60 + 39 \times 52 = 1500 + 2028\)</span>), as well as
+        Brahmagupta’s <span class="math notranslate nohighlight">\((13, 14, 15)\)</span>-derived cyclic quadrilateral—together with Ptolemy’s
+        auxiliary point <span class="math notranslate nohighlight">\(E \in AC\)</span> satisfying <span class="math notranslate nohighlight">\(\angle ABE = \angle DBC\)</span>.</p></li>
         <li><p><strong>Universal Algebraic Proof</strong> (<a class="reference internal" href="#geometor.ptolemy.cyclic_quadrilateral.prove_ptolemy_theorem_universally" title="geometor.ptolemy.cyclic_quadrilateral.prove_ptolemy_theorem_universally"><code class="xref py py-func docutils literal notranslate"><span class="pre">prove_ptolemy_theorem_universally()</span></code></a>):
-        Proves Ptolemy’s identity universally over $\mathbb{Q}(t_1, t_2, t_3, t_4)$ on the
+        Proves Ptolemy’s identity universally over <span class="math notranslate nohighlight">\(\mathbb{Q}(t_1, t_2, t_3, t_4)\)</span> on the
         rational parameterization of the circle via Cayley-Menger / Euler four-point identity.</p></li>
         </ol>
         <section class="level-2" id="classes">
@@ -236,13 +236,13 @@
         <dd><p>Construct a rational cyclic quadrilateral and verify Ptolemy’s Theorem (<em>Almagest</em> I.10, pp. 36-37).</p>
         <p>Supported <code class="docutils literal notranslate"><span class="pre">preset</span></code> configurations (100% exact rational coordinates):</p>
         <ul class="simple">
-        <li><p><code class="docutils literal notranslate"><span class="pre">&quot;pythagorean_65&quot;</span></code> (default): Cyclic quadrilateral on the circle $x^2 + y^2 = (65/2)^2$
-        with exact rational vertices $A = (-65/2, 0)$, $B = (-595/26, 300/13)$,
-        $C = (2047/130, 1848/65)$, and $D = (91/10, -156/5)$, yielding <strong>exact integer sides</strong>
-        $(AB, BC, CD, DA) = (25, 39, 60, 52)$ and <strong>exact integer diagonals</strong>
-        $(AC, BD) = (56, 63)$, so $56 \times 63 = 3528 = 25 \times 60 + 39 \times 52$.</p></li>
-        <li><p><code class="docutils literal notranslate"><span class="pre">&quot;brahmagupta&quot;</span></code>: Rational orthodiagonal cyclic quadrilateral on $x^2 + y^2 = (65/2)^2$
-        with integer sides $(25, 39, 60, 52)$ in swapped chord order so $AC \perp BD$.</p></li>
+        <li><p><code class="docutils literal notranslate"><span class="pre">&quot;pythagorean_65&quot;</span></code> (default): Cyclic quadrilateral on the circle <span class="math notranslate nohighlight">\(x^2 + y^2 = (65/2)^2\)</span>
+        with exact rational vertices <span class="math notranslate nohighlight">\(A = (-65/2, 0)\)</span>, <span class="math notranslate nohighlight">\(B = (-595/26, 300/13)\)</span>,
+        <span class="math notranslate nohighlight">\(C = (2047/130, 1848/65)\)</span>, and <span class="math notranslate nohighlight">\(D = (91/10, -156/5)\)</span>, yielding <strong>exact integer sides</strong>
+        <span class="math notranslate nohighlight">\((AB, BC, CD, DA) = (25, 39, 60, 52)\)</span> and <strong>exact integer diagonals</strong>
+        <span class="math notranslate nohighlight">\((AC, BD) = (56, 63)\)</span>, so <span class="math notranslate nohighlight">\(56 \times 63 = 3528 = 25 \times 60 + 39 \times 52\)</span>.</p></li>
+        <li><p><code class="docutils literal notranslate"><span class="pre">&quot;brahmagupta&quot;</span></code>: Rational orthodiagonal cyclic quadrilateral on <span class="math notranslate nohighlight">\(x^2 + y^2 = (65/2)^2\)</span>
+        with integer sides <span class="math notranslate nohighlight">\((25, 39, 60, 52)\)</span> in swapped chord order so <span class="math notranslate nohighlight">\(AC \perp BD\)</span>.</p></li>
         </ul>
         <dl class="field-list simple">
         <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -260,13 +260,14 @@
         <dl class="py function">
         <dt class="sig sig-object py" id="geometor.ptolemy.cyclic_quadrilateral.prove_ptolemy_theorem_universally">
         <span class="sig-prename descclassname"><span class="pre">geometor.ptolemy.cyclic_quadrilateral.</span></span><span class="sig-name descname"><span class="pre">prove_ptolemy_theorem_universally</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">sympy.Expr</span></span></span><a class="headerlink" href="#geometor.ptolemy.cyclic_quadrilateral.prove_ptolemy_theorem_universally" title="Link to this definition">¶</a></dt>
-        <dd><p>Prove Ptolemy’s Theorem universally over $\mathbb{Z}[t_1, t_2, t_3, t_4]$ on the rational circle.</p>
-        <p>On the unit circle parameterized by $P(t) = \left(\frac{1 - t^2}{1 + t^2}, \frac{2t}{1 + t^2}\right)$,
-        the Euclidean chord distance between $P(t_i)$ and $P(t_j)$ for ordered parameters
-        $t_1 &lt; t_2 &lt; t_3 &lt; t_4$ is:</p>
-        <p>$$d(t_i, t_j) = \frac{2(t_j - t_i)}{\sqrt{(1 + t_i^2)(1 + t_j^2)}}$$</p>
-        <p>Clearing the common positive denominator $\frac{1}{4}(1+t_1^2)(1+t_2^2)(1+t_3^2)(1+t_4^2)$
-        reduces $AC \cdot BD - (AB \cdot CD + BC \cdot DA) = 0$ to Euler’s universal four-point
+        <dd><p>Prove Ptolemy’s Theorem universally over <span class="math notranslate nohighlight">\(\mathbb{Z}[t_1, t_2, t_3, t_4]\)</span> on the rational circle.</p>
+        <p>On the unit circle parameterized by <span class="math notranslate nohighlight">\(P(t) = \left(\frac{1 - t^2}{1 + t^2}, \frac{2t}{1 + t^2}\right)\)</span>,
+        the Euclidean chord distance between <span class="math notranslate nohighlight">\(P(t_i)\)</span> and <span class="math notranslate nohighlight">\(P(t_j)\)</span> for ordered parameters
+        <span class="math notranslate nohighlight">\(t_1 &lt; t_2 &lt; t_3 &lt; t_4\)</span> is:</p>
+        <div class="math notranslate nohighlight">
+        \[d(t_i, t_j) = \frac{2(t_j - t_i)}{\sqrt{(1 + t_i^2)(1 + t_j^2)}}\]</div>
+        <p>Clearing the common positive denominator <span class="math notranslate nohighlight">\(\frac{1}{4}(1+t_1^2)(1+t_2^2)(1+t_3^2)(1+t_4^2)\)</span>
+        reduces <span class="math notranslate nohighlight">\(AC \cdot BD - (AB \cdot CD + BC \cdot DA) = 0\)</span> to Euler’s universal four-point
         polynomial identity, returning <code class="docutils literal notranslate"><span class="pre">sp.Integer(0)</span></code>.</p>
         </dd></dl>
 

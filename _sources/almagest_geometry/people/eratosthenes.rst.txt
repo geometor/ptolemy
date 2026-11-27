@@ -11,4 +11,4 @@ Eratosthenes
 ============
 
 **Eratosthenes of Cyrene (Ἐρατοσθένης, c. 276 – c. 194 BCE)**
-   Alexandrian geographer and mathematician; measured the arc between the tropics as $\frac{11}{83}$ of the meridian circle (*Almagest* I.12).
+   Alexandrian geographer and mathematician; measured the arc between the tropics as :math:`\frac{11}{83}` of the meridian circle (*Almagest* I.12).

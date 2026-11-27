@@ -110,16 +110,16 @@
         <p>Implements Heiberg 1898, Vol. I.1, pp. 68-78:</p>
         <ol class="arabic simple">
         <li><p><strong>Planar Menelaus Lemma</strong> (<a class="reference internal" href="#geometor.ptolemy.menelaus_sphaerica.construct_planar_menelaus" title="geometor.ptolemy.menelaus_sphaerica.construct_planar_menelaus"><code class="xref py py-func docutils literal notranslate"><span class="pre">construct_planar_menelaus()</span></code></a>, <em>Almagest</em> I.13, pp. 68-70):
-        Constructs Ptolemy’s sector-figure ($AB, AC$ cut by $BE, CD$ meeting at $Z$) and draws
-        auxiliary line $EH \parallel CD$ meeting $AB$ at $H$ (Eucl. I.31, VI.4), proving both
-        <em>kata synthesin</em> ($\frac{CA}{AE} = \frac{CD}{DZ} \cdot \frac{ZB}{BE}$) and
-        <em>kata diairesin</em> ($\frac{CE}{EA} = \frac{CZ}{ZD} \cdot \frac{DB}{BA}$).</p></li>
+        Constructs Ptolemy’s sector-figure (<span class="math notranslate nohighlight">\(AB, AC\)</span> cut by <span class="math notranslate nohighlight">\(BE, CD\)</span> meeting at <span class="math notranslate nohighlight">\(Z\)</span>) and draws
+        auxiliary line <span class="math notranslate nohighlight">\(EH \parallel CD\)</span> meeting <span class="math notranslate nohighlight">\(AB\)</span> at <span class="math notranslate nohighlight">\(H\)</span> (Eucl. I.31, VI.4), proving both
+        <em>kata synthesin</em> (<span class="math notranslate nohighlight">\(\frac{CA}{AE} = \frac{CD}{DZ} \cdot \frac{ZB}{BE}\)</span>) and
+        <em>kata diairesin</em> (<span class="math notranslate nohighlight">\(\frac{CE}{EA} = \frac{CZ}{ZD} \cdot \frac{DB}{BA}\)</span>).</p></li>
         <li><p><strong>Spherical Menelaus Chord Theorem &amp; Solar Declination</strong> (<a class="reference internal" href="#geometor.ptolemy.menelaus_sphaerica.verify_spherical_menelaus" title="geometor.ptolemy.menelaus_sphaerica.verify_spherical_menelaus"><code class="xref py py-func docutils literal notranslate"><span class="pre">verify_spherical_menelaus()</span></code></a>,
         <a class="reference internal" href="#geometor.ptolemy.menelaus_sphaerica.compute_solar_declination" title="geometor.ptolemy.menelaus_sphaerica.compute_solar_declination"><code class="xref py py-func docutils literal notranslate"><span class="pre">compute_solar_declination()</span></code></a>, <em>Almagest</em> I.13-I.14, pp. 74-78):
-        Verifies Ptolemy’s 3D central projection from the sphere center $H$ onto the plane of
-        $\triangle ACD$ (producing collinear meet points $\Theta, K, \Lambda$ on two intersecting
+        Verifies Ptolemy’s 3D central projection from the sphere center <span class="math notranslate nohighlight">\(H\)</span> onto the plane of
+        <span class="math notranslate nohighlight">\(\triangle ACD\)</span> (producing collinear meet points <span class="math notranslate nohighlight">\(\Theta, K, \Lambda\)</span> on two intersecting
         planes, Heiberg I, p. 75) and computes Ptolemy’s exact chord ratio
-        $\operatorname{crd}(2\delta) = \frac{\operatorname{crd}(2\varepsilon)\operatorname{crd}(2\lambda)}{120}$.</p></li>
+        <span class="math notranslate nohighlight">\(\operatorname{crd}(2\delta) = \frac{\operatorname{crd}(2\varepsilon)\operatorname{crd}(2\lambda)}{120}\)</span>.</p></li>
         </ol>
         <section class="level-2" id="classes">
         <h2>Classes<a class="headerlink" href="#classes" title="Link to this heading">¶</a></h2>
@@ -298,22 +298,23 @@
         <dd><p>Construct Ptolemy’s planar Menelaus sector configuration (<em>Almagest</em> I.13, Heiberg I, pp. 68-70).</p>
         <p>Follows Heiberg’s Greek letters ($mathrm{A}to A, mathrm{B}to B, mathrm{Gamma}to C,
         mathrm{Delta}to D, mathrm{E}to E, mathrm{Z}to Z, mathrm{H}to H$):
-        Across two straight lines $AB$ and $AC$, two transversals $BE$ and $CD$ meet at $Z$,
-        and $EH \parallel CD$ meets $AB$ at $H$.</p>
+        Across two straight lines <span class="math notranslate nohighlight">\(AB\)</span> and <span class="math notranslate nohighlight">\(AC\)</span>, two transversals <span class="math notranslate nohighlight">\(BE\)</span> and <span class="math notranslate nohighlight">\(CD\)</span> meet at <span class="math notranslate nohighlight">\(Z\)</span>,
+        and <span class="math notranslate nohighlight">\(EH \parallel CD\)</span> meets <span class="math notranslate nohighlight">\(AB\)</span> at <span class="math notranslate nohighlight">\(H\)</span>.</p>
         </dd></dl>
 
         <dl class="py function">
         <dt class="sig sig-object py" id="geometor.ptolemy.menelaus_sphaerica.verify_spherical_menelaus">
         <span class="sig-prename descclassname"><span class="pre">geometor.ptolemy.menelaus_sphaerica.</span></span><span class="sig-name descname"><span class="pre">verify_spherical_menelaus</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.ptolemy.menelaus_sphaerica.SphericalMenelausResult" title="geometor.ptolemy.menelaus_sphaerica.SphericalMenelausResult"><span class="pre">SphericalMenelausResult</span></a></span></span><a class="headerlink" href="#geometor.ptolemy.menelaus_sphaerica.verify_spherical_menelaus" title="Link to this definition">¶</a></dt>
         <dd><p>Verify Ptolemy’s 3D central-projection proof of Spherical Menelaus (<em>Almagest</em> I.13, pp. 74-76).</p>
-        <p>Constructs an exact rational spherical Menelaus configuration $(A, B, C, D, E, Z)$ on $S^2$
-        centered at $H = (0, 0, 0)$, computes the three planar intersections $\Theta = AD \cap HB$,
-        $K = CD \cap HZ$, and $\Lambda = AC \cap HE$ (Heiberg I, p. 75), verifies that $\Theta, K, \Lambda$
-        are strictly collinear (lying in the intersection of plane $ACD$ with great-circle plane $HBZE$),
+        <p>Constructs an exact rational spherical Menelaus configuration <span class="math notranslate nohighlight">\((A, B, C, D, E, Z)\)</span> on <span class="math notranslate nohighlight">\(S^2\)</span>
+        centered at <span class="math notranslate nohighlight">\(H = (0, 0, 0)\)</span>, computes the three planar intersections <span class="math notranslate nohighlight">\(\Theta = AD \cap HB\)</span>,
+        <span class="math notranslate nohighlight">\(K = CD \cap HZ\)</span>, and <span class="math notranslate nohighlight">\(\Lambda = AC \cap HE\)</span> (Heiberg I, p. 75), verifies that <span class="math notranslate nohighlight">\(\Theta, K, \Lambda\)</span>
+        are strictly collinear (lying in the intersection of plane <span class="math notranslate nohighlight">\(ACD\)</span> with great-circle plane <span class="math notranslate nohighlight">\(HBZE\)</span>),
         and verifies Ptolemy’s exact spherical chord theorem:</p>
-        <p>$$\frac{\operatorname{crd}(2\widehat{CE})}{\operatorname{crd}(2\widehat{EA})}
+        <div class="math notranslate nohighlight">
+        \[\frac{\operatorname{crd}(2\widehat{CE})}{\operatorname{crd}(2\widehat{EA})}
              = \frac{\operatorname{crd}(2\widehat{CZ})}{\operatorname{crd}(2\widehat{ZD})}
-             \cdot \frac{\operatorname{crd}(2\widehat{DB})}{\operatorname{crd}(2\widehat{BA})}$$</p>
+             \cdot \frac{\operatorname{crd}(2\widehat{DB})}{\operatorname{crd}(2\widehat{BA})}\]</div>
         </dd></dl>
 
         <dl class="py class">
@@ -350,13 +351,14 @@
         <dl class="py function">
         <dt class="sig sig-object py" id="geometor.ptolemy.menelaus_sphaerica.compute_solar_declination">
         <span class="sig-prename descclassname"><span class="pre">geometor.ptolemy.menelaus_sphaerica.</span></span><span class="sig-name descname"><span class="pre">compute_solar_declination</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">longitude_deg</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.ptolemy.menelaus_sphaerica.SolarDeclinationEntry" title="geometor.ptolemy.menelaus_sphaerica.SolarDeclinationEntry"><span class="pre">SolarDeclinationEntry</span></a></span></span><a class="headerlink" href="#geometor.ptolemy.menelaus_sphaerica.compute_solar_declination" title="Link to this definition">¶</a></dt>
-        <dd><p>Compute Ptolemy’s <em>Almagest</em> I.14–I.15 solar declination for $\lambda \in \{30^\circ, 60^\circ, 90^\circ\}$.</p>
+        <dd><p>Compute Ptolemy’s <em>Almagest</em> I.14–I.15 solar declination for <span class="math notranslate nohighlight">\(\lambda \in \{30^\circ, 60^\circ, 90^\circ\}\)</span>.</p>
         <p>Reproduces Heiberg 1898, Vol. I.1, pp. 77-78 verbatim:
-        With obliquity $2\varepsilon = \frac{11}{83} \cdot 360^\circ = 47^\circ 42' 40''$
-        and Ptolemy’s chord $\operatorname{crd}(2\varepsilon) = 48;31,55$, Menelaus’s theorem gives:</p>
-        <p>$$\operatorname{crd}(2\delta) = \frac{\operatorname{crd}(2\varepsilon) \cdot \operatorname{crd}(2\lambda)}{120}$$</p>
-        <p>yielding $\delta(30^\circ) \approx 11^\circ 40'$ (Heiberg p. 78, l. 12: $\overline{\iota\alpha}\ \overline{\mu}$)
-        and $\delta(60^\circ) \approx 20^\circ 30' 9''$ (Heiberg p. 78, l. 24: $\overline{\kappa}\ \overline{\lambda}\ \overline{\theta}$).</p>
+        With obliquity <span class="math notranslate nohighlight">\(2\varepsilon = \frac{11}{83} \cdot 360^\circ = 47^\circ 42' 40''\)</span>
+        and Ptolemy’s chord <span class="math notranslate nohighlight">\(\operatorname{crd}(2\varepsilon) = 48;31,55\)</span>, Menelaus’s theorem gives:</p>
+        <div class="math notranslate nohighlight">
+        \[\operatorname{crd}(2\delta) = \frac{\operatorname{crd}(2\varepsilon) \cdot \operatorname{crd}(2\lambda)}{120}\]</div>
+        <p>yielding <span class="math notranslate nohighlight">\(\delta(30^\circ) \approx 11^\circ 40'\)</span> (Heiberg p. 78, l. 12: <span class="math notranslate nohighlight">\(\overline{\iota\alpha}\ \overline{\mu}\)</span>)
+        and <span class="math notranslate nohighlight">\(\delta(60^\circ) \approx 20^\circ 30' 9''\)</span> (Heiberg p. 78, l. 24: <span class="math notranslate nohighlight">\(\overline{\kappa}\ \overline{\lambda}\ \overline{\theta}\)</span>).</p>
         </dd></dl>
 
         </section>
@@ -435,6 +437,9 @@
   <script src="../../../../../_static/js/collection_controls.js?v=b6b5297a"></script>
   <script src="../../../../../_static/js/collection_directory.js?v=0928c9d3"></script>
   <script src="../../../../../_static/js/geometor_interactive.js?v=219c1955"></script>
+  <script>window.MathJax = {"tex": {"inlineMath": [["\\(", "\\)"], ["$", "$"]], "displayMath": [["\\[", "\\]"], ["$$", "$$"]]}}</script>
+  <script>window.MathJax = {"options": {"ignoreHtmlClass": ".*|etc-lazy-math", "processHtmlClass": "math|arithmatex", "enableComplexity": true, "makeCollapsible": true, "menuOptions": {"settings": {"zoom": "Click", "zscale": "200%", "collapsible": true, "enrich": true, "speech": false, "braille": false, "assistiveMml": false}}}, "output": {"displayOverflow": "linebreak", "linebreaks": {"inline": true}}}</script>
+  <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
   <script src="../../../../../_static/js/search_highlight.js"></script>
 
 </body>
