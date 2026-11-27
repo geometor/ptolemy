@@ -51,7 +51,7 @@ Ancient & Modern Mathematical Companions
 
 .. _cite-archimedes-dimensio:
 
-* **Archimedes of Syracuse** — *Measurement of a Circle* (*Κύκλου μέτρησις*), Proposition 3 ($3\frac{10}{71} < \pi < 3\frac{1}{7}$).
+* **Archimedes of Syracuse** — *Measurement of a Circle* (*Κύκλου μέτρησις*), Proposition 3 (:math:`3\frac{10}{71} < \pi < 3\frac{1}{7}`).
 
 .. _cite-aristotle-metaphysics:
 

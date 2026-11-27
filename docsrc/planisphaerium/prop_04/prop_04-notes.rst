@@ -18,10 +18,10 @@ Connection to the *Almagest* & Practical Astrolabe Fabrication
 
 2. **Standard Astrolabe Dimensions**:
    In Islamic and Western European astrolabe workshops (from 10th-century Baghdad and al-Andalus through Renaissance Nuremberg and London), Ptolemy's exact radii from Section 4 governed the layout of every planispheric astrolabe:
-   - Outer retaining rim of the *mater*: scaled to exceed $r_{\text{Cap}} \approx 92.14^p$.
-   - Equator line on the plate: circle of radius $60^p$.
-   - Inner horizon bounding circle: bounded by the Cancer circle ($r_{\text{Can}} \approx 39.07^p$).
-   - Ecliptic ring of the Rete: eccentric circle of diameter $131;12,34^p$ shifted along the meridian by $26;31,58^p$.
+   - Outer retaining rim of the *mater*: scaled to exceed :math:`r_{\text{Cap}} \approx 92.14^p`.
+   - Equator line on the plate: circle of radius :math:`60^p`.
+   - Inner horizon bounding circle: bounded by the Cancer circle (:math:`r_{\text{Can}} \approx 39.07^p`).
+   - Ecliptic ring of the Rete: eccentric circle of diameter :math:`131;12,34^p` shifted along the meridian by :math:`26;31,58^p`.
 
 3. **Symbolic Verification in ``geometor.ptolemy``**:
-   In :func:`geometor.ptolemy.stereographic.construct_astrolabe_planisphere`, the geometric relationship $ez \cdot eh = ed^2$ is verified symbolically in pure algebra, establishing that the product of the radii is independent of the choice of obliquity $\varepsilon$, being a geometric property of stereographic projection itself.
+   In :func:`geometor.ptolemy.stereographic.construct_astrolabe_planisphere`, the geometric relationship :math:`ez \cdot eh = ed^2` is verified symbolically in pure algebra, establishing that the product of the radii is independent of the choice of obliquity :math:`\varepsilon`, being a geometric property of stereographic projection itself.

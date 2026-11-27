@@ -14,18 +14,18 @@ Observational Geometry & Obliquity Evaluation
 ---------------------------------------------
 
 1. **Experimental Setup**:
-   - Location: Alexandria, Egypt (latitude $\varphi \approx 30^\circ 58'$).
+   - Location: Alexandria, Egypt (latitude :math:`\varphi \approx 30^\circ 58'`).
    - Instruments: Graduated meridian armillary ring and vertical quadrant plinth.
-   - Target: Zenith distances $z_{\text{summer}}$ and $z_{\text{winter}}$ of the Sun at solar noon during summer and winter solstices.
+   - Target: Zenith distances :math:`z_{\text{summer}}` and :math:`z_{\text{winter}}` of the Sun at solar noon during summer and winter solstices.
 
 2. **Deductive Mathematical Reduction**:
-   - Summer solstice noon zenith distance: $z_1 = \varphi - \varepsilon$.
-   - Winter solstice noon zenith distance: $z_2 = \varphi + \varepsilon$.
-   - Difference of zenith distances: $z_2 - z_1 = 2\varepsilon$ (strictly independent of terrestrial latitude $\varphi$!).
-   - Terrestrial latitude: $\varphi = \frac{1}{2}(z_1 + z_2)$.
+   - Summer solstice noon zenith distance: :math:`z_1 = \varphi - \varepsilon`.
+   - Winter solstice noon zenith distance: :math:`z_2 = \varphi + \varepsilon`.
+   - Difference of zenith distances: :math:`z_2 - z_1 = 2\varepsilon` (strictly independent of terrestrial latitude :math:`\varphi`!).
+   - Terrestrial latitude: :math:`\varphi = \frac{1}{2}(z_1 + z_2)`.
 
 3. **Numerical Parameters**:
-   - Observational bounds: $47^\circ 40' < 2\varepsilon < 47^\circ 45'$.
-   - Continued fraction ratio: $2\varepsilon = \frac{11}{83} \times 360^\circ \approx 47^\circ 42'40''$.
-   - Obliquity of the Ecliptic: $\varepsilon = 23^\circ 51'20'' = 23.8555\dots^\circ$.
-   - Subtending chord ($D = 120^p$): $\operatorname{crd}(2\varepsilon) \approx 48;31,55^p$.
+   - Observational bounds: :math:`47^\circ 40' < 2\varepsilon < 47^\circ 45'`.
+   - Continued fraction ratio: :math:`2\varepsilon = \frac{11}{83} \times 360^\circ \approx 47^\circ 42'40''`.
+   - Obliquity of the Ecliptic: :math:`\varepsilon = 23^\circ 51'20'' = 23.8555\dots^\circ`.
+   - Subtending chord (:math:`D = 120^p`): :math:`\operatorname{crd}(2\varepsilon) \approx 48;31,55^p`.
